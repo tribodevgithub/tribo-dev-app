@@ -204,7 +204,7 @@ return [
     'continue' => 'Continue',
     'submit' => 'Save',
     'new' => 'New',
-    'history' => 'History',
+    'history' => 'Histórico',
     'item_id' => 'Item ID',
     'export_list' => 'Export students list',
     'duplicate' => 'Duplicate',
@@ -368,7 +368,7 @@ return [
     'zoom_jwt_token' => 'Zoom JWT Token',
  	  'how_zoom_jwt_token' => 'How to create Zoom JWT token',
     'instructor_is_not_available' => 'Instructor is temporarily unavailable.',
-  
+
     'chapter' => 'Section',
     'chapters' => 'Sections',
     'add_new_chapter' => 'Add New Section',

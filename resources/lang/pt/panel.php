@@ -38,9 +38,9 @@ return [
     'invited_classes' => 'Invited courses',
     'invited_teacher' => 'Invited instrcutor',
     'invited_by' => 'Invited by',
-    'classes' => 'Courses',
-    'my_classes' => 'My courses',
-    'my_activity' => 'My activity',
+    'classes' => 'Cursos',
+    'my_classes' => 'Meus Cursos',
+    'my_activity' => 'Minhas Atividades',
     'download_sales' => 'Download Sales',
     'course_sales' => 'Course Sales',
     'only_not_conducted_webinars' => 'Only not conducted live classes',
@@ -272,7 +272,7 @@ return [
 
     'more_info' => 'More info',
   	'partner_instructor_hint' => 'The partner instructor will have access to the course content and their profile will be displayed on the course page.',
-  	
+
   	'affiliate' => 'Affiliate',
     'affiliates' => 'Affiliate',
     'affiliates_page' => 'Affiliate Marketing',
