@@ -106,8 +106,8 @@ return [
     'add_plan' => 'New Plan',
     'add_new_ticket' => 'New Pricing Plan',
     'discount' => 'Discount',
-    'ticket_no_result' => 'No pricing plan!',
-    'ticket_no_result_hint' => 'By creating pricing plans you can add time and capacity-depended prices for your course.',
+    'ticket_no_result' => 'Sem Planos de preços!',
+    'ticket_no_result_hint' => 'Ao criar planos de preços, você pode adicionar preços dependentes de tempo e capacidade para o seu curso.',
 
     'edit' => 'Edit',
     'delete' => 'Delete',
@@ -368,7 +368,7 @@ return [
     'zoom_jwt_token' => 'Zoom JWT Token',
  	  'how_zoom_jwt_token' => 'How to create Zoom JWT token',
     'instructor_is_not_available' => 'Instructor is temporarily unavailable.',
-  
+
     'chapter' => 'Section',
     'chapters' => 'Sections',
     'add_new_chapter' => 'Add New Section',

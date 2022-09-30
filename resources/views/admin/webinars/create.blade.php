@@ -94,7 +94,7 @@
 
                                             <div class="form-group mt-15">
                                                 <label class="input-label">{{ trans('update.points') }}</label>
-                                                <input type="text" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
+                                                <input type="text" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Vazio significa modo inativo"/>
                                                 @error('points')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}
