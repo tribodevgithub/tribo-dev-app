@@ -11,6 +11,11 @@ class PrerequisiteController extends Controller
 {
     public function store(Request $request)
     {
+
+        echo '<pre >';
+                var_export($data);
+                echo '</pre><hr>';
+                exit();
         $this->authorize('admin_webinars_edit');
 
         $data = $request->all();
