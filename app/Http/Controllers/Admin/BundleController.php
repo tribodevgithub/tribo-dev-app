@@ -26,12 +26,6 @@ class BundleController extends Controller
     public function index(Request $request)
     {
 
-        echo '<pre >';
-                var_export("foi");
-                echo '</pre><hr>';
-                exit();
-        $this->authorize('admin_bundles_list');
-
         removeContentLocale();
 
         $query = Bundle::query();
