@@ -1,1808 +1,1083 @@
-(function ($) {
+function _createForOfIteratorHelper(e, t) {
+    var a;
+    if ("undefined" == typeof Symbol || null == e[Symbol.iterator]) {
+        if (Array.isArray(e) || (a = _unsupportedIterableToArray(e)) || t && e && "number" == typeof e.length) {
+            a && (e = a);
+            var n = 0,
+                i = function() {};
+            return {
+                s: i,
+                n: function() {
+                    return n >= e.length ? {
+                        done: !0
+                    } : {
+                        done: !1,
+                        value: e[n++]
+                    }
+                },
+                e: function(e) {
+                    throw e
+                },
+                f: i
+            }
+        }
+        throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+    }
+    var r, o = !0,
+        s = !1;
+    return {
+        s: function() {
+            a = e[Symbol.iterator]()
+        },
+        n: function() {
+            var e = a.next();
+            return o = e.done, e
+        },
+        e: function(e) {
+            s = !0, r = e
+        },
+        f: function() {
+            try {
+                o || null == a.return || a.return()
+            } finally {
+                if (s) throw r
+            }
+        }
+    }
+}
+
+function _unsupportedIterableToArray(e, t) {
+    if (e) {
+        if ("string" == typeof e) return _arrayLikeToArray(e, t);
+        var a = Object.prototype.toString.call(e).slice(8, -1);
+        return "Object" === a && e.constructor && (a = e.constructor.name), "Map" === a || "Set" === a ? Array.from(e) : "Arguments" === a || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(a) ? _arrayLikeToArray(e, t) : void 0
+    }
+}
+
+function _arrayLikeToArray(e, t) {
+    (null == t || t > e.length) && (t = e.length);
+    for (var a = 0, n = new Array(t); a < t; a++) n[a] = e[a];
+    return n
+}! function(e) {
     "use strict";
 
-    // form serialize to Object
-    $.fn.serializeObject = function () {
-        var o = {};
-        var a = this.serializeArray();
-        $.each(a, function () {
-            if (o[this.name]) {
-                if (!o[this.name].push) {
-                    o[this.name] = [o[this.name]];
-                }
-                o[this.name].push(this.value || '');
-            } else {
-                o[this.name] = this.value || '';
-            }
-        });
-        return o;
-    };
-
-    function randomString() {
-        var text = "";
-        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-
-        for (var i = 0; i < 5; i++)
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-
-        return text;
+    function t() {
+        for (var e = "", t = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", a = 0; a < 5; a++) e += t.charAt(Math.floor(Math.random() * t.length));
+        return e
     }
 
-    /**
-     * close swl
-     * */
-    $('body').on('click', '.close-swl', function (e) {
-        e.preventDefault();
-        Swal.close();
-    });
-
-
-    $('#summernote').summernote({
-        tabsize: 2,
-        height: 400,
-        placeholder: $('#summernote').attr('placeholder'),
-        dialogsInBody: true,
-        toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['fontname', ['fontname']],
-            ['color', ['color']],
-            ['para', ['paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'picture', 'video']],
-            ['view', ['fullscreen', 'codeview']],
-        ],
-    });
-
-
-    $('body').on('click', '#saveAndPublish', function (e) {
-        e.preventDefault();
-        $('#forDraft').val('publish');
-        $('#webinarForm').trigger('submit');
-    });
-
-    $('body').on('click', '#saveAsDraft', function (e) {
-        e.preventDefault();
-        $('#forDraft').val(1);
-        $('#webinarForm').trigger('submit');
-    });
-
-    $('body').on('click', '#saveReject', function (e) {
-        e.preventDefault();
-        $('#forDraft').val('reject');
-        $('#webinarForm').trigger('submit');
-    });
-
-    $('#partnerInstructorSwitch').on('change.bootstrapSwitch', function (e) {
-        let isChecked = e.target.checked;
-
-        if (isChecked) {
-            $('#partnerInstructorInput').removeClass('d-none');
-            resetSelect2();
-        } else {
-            $('#partnerInstructorInput').addClass('d-none');
+    function a(e, t, a) {
+        var n = {
+                width: 20,
+                height: 20
+            },
+            i = feather.icons.upload.toSvg(n),
+            r = e.find(".js-file-type-volume"),
+            o = e.find(".js-downloadable-input"),
+            s = e.find(".js-online_viewer-input"),
+            l = e.find(".js-file-path-input"),
+            d = e.find(".js-s3-file-path-input"),
+            c = e.find(".js-file-path-input button"),
+            p = e.find(".js-file-path-input input");
+        switch (c.addClass("panel-file-manager"), l.removeClass("d-none"), d.addClass("d-none"), t) {
+            case "youtube":
+            case "vimeo":
+            case "iframe":
+                r.addClass("d-none"), o.find("input").prop("checked", !1), o.addClass("d-none"), s.find("input").prop("checked", !1), s.addClass("d-none"), i = feather.icons.link.toSvg(n), c.removeClass("panel-file-manager");
+                break;
+            case "external_link":
+            case "s3":
+                r.removeClass("d-none"), a && "video" === a ? o.removeClass("d-none") : (o.find("input").prop("checked", !1), o.addClass("d-none")), "external_link" === t ? (i = feather.icons["external-link"].toSvg(n), c.removeClass("panel-file-manager")) : "s3" === t && (l.addClass("d-none"), d.removeClass("d-none")), a && "pdf" === a ? s.removeClass("d-none") : (s.find("input").prop("checked", !1), s.addClass("d-none"));
+                break;
+            case "google_drive":
+                r.removeClass("d-none"), o.find("input").prop("checked", !1), o.addClass("d-none"), a && "pdf" === a ? s.removeClass("d-none") : (s.find("input").prop("checked", !1), s.addClass("d-none")), i = feather.icons.box.toSvg(n), c.removeClass("panel-file-manager");
+                break;
+            case "upload":
+                r.removeClass("d-none"), o.removeClass("d-none"), a && "pdf" === a ? s.removeClass("d-none") : (s.find("input").prop("checked", !1), s.addClass("d-none"))
         }
-    });
+        i && c.html(i), filePathPlaceHolderBySource && p.attr("placeholder", filePathPlaceHolderBySource[t])
+    }
 
-    $('body').on('change', '#categories', function (e) {
-        e.preventDefault();
-        let category_id = this.value;
-        $.get('/admin/filters/get-by-category-id/' + category_id, function (result) {
+    function n(t) {
+        var a = '<div id="extraDescriptionModal">';
+        a += e("#extraDescriptionForm").html();
+        var n = e(a += "</div>");
+        n.find(".js-form-groups").children().remove(), n.find(".js-form-groups").append('<div class="form-group">\n            <label class="input-label">image</label>\n            <div class="input-group">\n                <div class="input-group-prepend">\n                    <button type="button" class="input-group-text admin-file-manager" data-input="image_' + t + '" data-preview="holder">\n                        <i class="fa fa-upload"></i>\n                    </button>\n                </div>\n                <input type="text" name="value" id="image_' + t + '" class="form-control"/>\n            </div>\n        </div>');
+        var i = '<div id="extraDescriptionModal">';
+        return i += n.html(), i += "</div>"
+    }
 
-            if (result && typeof result.filters !== "undefined" && result.filters.length) {
-                let html = '';
-                Object.keys(result.filters).forEach(key => {
-                    let filter = result.filters[key];
-                    let options = [];
-
-                    if (filter.options.length) {
-                        options = filter.options;
+    function i(a, i) {
+        var r = a.attr("data-item-id"),
+            o = a.attr("data-webinar-id"),
+            s = t(),
+            l = {
+                item_id: o,
+                locale: i
+            };
+        e.post("/admin/webinar-extra-description/" + r + "/edit", l, function(t) {
+            if (t && t.webinarExtraDescription) {
+                var a = t.webinarExtraDescription,
+                    i = '<div id="extraDescriptionModal">';
+                i += e("#extraDescriptionForm").html(), i += "</div>", "company_logos" === a.type && (i = n(s)), i = i.replaceAll("/admin/webinar-extra-description/store", "/admin/webinar-extra-description/" + r + "/update"), Swal.fire({
+                    html: i,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
+                    customClass: {
+                        content: "p-0 text-left"
+                    },
+                    width: "48rem",
+                    onOpen: function() {
+                        var t = e("#extraDescriptionModal");
+                        Object.keys(a).forEach(function(e) {
+                            t.find('[name="' + e + '"]').val(a[e])
+                        });
+                        var n = t.find('select[name="locale"]');
+                        n && (n.addClass("js-edit-extraDescription-locale-ajax"), n.attr("data-item-id", r), n.attr("data-webinar-id", o))
                     }
-
-                    html += '<div class="col-12 col-md-3">\n' +
-                        '<div class="webinar-category-filters">\n' +
-                        '<strong class="category-filter-title d-block">' + filter.title + '</strong>\n' +
-                        '<div class="py-10"></div>\n' +
-                        '\n';
-
-                    if (options.length) {
-                        Object.keys(options).forEach(index => {
-                            let option = options[index];
-
-                            html += '<div class="form-group mt-20 d-flex align-items-center justify-content-between">\n' +
-                                '<label class="" for="filterOption' + option.id + '">' + option.title + '</label>\n' +
-                                '<div class="custom-control custom-checkbox">\n' +
-                                '<input type="checkbox" name="filters[]" value="' + option.id + '" class="custom-control-input" id="filterOption' + option.id + '">\n' +
-                                '<label class="custom-control-label" for="filterOption' + option.id + '"></label>\n' +
-                                '</div>\n' +
-                                '</div>\n';
-                        })
-                    }
-
-                    html += '</div></div>';
-                });
-
-                $('#categoriesFiltersContainer').removeClass('d-none');
-                $('#categoriesFiltersCard').html(html);
-            } else {
-                $('#categoriesFiltersContainer').addClass('d-none');
-                $('#categoriesFiltersCard').html('');
+                })
             }
         })
-    });
+    }
 
-    /**
-     * add ticket
-     * */
-    $('body').on('click', '#webinarAddTicket', function (e) {
-        e.preventDefault();
-        let add_ticket_modal = '<div id="addTicketModal">';
-        add_ticket_modal += $('#webinarTicketModal').html();
-        add_ticket_modal += '</div>';
+    function r(t) {
+        var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
+            n = t.attr("data-ticket-id"),
+            i = t.attr("data-webinar-id"),
+            r = {
+                item_id: i,
+                locale: a
+            };
+        e.post("/admin/tickets/" + n + "/edit", r, function(t) {
+            if (t && t.ticket) {
+                var a = t.ticket,
+                    r = '<div id="addTicketModal">';
+                r += e("#webinarTicketModal").html(), r = (r += "</div>").replaceAll("/admin/tickets/store", "/admin/tickets/" + n + "/update"), Swal.fire({
+                    html: r,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
+                    customClass: {
+                        content: "p-0 text-left"
+                    },
+                    width: "48rem",
+                    onOpen: function() {
+                        e(".date-range-picker").daterangepicker({
+                            locale: {
+                                format: "YYYY-MM-DD"
+                            },
+                            drops: "down",
+                            opens: "right",
+                            startDate: moment(1e3 * a.start_date).toDate(),
+                            endDate: moment(1e3 * a.end_date).toDate()
+                        }), delete a.start_date, delete a.end_date, Object.keys(a).forEach(function(t) {
+                            e("#addTicketModal").find('[name="' + t + '"]').val(a[t])
+                        });
+                        var t = e("#addTicketModal").find('select[name="locale"]');
+                        t && (t.addClass("js-edit-ticket-locale-ajax"), t.attr("data-ticket-id", n), t.attr("data-webinar-id", i))
+                    }
+                })
+            }
+        })
+    }
 
-        Swal.fire({
-            html: add_ticket_modal,
-            showCancelButton: false,
-            showConfirmButton: false,
+    function o(a) {
+        var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
+            i = a.attr("data-chapter-id"),
+            r = a.attr("data-webinar-id"),
+            o = {
+                item_id: r,
+                locale: n
+            };
+        e.post("/admin/chapters/" + i + "/edit", o, function(a) {
+            if (a && a.chapter) {
+                var n = a.chapter,
+                    o = '<div id="editChapterModal">';
+                o += e("#webinarChapterModal").html(), o = (o += "</div>").replaceAll("/admin/chapters/store", "/admin/chapters/" + i + "/update");
+                var s = t();
+                o = o.replaceAll("record", s), Swal.fire({
+                    html: o,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
+                    customClass: {
+                        content: "p-0 text-left"
+                    },
+                    width: "48rem",
+                    onOpen: function() {
+                        var t = e("#editChapterModal");
+                        Object.keys(n).forEach(function(e) {
+                            if ("status" === e) {
+                                var a = "active" === n.status;
+                                t.find('[name="' + e + '"]').prop("checked", a)
+                            } else if ("check_all_contents_pass" === e) {
+                                var i = n.check_all_contents_pass && "0" !== n.check_all_contents_pass;
+                                t.find('[name="' + e + '"]').prop("checked", i)
+                            } else t.find('[name="' + e + '"]').val(n[e])
+                        });
+                        var a = t.find('select[name="locale"]');
+                        a && (a.addClass("js-edit-chapter-locale-ajax"), a.attr("data-chapter-id", i), a.attr("data-webinar-id", r))
+                    }
+                })
+            }
+        })
+    }
+
+    function s(a) {
+        var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
+            i = a.attr("data-session-id"),
+            r = a.attr("data-webinar-id"),
+            o = {
+                item_id: r,
+                locale: n
+            };
+        e.post("/admin/sessions/" + i + "/edit", o, function(a) {
+            if (a && a.session) {
+                var n = a.session,
+                    o = '<div id="addSessionModal">';
+                o += e("#webinarSessionModal").html(), o = (o += "</div>").replaceAll("/admin/sessions/store", "/admin/sessions/" + i + "/update");
+                var s = t();
+                o = o.replaceAll("record", s), Swal.fire({
+                    html: o,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
+                    customClass: {
+                        content: "p-0 text-left"
+                    },
+                    width: "48rem",
+                    onOpen: function() {
+                        var t = e("#addSessionModal"),
+                            a = e(".datetimepicker");
+                        a.val(n.date), a.daterangepicker({
+                            locale: {
+                                format: "YYYY-MM-DD HH:mm"
+                            },
+                            singleDatePicker: !0,
+                            timePicker: !0,
+                            timePicker24Hour: !0
+                        }), delete n.date, Object.keys(n).forEach(function(e) {
+                            if ("session_api" === e) t.find('.js-api-input[value="' + n[e] + '"]').prop("checked", !0), t.find(".js-api-input").prop("disabled", !0), "local" !== n[e] && (t.find(".js-ajax-api_secret").prop("disabled", !0), t.find(".js-ajax-date").prop("disabled", !0), t.find(".js-ajax-duration").prop("disabled", !0), t.find(".js-ajax-link").prop("disabled", !0)), "big_blue_button" === n[e] ? (t.find(".js-moderator-secret").removeClass("d-none"), t.find(".js-ajax-moderator_secret").prop("disabled", !0)) : "zoom" === n[e] ? (t.find(".js-local-link").addClass("d-none"), t.find(".js-api-secret").addClass("d-none"), t.find(".js-moderator-secret").addClass("d-none")) : "agora" === n[e] && (t.find(".js-agora-chat-and-rec").removeClass("d-none"), t.find(".js-api-secret").addClass("d-none"), t.find(".js-local-link").addClass("d-none"), t.find(".js-moderator-secret").addClass("d-none"));
+                            else if ("status" === e) {
+                                var a = "active" === n.status;
+                                t.find('[name="' + e + '"]').prop("checked", a)
+                            } else if ("check_previous_parts" === e || "access_after_day" === e) {
+                                (n.check_previous_parts || null !== n.access_after_day) && (t.find(".js-sequence-content-switch").prop("checked", !0), t.find('[name="check_previous_parts"]').prop("checked", n.check_previous_parts), t.find('[name="access_after_day"]').val(n.access_after_day), t.find(".js-sequence-content-inputs").removeClass("d-none"))
+                            } else if ("agora_settings" === e) {
+                                var i = JSON.parse(n.agora_settings);
+                                i && i.chat && (!0 === i.chat || "true" === i.chat) && t.find('[name="agora_chat"]').prop("checked", !0), i && i.record && (!0 === i.record || "true" === i.record) && t.find('[name="agora_record"]').prop("checked", !0)
+                            } else t.find('[name="' + e + '"]').val(n[e])
+                        });
+                        var o = t.find('select[name="locale"]');
+                        o && (o.addClass("js-edit-session-locale-ajax"), o.attr("data-session-id", i), o.attr("data-webinar-id", r))
+                    }
+                })
+            }
+        })
+    }
+
+    function l(t) {
+        var a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
+            n = t.attr("data-faq-id"),
+            i = t.attr("data-webinar-id"),
+            r = {
+                item_id: i,
+                locale: a
+            };
+        e.post("/admin/faqs/" + n + "/edit", r, function(t) {
+            if (t && t.faq) {
+                var a = t.faq,
+                    r = '<div id="addFAQsModal">';
+                r += e("#webinarFaqModal").html(), r = (r += "</div>").replaceAll("/admin/faqs/store", "/admin/faqs/" + n + "/update"), Swal.fire({
+                    html: r,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
+                    customClass: {
+                        content: "p-0 text-left"
+                    },
+                    width: "48rem",
+                    onOpen: function() {
+                        var t = e("#addFAQsModal");
+                        Object.keys(a).forEach(function(e) {
+                            t.find('[name="' + e + '"]').val(a[e])
+                        });
+                        var r = t.find('select[name="locale"]');
+                        r && (r.addClass("js-edit-faq-locale-ajax"), r.attr("data-faq-id", n), r.attr("data-webinar-id", i))
+                    }
+                })
+            }
+        })
+    }
+    e.fn.serializeObject = function() {
+        var t = {},
+            a = this.serializeArray();
+        return e.each(a, function() {
+            t[this.name] ? (t[this.name].push || (t[this.name] = [t[this.name]]), t[this.name].push(this.value || "")) : t[this.name] = this.value || ""
+        }), t
+    }, e("body").on("click", ".close-swl", function(e) {
+        e.preventDefault(), Swal.close()
+    }), e("#summernote").summernote({
+        tabsize: 2,
+        height: 400,
+        placeholder: e("#summernote").attr("placeholder"),
+        dialogsInBody: !0,
+        toolbar: [
+            ["style", ["style"]],
+            ["font", ["bold", "underline", "clear"]],
+            ["fontname", ["fontname"]],
+            ["color", ["color"]],
+            ["para", ["paragraph"]],
+            ["table", ["table"]],
+            ["insert", ["link", "picture", "video"]],
+            ["view", ["fullscreen", "codeview"]]
+        ]
+    }), e("body").on("click", "#saveAndPublish", function(t) {
+        t.preventDefault(), e("#forDraft").val("publish"), e("#webinarForm").trigger("submit")
+    }), e("body").on("click", "#saveAsDraft", function(t) {
+        t.preventDefault(), e("#forDraft").val(1), e("#webinarForm").trigger("submit")
+    }), e("body").on("click", "#saveReject", function(t) {
+        t.preventDefault(), e("#forDraft").val("reject"), e("#webinarForm").trigger("submit")
+    }), e("#partnerInstructorSwitch").on("change.bootstrapSwitch", function(t) {
+        t.target.checked ? (e("#partnerInstructorInput").removeClass("d-none"), resetSelect2()) : e("#partnerInstructorInput").addClass("d-none")
+    }), e("body").on("change", "#categories", function(t) {
+        t.preventDefault();
+        var a = this.value;
+        e.get("/admin/filters/get-by-category-id/" + a, function(t) {
+            if (t && void 0 !== t.filters && t.filters.length) {
+                var a = "";
+                Object.keys(t.filters).forEach(function(e) {
+                    var n = t.filters[e],
+                        i = [];
+                    n.options.length && (i = n.options), a += '<div class="col-12 col-md-3">\n<div class="webinar-category-filters">\n<strong class="category-filter-title d-block">' + n.title + '</strong>\n<div class="py-10"></div>\n\n', i.length && Object.keys(i).forEach(function(e) {
+                        var t = i[e];
+                        a += '<div class="form-group mt-20 d-flex align-items-center justify-content-between">\n<label class="" for="filterOption' + t.id + '">' + t.title + '</label>\n<div class="custom-control custom-checkbox">\n<input type="checkbox" name="filters[]" value="' + t.id + '" class="custom-control-input" id="filterOption' + t.id + '">\n<label class="custom-control-label" for="filterOption' + t.id + '"></label>\n</div>\n</div>\n'
+                    }), a += "</div></div>"
+                }), e("#categoriesFiltersContainer").removeClass("d-none"), e("#categoriesFiltersCard").html(a)
+            } else e("#categoriesFiltersContainer").addClass("d-none"), e("#categoriesFiltersCard").html("")
+        })
+    }), e("body").on("click", "#webinarAddTicket", function(t) {
+        t.preventDefault();
+        var a = '<div id="addTicketModal">';
+        a += e("#webinarTicketModal").html(), a += "</div>", Swal.fire({
+            html: a,
+            showCancelButton: !1,
+            showConfirmButton: !1,
             customClass: {
-                content: 'p-0 text-left',
+                content: "p-0 text-left"
             },
-            width: '48rem',
-        });
+            width: "48rem"
+        }), resetDatePickers()
+    }), e("body").on("click", "#saveTicket", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e("#addTicketModal .js-form");
+        handleWebinarItemForm(n, a)
+    }), e(document).ready(function() {
+        var t = getComputedStyle(document.body).getPropertyValue("--primary");
 
-        resetDatePickers();
-    });
-
-    $('body').on('click', '#saveTicket', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $('#addTicketModal form');
-        handleWebinarItemForm(form, $this);
-    });
-
-    /**
-     * Contents
-     * */
-
-    $(document).ready(function () {
-
-        const style = getComputedStyle(document.body);
-        const primaryColor = style.getPropertyValue('--primary');
-
-        function updateToDatabase(table, idString) {
-            $.post('/admin/webinars/order-items', {table: table, items: idString}, function (result) {
-                if (result && result.title && result.msg) {
-                    $.toast({
-                        heading: result.title,
-                        text: result.msg,
-                        bgColor: primaryColor,
-                        textColor: 'white',
-                        hideAfter: 10000,
-                        position: 'bottom-right',
-                        icon: 'success'
+        function n(a) {
+            a.length && a.sortable({
+                group: "no-drop",
+                handle: ".move-icon",
+                axis: "y",
+                update: function(n, i) {
+                    var r = a.sortable("toArray", {
+                        attribute: "data-id"
                     });
+                    ! function(a, n) {
+                        e.post("/admin/webinars/order-items", {
+                            table: a,
+                            items: n
+                        }, function(a) {
+                            a && a.title && a.msg && e.toast({
+                                heading: a.title,
+                                text: a.msg,
+                                bgColor: t,
+                                textColor: "white",
+                                hideAfter: 1e4,
+                                position: "bottom-right",
+                                icon: "success"
+                            })
+                        })
+                    }(n.target.getAttribute("data-order-table"), r.join(","))
                 }
             })
         }
-
-        function setSortable(target) {
-            if (target.length) {
-                target.sortable({
-                    group: 'no-drop',
-                    handle: '.move-icon',
-                    axis: "y",
-                    update: function (e, ui) {
-                        var sortData = target.sortable('toArray', {attribute: 'data-id'});
-                        var table = e.target.getAttribute('data-order-table');
-
-                        updateToDatabase(table, sortData.join(','))
-                    }
-                });
-            }
-        }
-
-        const items = [];
-
-        var draggableContentLists = $('.draggable-content-lists');
-        if (draggableContentLists.length) {
-            for (let item of draggableContentLists) {
-                items.push($(item).attr('data-drag-class'))
-            }
-        }
-
-        if (items.length) {
-            for (let item of items) {
-                const tag = $('.' + item);
-
-                if (tag.length) {
-                    setSortable(tag);
+        var i = [],
+            r = e(".draggable-content-lists");
+        if (r.length) {
+            var o, s = _createForOfIteratorHelper(r);
+            try {
+                for (s.s(); !(o = s.n()).done;) {
+                    var l = o.value;
+                    i.push(e(l).attr("data-drag-class"))
                 }
+            } catch (e) {
+                s.e(e)
+            } finally {
+                s.f()
             }
         }
-
-        const $fileForms = $('.file-form');
-
-        if ($fileForms && $fileForms.length) {
-            $fileForms.each(key => {
-                if ($fileForms[key]) {
-                    const $form = $($fileForms[key]);
-
-                    const source = $form.find('.js-file-storage').val();
-                    const fileType = $form.find('.js-ajax-file_type').val();
-                    handleShowFileInputsBySource($form, source, fileType);
+        if (i.length) {
+            var d, c = _createForOfIteratorHelper(i);
+            try {
+                for (c.s(); !(d = c.n()).done;) {
+                    var p = d.value,
+                        u = e("." + p);
+                    u.length && n(u)
                 }
-            });
-        }
-
-        if ($('.accordion-content-wrapper .attachments-select2').length) {
-            $('.accordion-content-wrapper .attachments-select2').select2({
-                multiple: true,
-                width: '100%',
-            });
-        }
-
-        var summernoteTarget = $('.accordion-content-wrapper .js-content-summernote');
-        if (summernoteTarget.length) {
-            summernoteTarget.summernote({
-                tabsize: 2,
-                height: 400,
-                callbacks: {
-                    onChange: function (contents, $editable) {
-                        $('.js-hidden-content-summernote').val(contents);
-                    }
-                }
-            });
-        }
-    });
-
-    $('body').on('change', '.js-webinar-content-locale', function (e) {
-        e.preventDefault();
-
-        const $this = $(this);
-        const $form = $(this).closest('.js-content-form');
-        const locale = $this.val();
-        const webinarId = $this.attr('data-webinar-id');
-        const item_id = $this.attr('data-id');
-        const relation = $this.attr('data-relation');
-        let fields = $this.attr('data-fields');
-        fields = fields.split(',');
-
-
-        $this.addClass('loadingbar gray');
-
-        const path = '/admin/webinars/' + webinarId + '/getContentItemByLocale';
-        const data = {
-            item_id,
-            locale,
-            relation
-        };
-
-        $.post(path, data, function (result) {
-            if (result && result.item) {
-                const item = result.item;
-
-                Object.keys(item).forEach(function (key) {
-                    const value = item[key];
-
-                    if ($.inArray(key, fields) !== -1) {
-                        let element = $form.find('.js-ajax-' + key);
-                        element.val(value);
-                    }
-
-                    if (relation === 'textLessons' && key === 'content') {
-                        var summernoteTarget = $form.find('.js-content-' + item_id);
-
-                        if (summernoteTarget.length) {
-                            summernoteTarget.summernote('destroy');
-
-
-                            summernoteTarget.val(value);
-                            $('.js-hidden-content-' + item_id).val(value);
-
-                            summernoteTarget.summernote({
-                                tabsize: 2,
-                                height: 400,
-                                callbacks: {
-                                    onChange: function (contents, $editable) {
-                                        $('.js-hidden-content-' + item_id).val(contents);
-                                    }
-                                }
-                            });
-                        }
-                    }
-                });
-
-                $this.removeClass('loadingbar gray');
+            } catch (e) {
+                c.e(e)
+            } finally {
+                c.f()
             }
-        }).fail(err => {
-            $this.removeClass('loadingbar gray');
+        }
+        var f = e(".file-form");
+        f && f.length && f.each(function(t) {
+            if (f[t]) {
+                var n = e(f[t]),
+                    i = n.find(".js-file-storage").val(),
+                    r = n.find(".js-ajax-file_type").val();
+                a(n, i, r)
+            }
+        }), e(".accordion-content-wrapper .attachments-select2").length && e(".accordion-content-wrapper .attachments-select2").select2({
+            multiple: !0,
+            width: "100%"
         });
-    });
-
-    function handleFileFormSubmit(form, $this) {
-        let data = serializeObjectByTag(form);
-        let action = form.attr('data-action');
-
-        $this.addClass('loadingbar primary').prop('disabled', true);
-        form.find('input').removeClass('is-invalid');
-        form.find('textarea').removeClass('is-invalid');
-
-        var formData = new FormData();
-
-        const s3Input = form.find('.js-s3-file-input');
-
-        if (s3Input && s3Input.prop('files') && s3Input.prop('files')[0]) {
-            formData.append('s3_file', s3Input.prop('files')[0]);
-        }
-
-        const items = form.find('input, textarea, select').serializeArray();
-
-        $.each(items, function () {
-            formData.append(this.name, this.value);
-        });
-
-        $.ajax({
-            url: action,
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            cache: false,
-            success: function (result) {
-                if (result && result.code === 200) {
-                    //window.location.reload();
-                    Swal.fire({
-                        icon: 'success',
-                        html: '<h3 class="font-20 text-center text-dark-blue py-25">' + saveSuccessLang + '</h3>',
-                        showConfirmButton: false,
-                        width: '25rem',
-                    });
-
-                    setTimeout(() => {
-                        window.location.reload();
-                    }, 500);
+        var m = e(".accordion-content-wrapper .js-content-summernote");
+        m.length && m.summernote({
+            tabsize: 2,
+            height: 400,
+            dialogsInBody: !0,
+            callbacks: {
+                onChange: function(t, a) {
+                    e(".js-hidden-content-summernote").val(t)
                 }
-            },
-            error: function (err) {
-                $this.removeClass('loadingbar primary').prop('disabled', false);
-                var errors = err.responseJSON;
-
-                if (errors && errors.errors) {
-                    Object.keys(errors.errors).forEach((key) => {
-                        const error = errors.errors[key];
-                        let element = form.find('.js-ajax-' + key);
-
-                        element.addClass('is-invalid');
-                        element.parent().find('.invalid-feedback').text(error[0]);
-                    });
-                }
-            }
-        });
-    }
-
-    window.handleWebinarItemForm = function (form, $this) {
-        let data = serializeObjectByTag(form);
-        let action = form.attr('data-action');
-
-        $this.addClass('loadingbar primary').prop('disabled', true);
-        form.find('input').removeClass('is-invalid');
-        form.find('textarea').removeClass('is-invalid');
-
-        $.post(action, data, function (result) {
-            if (result && result.code === 200) {
-                //window.location.reload();
-                Swal.fire({
-                    icon: 'success',
-                    html: '<h3 class="font-20 text-center text-dark-blue py-25">' + saveSuccessLang + '</h3>',
-                    showConfirmButton: false,
-                    width: '25rem',
-                });
-
-                setTimeout(() => {
-                    window.location.reload();
-                }, 500)
-            }
-        }).fail(err => {
-            $this.removeClass('loadingbar primary').prop('disabled', false);
-            var errors = err.responseJSON;
-
-            if (errors && errors.status === 'zoom_jwt_token_invalid') {
-                Swal.fire({
-                    icon: 'error',
-                    html: '<h3 class="font-20 text-center text-dark-blue py-25">' + zoomJwtTokenInvalid + '</h3>',
-                    showConfirmButton: false,
-                    width: '25rem',
-                });
-            }
-
-            if (errors && errors.errors) {
-                Object.keys(errors.errors).forEach((key) => {
-                    const error = errors.errors[key];
-                    let element = form.find('.js-ajax-' + key);
-
-                    if (key === 'zoom-not-complete-alert') {
-                        form.find('.js-zoom-not-complete-alert').removeClass('d-none');
-                    } else {
-                        element.addClass('is-invalid');
-                        element.parent().find('.invalid-feedback').text(error[0]);
-                    }
-                });
             }
         })
-    }
-
-    $('body').on('click', '.save-chapter', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $this.closest('.chapter-form');
-
-        handleWebinarItemForm(form, $this);
-    });
-
-
-    $('body').on('click', '.js-add-chapter', function (e) {
-        const $this = $(this);
-
-        const webinarId = $this.attr('data-webinar-id');
-        const type = $this.attr('data-type');
-        const itemId = $this.attr('data-chapter');
-        const locale = $this.attr('data-locale');
-
-        const random = itemId ? itemId : randomString();
-
-        var clone = $('#chapterModalHtml').clone();
-        clone.removeClass('d-none');
-        var cloneHtml = clone.prop('innerHTML');
-        cloneHtml = cloneHtml.replaceAll('record', random);
-
-        clone.html('<div id="chapterModal' + random + '">' + cloneHtml + '</div>');
-
-        Swal.fire({
-            html: clone,
-            showCancelButton: false,
-            showConfirmButton: false,
-            customClass: {
-                content: 'p-0 text-left',
-            },
-            width: '36rem',
-            onOpen: function () {
-
-                const modal = $('#chapterModal' + random);
-
-                modal.find('input.js-chapter-webinar-id').val(webinarId);
-                modal.find('input.js-chapter-type').val(type);
-
-                if (itemId) {
-                    modal.find('.section-title').text(editChapterLang);
-
-                    const path = '/admin/chapters/' + itemId + '/update';
-                    modal.find('.chapter-form').attr('data-action', path);
-
-                    $.get('/admin/chapters/' + itemId + '?locale=' + locale, function (result) {
-                        if (result && result.chapter) {
-                            modal.find('.js-ajax-title').val(result.chapter.title);
-
-                            const status = modal.find('.js-chapter-status-switch');
-                            if (result.chapter.status === 'active') {
-                                status.prop('checked', true);
-                            } else {
-                                status.prop('checked', false);
+    }), e("body").on("change", ".js-webinar-content-locale", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e(this).closest(".js-content-form"),
+            i = a.val(),
+            r = a.attr("data-webinar-id"),
+            o = a.attr("data-id"),
+            s = a.attr("data-relation"),
+            l = a.attr("data-fields");
+        l = l.split(","), a.addClass("loadingbar gray");
+        var d = "/admin/webinars/" + r + "/getContentItemByLocale",
+            c = {
+                item_id: o,
+                locale: i,
+                relation: s
+            };
+        e.post(d, c, function(t) {
+            if (t && t.item) {
+                var i = t.item;
+                Object.keys(i).forEach(function(t) {
+                    var a = i[t]; - 1 !== e.inArray(t, l) && n.find(".js-ajax-" + t).val(a);
+                    if ("textLessons" === s && "content" === t) {
+                        var r = n.find(".js-content-" + o);
+                        r.length && (r.summernote("destroy"), r.val(a), e(".js-hidden-content-" + o).val(a), r.summernote({
+                            tabsize: 2,
+                            height: 400,
+                            dialogsInBody: !0,
+                            callbacks: {
+                                onChange: function(t, a) {
+                                    e(".js-hidden-content-" + o).val(t)
+                                }
                             }
-
-                            const checkedAllContents = (result.chapter.check_all_contents_pass && result.chapter.check_all_contents_pass !== "0");
-                            modal.find('.js-chapter-check-all-contents-pass').prop('checked', checkedAllContents);
-
-                            var localeSelect = modal.find('.js-chapter-locale');
-                            localeSelect.val(locale);
-                            localeSelect.addClass('js-webinar-content-locale');
-                            localeSelect.attr('data-id', itemId);
+                        }))
+                    }
+                }), a.removeClass("loadingbar gray")
+            }
+        }).fail(function(e) {
+            a.removeClass("loadingbar gray")
+        })
+    }), window.handleWebinarItemForm = function(t, a) {
+        var n = serializeObjectByTag(t),
+            i = t.attr("data-action");
+        a.addClass("loadingbar primary").prop("disabled", !0), t.find("input").removeClass("is-invalid"), t.find("textarea").removeClass("is-invalid"), e.post(i, n, function(e) {
+            e && 200 === e.code && (Swal.fire({
+                icon: "success",
+                html: '<h3 class="font-20 text-center text-dark-blue py-25">' + saveSuccessLang + "</h3>",
+                showConfirmButton: !1,
+                width: "25rem"
+            }), setTimeout(function() {
+                window.location.reload()
+            }, 500))
+        }).fail(function(e) {
+            a.removeClass("loadingbar primary").prop("disabled", !1);
+            var n = e.responseJSON;
+            n && "zoom_jwt_token_invalid" === n.status && Swal.fire({
+                icon: "error",
+                html: '<h3 class="font-20 text-center text-dark-blue py-25">' + zoomJwtTokenInvalid + "</h3>",
+                showConfirmButton: !1,
+                width: "25rem"
+            }), n && n.errors && Object.keys(n.errors).forEach(function(e) {
+                var a = n.errors[e],
+                    i = t.find(".js-ajax-" + e);
+                "zoom-not-complete-alert" === e ? t.find(".js-zoom-not-complete-alert").removeClass("d-none") : (i.addClass("is-invalid"), i.parent().find(".invalid-feedback").text(a[0]))
+            })
+        })
+    }, e("body").on("click", ".save-chapter", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.closest(".chapter-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".js-add-chapter", function(a) {
+        var n = e(this),
+            i = n.attr("data-webinar-id"),
+            r = n.attr("data-type"),
+            o = n.attr("data-chapter"),
+            s = n.attr("data-locale"),
+            l = o || t(),
+            d = e("#chapterModalHtml").clone();
+        d.removeClass("d-none");
+        var c = d.prop("innerHTML");
+        c = c.replaceAll("record", l), d.html('<div id="chapterModal' + l + '">' + c + "</div>"), Swal.fire({
+            html: d,
+            showCancelButton: !1,
+            showConfirmButton: !1,
+            customClass: {
+                content: "p-0 text-left"
+            },
+            width: "36rem",
+            onOpen: function() {
+                var t = e("#chapterModal" + l);
+                if (t.find("input.js-chapter-webinar-id").val(i), t.find("input.js-chapter-type").val(r), o) {
+                    t.find(".section-title").text(editChapterLang);
+                    var a = "/admin/chapters/" + o + "/update";
+                    t.find(".chapter-form").attr("data-action", a), e.get("/admin/chapters/" + o + "?locale=" + s, function(e) {
+                        if (e && e.chapter) {
+                            t.find(".js-ajax-title").val(e.chapter.title);
+                            var a = t.find(".js-chapter-status-switch");
+                            "active" === e.chapter.status ? a.prop("checked", !0) : a.prop("checked", !1);
+                            var n = e.chapter.check_all_contents_pass && "0" !== e.chapter.check_all_contents_pass;
+                            t.find(".js-chapter-check-all-contents-pass").prop("checked", n);
+                            var i = t.find(".js-chapter-locale");
+                            i.val(s), i.addClass("js-webinar-content-locale"), i.attr("data-id", o)
                         }
                     })
                 }
             }
-        });
-    });
-
-    $('body').on('click', '.js-add-course-content-btn, .add-new-interactive-file-btn', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const type = $this.attr('data-type');
-        const chapterId = $this.attr('data-chapter');
-
-        const contentTagId = '#chapterContentAccordion' + chapterId;
-        const key = randomString();
-        var html = '';
-
-        switch (type) {
-            case 'file':
-                const newFileForm = $('#newFileForm');
-                newFileForm.find('.chapter-input').val(chapterId);
-                html = newFileForm.html();
-
-                html = html.replace(/record/g, key);
-
-                $(contentTagId).prepend(html);
-
+        })
+    }), e("body").on("click", ".js-add-course-content-btn, .add-new-interactive-file-btn", function(a) {
+        a.preventDefault();
+        var n = e(this),
+            i = n.attr("data-type"),
+            r = n.attr("data-chapter"),
+            o = "#chapterContentAccordion" + r,
+            s = t(),
+            l = "";
+        switch (i) {
+            case "file":
+                var d = e("#newFileForm");
+                d.find(".chapter-input").val(r), l = (l = d.html()).replace(/record/g, s), e(o).prepend(l);
                 break;
-            case 'new_interactive_file':
-                const newInteractiveFileForm = $('#newInteractiveFileForm');
-                newInteractiveFileForm.find('.chapter-input').val(chapterId);
-                html = newInteractiveFileForm.html();
-
-                html = html.replace(/record/g, key);
-
-                $(contentTagId).prepend(html);
-
+            case "new_interactive_file":
+                var c = e("#newInteractiveFileForm");
+                c.find(".chapter-input").val(r), l = (l = c.html()).replace(/record/g, s), e(o).prepend(l);
                 break;
-            case 'session':
-                const newSessionForm = $('#newSessionForm');
-                newSessionForm.find('.chapter-input').val(chapterId);
-                html = newSessionForm.html();
-
-                html = html.replace(/record/g, key);
-
-                $(contentTagId).prepend(html);
+            case "session":
+                var p = e("#newSessionForm");
+                p.find(".chapter-input").val(r), l = (l = p.html()).replace(/record/g, s), e(o).prepend(l);
                 break;
-            case 'text_lesson':
-                const newTextLessonForm = $('#newTextLessonForm');
-                newTextLessonForm.find('.chapter-input').val(chapterId);
-                html = newTextLessonForm.html();
-
-                html = html.replace(/record/g, key);
-
-                html = html.replaceAll('attachments-select2', 'attachments-select2-' + key);
-                html = html.replaceAll('js-content-summernote', 'js-content-summernote-' + key);
-                html = html.replaceAll('js-hidden-content-summernote', 'js-hidden-content-summernote-' + key);
-
-                $(contentTagId).prepend(html);
-
-                $('.attachments-select2-' + key).select2({
-                    multiple: true,
-                    width: '100%',
-                });
-
-                $('.js-content-summernote-' + key).summernote({
+            case "text_lesson":
+                var u = e("#newTextLessonForm");
+                u.find(".chapter-input").val(r), l = (l = (l = (l = (l = u.html()).replace(/record/g, s)).replaceAll("attachments-select2", "attachments-select2-" + s)).replaceAll("js-content-summernote", "js-content-summernote-" + s)).replaceAll("js-hidden-content-summernote", "js-hidden-content-summernote-" + s), e(o).prepend(l), e(".attachments-select2-" + s).select2({
+                    multiple: !0,
+                    width: "100%"
+                }), e(".js-content-summernote-" + s).summernote({
                     tabsize: 2,
                     height: 400,
+                    dialogsInBody: !0,
                     callbacks: {
-                        onChange: function (contents, $editable) {
-                            $('.js-hidden-content-summernote-' + key).val(contents);
+                        onChange: function(t, a) {
+                            e(".js-hidden-content-summernote-" + s).val(t)
                         }
                     }
                 });
-
                 break;
-
-            case 'assignment':
-                const newAssignmentForm = $('#newAssignmentForm');
-                newAssignmentForm.find('.chapter-input').val(chapterId);
-                html = newAssignmentForm.html();
-
-                html = html.replace(/record/g, key);
-
-                $(contentTagId).prepend(html);
+            case "assignment":
+                var f = e("#newAssignmentForm");
+                f.find(".chapter-input").val(r), l = (l = f.html()).replace(/record/g, s), e(o).prepend(l);
                 break;
-
-            case 'quiz':
-                const newQuizForm = $('#newQuizForm');
-                newQuizForm.find('.chapter-input').val(chapterId);
-                html = newQuizForm.html();
-
-                html = html.replace(/record/g, key);
-
-                $(contentTagId).prepend(html);
-                break;
+            case "quiz":
+                var m = e("#newQuizForm");
+                m.find(".chapter-input").val(r), l = (l = m.html()).replace(/record/g, s), e(o).prepend(l)
         }
-
-        resetDatePickers();
-        feather.replace();
-    });
-
-    $('body').on('click', '.js-change-content-chapter', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const itemId = $this.attr('data-item-id');
-        const itemType = $this.attr('data-item-type');
-        const chapterId = $this.attr('data-chapter-id');
-
-        const random = randomString();
-
-        var clone = $('#changeChapterModalHtml').clone();
-        clone.removeClass('d-none');
-        var cloneHtml = clone.prop('innerHTML');
-
-        clone.html('<div id="changeChapterModalHtml' + random + '">' + cloneHtml + '</div>');
-
-        Swal.fire({
-            html: clone,
-            showCancelButton: false,
-            showConfirmButton: false,
+        resetDatePickers(), feather.replace()
+    }), e("body").on("click", ".js-change-content-chapter", function(a) {
+        a.preventDefault();
+        var n = e(this),
+            i = n.attr("data-item-id"),
+            r = n.attr("data-item-type"),
+            o = n.attr("data-chapter-id"),
+            s = t(),
+            l = e("#changeChapterModalHtml").clone();
+        l.removeClass("d-none");
+        var d = l.prop("innerHTML");
+        l.html('<div id="changeChapterModalHtml' + s + '">' + d + "</div>"), Swal.fire({
+            html: l,
+            showCancelButton: !1,
+            showConfirmButton: !1,
             customClass: {
-                content: 'p-0 text-left',
+                content: "p-0 text-left"
             },
-            width: '36rem',
-            onOpen: function () {
-
-                const modal = $('#changeChapterModalHtml' + random);
-
-                modal.find('input.js-item-id').val(itemId);
-                modal.find('input.js-item-type').val(itemType);
-                modal.find('.js-ajax-chapter_id').val(chapterId).change();
+            width: "36rem",
+            onOpen: function() {
+                var t = e("#changeChapterModalHtml" + s);
+                t.find("input.js-item-id").val(i), t.find("input.js-item-type").val(r), t.find(".js-ajax-chapter_id").val(o).change()
             }
-        });
-    });
-
-    $('body').on('click', '.save-change-chapter', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $this.closest('.change-chapter-form');
-
-        handleWebinarItemForm(form, $this);
-    });
-
-    // ======
-    // contents files
-    function handleShowFileInputsBySource($form, source, fileType) {
-        const featherIconsConf = {width: 20, height: 20};
-        let icon = feather.icons['upload'].toSvg(featherIconsConf);
-
-        const $fileTypeVolumeInputs = $form.find('.js-file-type-volume');
-        const $downloadableInput = $form.find('.js-downloadable-input');
-        const $onlineViewerInput = $form.find('.js-online_viewer-input');
-
-        const $filePathInputGroup = $form.find('.js-file-path-input');
-        const $s3FilePathInputGroup = $form.find('.js-s3-file-path-input');
-        const $filePathButton = $form.find('.js-file-path-input button');
-        const $filePathInput = $form.find('.js-file-path-input input');
-
-        $filePathButton.addClass('panel-file-manager');
-        $filePathInputGroup.removeClass('d-none');
-        $s3FilePathInputGroup.addClass('d-none');
-
-        switch (source) {
-            case 'youtube':
-            case 'vimeo':
-            case 'iframe':
-                $fileTypeVolumeInputs.addClass('d-none');
-                $downloadableInput.find('input').prop('checked', false);
-                $downloadableInput.addClass('d-none');
-
-                $onlineViewerInput.find('input').prop('checked', false);
-                $onlineViewerInput.addClass('d-none');
-
-                icon = feather.icons['link'].toSvg(featherIconsConf);
-                $filePathButton.removeClass('panel-file-manager');
-
-                break;
-
-            case 'external_link':
-            case 's3':
-                $fileTypeVolumeInputs.removeClass('d-none');
-
-                if (fileType && fileType === 'video') {
-                    $downloadableInput.removeClass('d-none');
-                } else {
-                    $downloadableInput.find('input').prop('checked', false);
-                    $downloadableInput.addClass('d-none');
+        })
+    }), e("body").on("click", ".save-change-chapter", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.closest(".change-chapter-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".js-save-file", function(t) {
+        t.preventDefault();
+        var a = e(this);
+        ! function(t, a) {
+            serializeObjectByTag(t);
+            var n = t.attr("data-action");
+            a.addClass("loadingbar primary").prop("disabled", !0), t.find("input").removeClass("is-invalid"), t.find("textarea").removeClass("is-invalid");
+            var i = new FormData,
+                r = t.find(".js-s3-file-input");
+            r && r.prop("files") && r.prop("files")[0] && i.append("s3_file", r.prop("files")[0]);
+            var o = t.find("input, textarea, select").serializeArray();
+            e.each(o, function() {
+                i.append(this.name, this.value)
+            }), e.ajax({
+                url: n,
+                type: "POST",
+                data: i,
+                processData: !1,
+                contentType: !1,
+                cache: !1,
+                success: function(e) {
+                    e && 200 === e.code && (Swal.fire({
+                        icon: "success",
+                        html: '<h3 class="font-20 text-center text-dark-blue py-25">' + saveSuccessLang + "</h3>",
+                        showConfirmButton: !1,
+                        width: "25rem"
+                    }), setTimeout(function() {
+                        window.location.reload()
+                    }, 500))
+                },
+                error: function(e) {
+                    a.removeClass("loadingbar primary").prop("disabled", !1);
+                    var n = e.responseJSON;
+                    n && n.errors && Object.keys(n.errors).forEach(function(e) {
+                        var a = n.errors[e],
+                            i = t.find(".js-ajax-" + e);
+                        i.addClass("is-invalid"), i.parent().find(".invalid-feedback").text(a[0])
+                    })
                 }
-
-                if (source === 'external_link') {
-                    icon = feather.icons['external-link'].toSvg(featherIconsConf);
-                    $filePathButton.removeClass('panel-file-manager');
-                } else if (source === 's3') {
-                    $filePathInputGroup.addClass('d-none');
-                    $s3FilePathInputGroup.removeClass('d-none');
-                }
-
-                if (fileType && (fileType === 'pdf')) {
-                    $onlineViewerInput.removeClass('d-none');
-                } else {
-                    $onlineViewerInput.find('input').prop('checked', false);
-                    $onlineViewerInput.addClass('d-none');
-                }
-
-                break;
-
-            case 'google_drive':
-                $fileTypeVolumeInputs.removeClass('d-none');
-                $downloadableInput.find('input').prop('checked', false);
-                $downloadableInput.addClass('d-none');
-
-                if (fileType && (fileType === 'pdf')) {
-                    $onlineViewerInput.removeClass('d-none');
-                } else {
-                    $onlineViewerInput.find('input').prop('checked', false);
-                    $onlineViewerInput.addClass('d-none');
-                }
-
-                icon = feather.icons['box'].toSvg(featherIconsConf);
-                $filePathButton.removeClass('panel-file-manager');
-
-                break;
-
-            case 'upload':
-                $fileTypeVolumeInputs.removeClass('d-none');
-                $downloadableInput.removeClass('d-none');
-
-                if (fileType && (fileType === 'pdf')) {
-                    $onlineViewerInput.removeClass('d-none');
-                } else {
-                    $onlineViewerInput.find('input').prop('checked', false);
-                    $onlineViewerInput.addClass('d-none');
-                }
-        }
-
-        if (icon) {
-            $filePathButton.html(icon);
-        }
-
-        if (filePathPlaceHolderBySource) {
-            $filePathInput.attr('placeholder', filePathPlaceHolderBySource[source]);
-        }
-
-    }
-
-    $('body').on('click', '.js-save-file', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $this.closest('.file-form');
-
-        handleFileFormSubmit(form, $this);
-    });
-
-    $('body').on('change', '.js-file-storage', function (e) {
-        e.preventDefault();
-
-        const value = this.value;
-        const formGroup = $(this).closest('form');
-        const fileType = formGroup.find('.js-ajax-file_type').val();
-
-        handleShowFileInputsBySource(formGroup, value, fileType);
-    });
-
-    $('body').on('change', '.js-ajax-file_type', function (e) {
-        e.preventDefault();
-
-        const value = $(this).val();
-        const formGroup = $(this).closest('form');
-        const source = formGroup.find('.js-file-storage').val();
-
-        handleShowFileInputsBySource(formGroup, source, value);
-    });
-
-    // Sessions
-    $('body').on('change', '.js-api-input', function (e) {
-        e.preventDefault();
-
-        const sessionForm = $(this).closest('.session-form');
-        const value = this.value;
-
-        sessionForm.find('.js-zoom-not-complete-alert').addClass('d-none');
-        sessionForm.find('.js-agora-chat-and-rec').addClass('d-none');
-
-        if (value === 'big_blue_button') {
-            sessionForm.find('.js-local-link').addClass('d-none');
-            sessionForm.find('.js-api-secret').removeClass('d-none');
-            sessionForm.find('.js-moderator-secret').removeClass('d-none');
-        } else if (value === 'zoom') {
-            sessionForm.find('.js-local-link').addClass('d-none');
-            sessionForm.find('.js-api-secret').addClass('d-none');
-            sessionForm.find('.js-moderator-secret').addClass('d-none');
-
-            if (hasZoomApiToken && hasZoomApiToken !== 'true') {
-                sessionForm.find('.js-zoom-not-complete-alert').removeClass('d-none');
-            }
-        } else if (value === 'agora') {
-            sessionForm.find('.js-agora-chat-and-rec').removeClass('d-none');
-            sessionForm.find('.js-api-secret').addClass('d-none');
-            sessionForm.find('.js-local-link').addClass('d-none');
-            sessionForm.find('.js-moderator-secret').addClass('d-none');
-        } else {
-            sessionForm.find('.js-local-link').removeClass('d-none');
-            sessionForm.find('.js-api-secret').removeClass('d-none');
-            sessionForm.find('.js-moderator-secret').addClass('d-none');
-        }
-    });
-
-    $('body').on('click', '.js-save-session', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $this.closest('.session-form');
-
-        handleWebinarItemForm(form, $this);
-    });
-
-    $('body').on('click', '.js-session-has-ended', function () {
-
-        $.toast({
+            })
+        }(a.closest(".file-form"), a)
+    }), e("body").on("change", ".js-file-storage", function(t) {
+        t.preventDefault();
+        var n = this.value,
+            i = e(this).closest("form"),
+            r = i.find(".js-ajax-file_type").val();
+        a(i, n, r)
+    }), e("body").on("change", ".js-ajax-file_type", function(t) {
+        t.preventDefault();
+        var n = e(this).val(),
+            i = e(this).closest("form"),
+            r = i.find(".js-file-storage").val();
+        a(i, r, n)
+    }), e("body").on("change", ".js-api-input", function(t) {
+        t.preventDefault();
+        var a = e(this).closest(".session-form"),
+            n = this.value;
+        a.find(".js-zoom-not-complete-alert").addClass("d-none"), a.find(".js-agora-chat-and-rec").addClass("d-none"), "big_blue_button" === n ? (a.find(".js-local-link").addClass("d-none"), a.find(".js-api-secret").removeClass("d-none"), a.find(".js-moderator-secret").removeClass("d-none")) : "zoom" === n ? (a.find(".js-local-link").addClass("d-none"), a.find(".js-api-secret").addClass("d-none"), a.find(".js-moderator-secret").addClass("d-none"), hasZoomApiToken && "true" !== hasZoomApiToken && a.find(".js-zoom-not-complete-alert").removeClass("d-none")) : "agora" === n ? (a.find(".js-agora-chat-and-rec").removeClass("d-none"), a.find(".js-api-secret").addClass("d-none"), a.find(".js-local-link").addClass("d-none"), a.find(".js-moderator-secret").addClass("d-none")) : (a.find(".js-local-link").removeClass("d-none"), a.find(".js-api-secret").removeClass("d-none"), a.find(".js-moderator-secret").addClass("d-none"))
+    }), e("body").on("click", ".js-save-session", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.closest(".session-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".js-session-has-ended", function() {
+        e.toast({
             heading: requestFailedLang,
             text: thisLiveHasEndedLang,
-            bgColor: '#f63c3c',
-            textColor: 'white',
-            hideAfter: 10000,
-            position: 'bottom-right',
-            icon: 'error'
-        });
-    });
-
-    // Text lession
-    $('body').on('click', '.js-save-text_lesson', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $this.closest('.text_lesson-form');
-
-        handleWebinarItemForm(form, $this);
-    });
-
-    // assignments
-
-    $('body').on('click', '.js-save-assignment', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $this.closest('.assignment-form');
-
-        handleWebinarItemForm(form, $this);
-    });
-
-    $('body').on('click', '.assignment-attachments-add-btn', function (e) {
-        var $container = $(this).closest('.js-assignment-attachments-items');
-        var mainRow = $container.find('.assignment-attachments-main-row');
-
-        var copy = mainRow.clone();
-        copy.removeClass('assignment-attachments-main-row');
-        copy.removeClass('d-none');
-
-        const removeBtn = copy.find('.assignment-attachments-remove-btn');
-
-        if (removeBtn) {
-            removeBtn.removeClass('d-none');
-        }
-
-        var copyHtml = copy.prop('innerHTML');
-        copyHtml = copyHtml.replaceAll('assignmentTemp', randomString());
-        copyHtml = copyHtml.replaceAll('btn-primary', 'btn-danger');
-        copyHtml = copyHtml.replaceAll('assignment-attachments-add-btn', 'assignment-attachments-remove-btn');
-
-        copy.html(copyHtml);
-        $container.append(copy);
-    });
-
-    $('body').on('click', '.assignment-attachments-remove-btn', function (e) {
-        e.preventDefault();
-        $(this).closest('.js-ajax-attachments').remove();
-    });
-
-    /*
-    * ./ Contents
-    * */
-
-    $('body').on('click', '.cancel-accordion', function (e) {
-        e.preventDefault();
-
-        $(this).closest('.accordion-row').remove();
-    });
-
-
-
-    /**
-     * add webinar prerequisites
-     * */
-    $('body').on('click', '#webinarAddPrerequisites', function (e) {
-        e.preventDefault();
-        let add_prerequisites_modal = '<div id="addPrerequisitesModal">';
-        add_prerequisites_modal += $('#webinarPrerequisitesModal').html();
-        add_prerequisites_modal += '</div>';
-        add_prerequisites_modal = add_prerequisites_modal.replaceAll('prerequisites-select', 'prerequisites-select2');
-        add_prerequisites_modal = add_prerequisites_modal.replaceAll('str_', '');
-
-        Swal.fire({
-            html: add_prerequisites_modal,
-            showCancelButton: false,
-            showConfirmButton: false,
+            bgColor: "#f63c3c",
+            textColor: "white",
+            hideAfter: 1e4,
+            position: "bottom-right",
+            icon: "error"
+        })
+    }), e("body").on("click", ".js-save-text_lesson", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.closest(".text_lesson-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".js-save-assignment", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.closest(".assignment-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".assignment-attachments-add-btn", function(a) {
+        var n = e(this).closest(".js-assignment-attachments-items"),
+            i = n.find(".assignment-attachments-main-row").clone();
+        i.removeClass("assignment-attachments-main-row"), i.removeClass("d-none");
+        var r = i.find(".assignment-attachments-remove-btn");
+        r && r.removeClass("d-none");
+        var o = i.prop("innerHTML");
+        o = (o = (o = o.replaceAll("assignmentTemp", t())).replaceAll("btn-primary", "btn-danger")).replaceAll("assignment-attachments-add-btn", "assignment-attachments-remove-btn"), i.html(o), n.append(i)
+    }), e("body").on("click", ".assignment-attachments-remove-btn", function(t) {
+        t.preventDefault(), e(this).closest(".js-ajax-attachments").remove()
+    }), e("body").on("click", ".cancel-accordion", function(t) {
+        t.preventDefault(), e(this).closest(".accordion-row").remove()
+    }), e("body").on("click", "#webinarAddPrerequisites", function(t) {
+        var a = this;
+        t.preventDefault();
+        var n = '<div id="addPrerequisitesModal">';
+        n += e("#webinarPrerequisitesModal").html(), n = (n = (n += "</div>").replaceAll("prerequisites-select", "prerequisites-select2")).replaceAll("str_", ""), Swal.fire({
+            html: n,
+            showCancelButton: !1,
+            showConfirmButton: !1,
             customClass: {
-                content: 'p-0 text-left',
+                content: "p-0 text-left"
             },
-            width: '48rem',
-            onOpen: () => {
-                $('.prerequisites-select2').select2({
-                    placeholder: $(this).data('placeholder'),
+            width: "48rem",
+            onOpen: function() {
+                e(".prerequisites-select2").select2({
+                    placeholder: e(a).data("placeholder"),
                     minimumInputLength: 3,
-                    allowClear: true,
+                    allowClear: !0,
                     ajax: {
-                        url: '/admin/webinars/search',
-                        dataType: 'json',
+                        url: "/admin/webinars/search",
+                        dataType: "json",
                         type: "POST",
                         quietMillis: 50,
-                        data: function (params) {
-                            var queryParameters = {
-                                term: params.term,
-                                webinar_id: $(this).data('webinar-id')
-                            }
-                            return queryParameters;
-                        },
-                        processResults: function (data) {
+                        data: function(t) {
                             return {
-                                results: $.map(data, function (item) {
+                                term: t.term,
+                                webinar_id: e(this).data("webinar-id")
+                            }
+                        },
+                        processResults: function(t) {
+                            return {
+                                results: e.map(t, function(e) {
                                     return {
-                                        text: item.title,
-                                        id: item.id
+                                        text: e.title,
+                                        id: e.id
                                     }
                                 })
-                            };
-                        }
-                    }
-                });
-            },
-        });
-    });
-
-    $('body').on('click', '#savePrerequisites', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $('#addPrerequisitesModal form');
-        handleWebinarItemForm(form, $this);
-    });
-
-    /**
-     * add webinar FAQ
-     * */
-    $('body').on('click', '#webinarAddFAQ', function (e) {
-        e.preventDefault();
-        let add_faq_modal = '<div id="addFAQsModal">';
-        add_faq_modal += $('#webinarFaqModal').html();
-        add_faq_modal += '</div>';
-
-        Swal.fire({
-            html: add_faq_modal,
-            showCancelButton: false,
-            showConfirmButton: false,
-            customClass: {
-                content: 'p-0 text-left',
-            },
-            width: '48rem',
-        });
-    });
-
-    $('body').on('click', '#saveFAQ', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $('#addFAQsModal form');
-        handleWebinarItemForm(form, $this);
-    });
-
-    /*
-    * add extra description
-    * */
-    $('body').on('click', '#add_new_learning_materials', function (e) {
-        e.preventDefault();
-        const key = randomString();
-
-        let html = '<div id="extraDescriptionModal">';
-        html += $('#extraDescriptionForm').html();
-        html += '</div>';
-
-        Swal.fire({
-            html: html,
-            showCancelButton: false,
-            showConfirmButton: false,
-            customClass: {
-                content: 'p-0 text-left',
-            },
-            width: '48rem',
-            onOpen: function () {
-                $('#extraDescriptionModal input[name="type"]').val('learning_materials')
-            }
-        });
-    });
-
-    function handleCompanyLogosInputHtml(key) {
-        let html = '<div id="extraDescriptionModal">';
-        html += $('#extraDescriptionForm').html();
-        html += '</div>';
-
-        var modalHtml = $(html);
-        modalHtml.find('.js-form-groups').children().remove();
-        modalHtml.find('.js-form-groups').append('<div class="form-group">\n' +
-            '            <label class="input-label">image</label>\n' +
-            '            <div class="input-group">\n' +
-            '                <div class="input-group-prepend">\n' +
-            '                    <button type="button" class="input-group-text admin-file-manager" data-input="image_' + key + '" data-preview="holder">\n' +
-            '                        <i class="fa fa-upload"></i>\n' +
-            '                    </button>\n' +
-            '                </div>\n' +
-            '                <input type="text" name="value" id="image_' + key + '" class="form-control"/>\n' +
-            '            </div>\n' +
-            '        </div>');
-
-        var mainHtml = '<div id="extraDescriptionModal">';
-        mainHtml += modalHtml.html();
-        mainHtml += '</div>';
-
-        return mainHtml;
-    }
-
-    $('body').on('click', '#add_new_company_logos', function (e) {
-        e.preventDefault();
-        const key = randomString();
-        var html = handleCompanyLogosInputHtml(key)
-
-        Swal.fire({
-            html: html,
-            showCancelButton: false,
-            showConfirmButton: false,
-            customClass: {
-                content: 'p-0 text-left',
-            },
-            width: '48rem',
-            onOpen: function () {
-                $('#extraDescriptionModal input[name="type"]').val('company_logos')
-            }
-        });
-    });
-
-    $('body').on('click', '#add_new_requirements', function (e) {
-        e.preventDefault();
-        const key = randomString();
-
-        let html = '<div id="extraDescriptionModal">';
-        html += $('#extraDescriptionForm').html();
-        html += '</div>';
-
-        Swal.fire({
-            html: html,
-            showCancelButton: false,
-            showConfirmButton: false,
-            customClass: {
-                content: 'p-0 text-left',
-            },
-            width: '48rem',
-            onOpen: function () {
-                $('#extraDescriptionModal input[name="type"]').val('requirements')
-            }
-        });
-    });
-
-    $('body').on('click', '#saveExtraDescription', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $('#extraDescriptionModal form');
-        handleWebinarItemForm(form, $this);
-    });
-
-    $('body').on('click', '.edit-extraDescription', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-
-        editExtraDescription($this);
-    });
-
-    $('body').on('change', '.js-edit-extraDescription-locale-ajax', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const locale = $this.val();
-
-        editExtraDescription($this, locale);
-    });
-
-    function editExtraDescription($this, locale) {
-        const item_id = $this.attr('data-item-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
-        const rendomKey = randomString();
-
-        const edit_data = {
-            item_id: webinar_id,
-            locale: locale
-        };
-
-        $.post('/admin/webinar-extra-description/' + item_id + '/edit', edit_data, function (result) {
-            if (result && result.webinarExtraDescription) {
-                const webinarExtraDescription = result.webinarExtraDescription;
-
-                let html = '<div id="extraDescriptionModal">';
-                html += $('#extraDescriptionForm').html();
-                html += '</div>';
-
-                if (webinarExtraDescription.type === 'company_logos') {
-                    html = handleCompanyLogosInputHtml(rendomKey);
-                }
-
-                html = html.replaceAll('/admin/webinar-extra-description/store', '/admin/webinar-extra-description/' + item_id + '/update');
-
-                Swal.fire({
-                    html: html,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    customClass: {
-                        content: 'p-0 text-left',
-                    },
-                    width: '48rem',
-                    onOpen: () => {
-                        var $modal = $('#extraDescriptionModal');
-
-                        Object.keys(webinarExtraDescription).forEach(key => {
-                            $modal.find('[name="' + key + '"]').val(webinarExtraDescription[key]);
-                        });
-
-                        var localeSelect = $modal.find('select[name="locale"]');
-
-                        if (localeSelect) {
-                            localeSelect.addClass('js-edit-extraDescription-locale-ajax');
-                            localeSelect.attr('data-item-id', item_id);
-                            localeSelect.attr('data-webinar-id', webinar_id);
-                        }
-                    }
-                });
-            }
-        });
-    }
-
-    /**
-     * add webinar Quiz
-     * */
-    $('body').on('click', '#webinarAddQuiz', function (e) {
-        e.preventDefault();
-        let add_quiz_modal = '<div id="addQuizModal">';
-        add_quiz_modal += $('#quizzesModal').html();
-        add_quiz_modal += '</div>';
-        add_quiz_modal = add_quiz_modal.replaceAll('quiz-select2', 'quiz-select22');
-
-        Swal.fire({
-            html: add_quiz_modal,
-            showCancelButton: false,
-            showConfirmButton: false,
-            customClass: {
-                content: 'p-0 text-left',
-            },
-            width: '30rem',
-            onOpen: () => {
-                $(".quiz-select22").select2({
-                    placeholder: $(this).data('placeholder'),
-                    allowClear: true,
-                    width: '100%',
-                });
-            }
-        });
-    });
-
-    $('body').on('click', '#saveQuiz', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $('#addQuizModal form');
-        handleWebinarItemForm(form, $this);
-    });
-
-    /*
-    * edit ticket
-    * */
-
-    function editTicket($this, locale = null) {
-        const ticket_id = $this.attr('data-ticket-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
-        const edit_data = {
-            item_id: webinar_id,
-            locale: locale,
-        };
-
-        $.post('/admin/tickets/' + ticket_id + '/edit', edit_data, function (result) {
-            if (result && result.ticket) {
-                const ticket = result.ticket;
-
-                let edit_ticket_modal = '<div id="addTicketModal">';
-                edit_ticket_modal += $('#webinarTicketModal').html();
-                edit_ticket_modal += '</div>';
-                edit_ticket_modal = edit_ticket_modal.replaceAll('/admin/tickets/store', '/admin/tickets/' + ticket_id + '/update');
-
-                Swal.fire({
-                    html: edit_ticket_modal,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    customClass: {
-                        content: 'p-0 text-left',
-                    },
-                    width: '48rem',
-                    onOpen: () => {
-                        $('.date-range-picker').daterangepicker({
-                            locale: {format: 'YYYY-MM-DD'},
-                            drops: 'down',
-                            opens: 'right',
-                            startDate: moment(ticket.start_date * 1000).toDate(),
-                            endDate: moment(ticket.end_date * 1000).toDate(),
-                        });
-                        delete ticket.start_date;
-                        delete ticket.end_date;
-
-                        Object.keys(ticket).forEach(key => {
-                            $('#addTicketModal').find('[name="' + key + '"]').val(ticket[key]);
-                        });
-
-                        var localeSelect = $('#addTicketModal').find('select[name="locale"]');
-
-                        if (localeSelect) {
-                            localeSelect.addClass('js-edit-ticket-locale-ajax');
-                            localeSelect.attr('data-ticket-id', ticket_id);
-                            localeSelect.attr('data-webinar-id', webinar_id);
-                        }
-                    }
-                });
-            }
-        });
-    }
-
-    $('body').on('click', '.edit-ticket', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-
-        loadingSwl();
-
-        editTicket($this);
-    });
-
-    $('body').on('change', '.js-edit-ticket-locale-ajax', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-
-        const locale = $this.val();
-
-        editTicket($this, locale);
-    });
-
-    /*
-    * edit session
-    * */
-
-    function editChapter($this, locale = null) {
-        const chapter_id = $this.attr('data-chapter-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
-        const edit_data = {
-            item_id: webinar_id,
-            locale: locale,
-        };
-
-        $.post('/admin/chapters/' + chapter_id + '/edit', edit_data, function (result) {
-            if (result && result.chapter) {
-                const chapter = result.chapter;
-
-                let html = '<div id="editChapterModal">';
-                html += $('#webinarChapterModal').html();
-                html += '</div>';
-
-                html = html.replaceAll('/admin/chapters/store', '/admin/chapters/' + chapter_id + '/update');
-                const nameId = randomString();
-                html = html.replaceAll('record', nameId);
-
-                Swal.fire({
-                    html: html,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    customClass: {
-                        content: 'p-0 text-left',
-                    },
-                    width: '48rem',
-                    onOpen: () => {
-                        var $modal = $('#editChapterModal');
-
-                        Object.keys(chapter).forEach(key => {
-                            if (key === 'status') {
-                                const checked = (chapter.status === 'active');
-
-                                $modal.find('[name="' + key + '"]').prop('checked', checked)
-                            } else if (key === 'check_all_contents_pass') {
-                                const checkedAllContents = (chapter.check_all_contents_pass && chapter.check_all_contents_pass !== "0");
-                                $modal.find('[name="' + key + '"]').prop('checked', checkedAllContents)
-                            } else {
-                                $modal.find('[name="' + key + '"]').val(chapter[key]);
                             }
-                        });
-
-                        var localeSelect = $modal.find('select[name="locale"]');
-
-                        if (localeSelect) {
-                            localeSelect.addClass('js-edit-chapter-locale-ajax');
-                            localeSelect.attr('data-chapter-id', chapter_id);
-                            localeSelect.attr('data-webinar-id', webinar_id);
                         }
                     }
-                });
+                })
             }
-        });
-    }
-
-    $('body').on('click', '.edit-chapter', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-
-        loadingSwl();
-
-        editChapter($this);
-    });
-
-    $('body').on('change', '.js-edit-chapter-locale-ajax', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const locale = $this.val();
-
-        editChapter($this, locale);
-    });
-
-    /*
-    * edit session
-    * */
-
-    function editSession($this, locale = null) {
-        const session_id = $this.attr('data-session-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
-        const edit_data = {
-            item_id: webinar_id,
-            locale: locale
-        };
-
-        $.post('/admin/sessions/' + session_id + '/edit', edit_data, function (result) {
-            if (result && result.session) {
-                const session = result.session;
-
-                let edit_session_modal = '<div id="addSessionModal">';
-                edit_session_modal += $('#webinarSessionModal').html();
-                edit_session_modal += '</div>';
-                edit_session_modal = edit_session_modal.replaceAll('/admin/sessions/store', '/admin/sessions/' + session_id + '/update');
-                const nameId = randomString();
-                edit_session_modal = edit_session_modal.replaceAll('record', nameId);
-
-                Swal.fire({
-                    html: edit_session_modal,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    customClass: {
-                        content: 'p-0 text-left',
-                    },
-                    width: '48rem',
-                    onOpen: () => {
-                        var $modal = $('#addSessionModal');
-
-                        var datetimepicker = $('.datetimepicker');
-                        datetimepicker.val(session.date);
-                        datetimepicker.daterangepicker({
-                            locale: {format: 'YYYY-MM-DD HH:mm'},
-                            singleDatePicker: true,
-                            timePicker: true,
-                            timePicker24Hour: true,
-                        });
-                        delete session.date;
-
-                        Object.keys(session).forEach(key => {
-                            if (key === 'session_api') {
-                                var apiInput = $modal.find('.js-api-input[value="' + session[key] + '"]');
-                                apiInput.prop('checked', true);
-
-                                $modal.find('.js-api-input').prop('disabled', true);
-
-                                if (session[key] !== 'local') {
-                                    $modal.find('.js-ajax-api_secret').prop('disabled', true);
-                                    $modal.find('.js-ajax-date').prop('disabled', true);
-                                    $modal.find('.js-ajax-duration').prop('disabled', true);
-                                    $modal.find('.js-ajax-link').prop('disabled', true);
-                                }
-
-                                if (session[key] === 'big_blue_button') {
-                                    $modal.find('.js-moderator-secret').removeClass('d-none');
-                                    $modal.find('.js-ajax-moderator_secret').prop('disabled', true);
-                                } else if (session[key] === 'zoom') {
-                                    $modal.find('.js-local-link').addClass('d-none');
-                                    $modal.find('.js-api-secret').addClass('d-none');
-                                    $modal.find('.js-moderator-secret').addClass('d-none');
-                                } else if (session[key] === 'agora') {
-                                    $modal.find('.js-agora-chat-and-rec').removeClass('d-none');
-                                    $modal.find('.js-api-secret').addClass('d-none');
-                                    $modal.find('.js-local-link').addClass('d-none');
-                                    $modal.find('.js-moderator-secret').addClass('d-none');
-                                }
-
-                            } else if (key === 'status') {
-                                const checked = (session.status === 'active');
-
-                                $modal.find('[name="' + key + '"]').prop('checked', checked);
-                            } else if (key === 'check_previous_parts' || key === 'access_after_day') {
-                                const sequenceContentSwitchChecked = (session.check_previous_parts || session.access_after_day !== null);
-
-                                if (sequenceContentSwitchChecked) {
-                                    $modal.find('.js-sequence-content-switch').prop('checked', true);
-                                    $modal.find('[name="check_previous_parts"]').prop('checked', session.check_previous_parts);
-                                    $modal.find('[name="access_after_day"]').val(session.access_after_day);
-                                    $modal.find('.js-sequence-content-inputs').removeClass('d-none')
-                                }
-                            } else if (key === 'agora_settings') {
-                                const agora_settings = JSON.parse(session.agora_settings);
-
-                                if (agora_settings && agora_settings['chat'] && (agora_settings['chat'] === true || agora_settings['chat'] === 'true')) {
-                                    $modal.find('[name="agora_chat"]').prop('checked', true)
-                                }
-
-                                if (agora_settings && agora_settings['record'] && (agora_settings['record'] === true || agora_settings['record'] === 'true')) {
-                                    $modal.find('[name="agora_record"]').prop('checked', true)
-                                }
-                            } else {
-                                $modal.find('[name="' + key + '"]').val(session[key]);
-                            }
-                        });
-
-                        var localeSelect = $modal.find('select[name="locale"]');
-
-                        if (localeSelect) {
-                            localeSelect.addClass('js-edit-session-locale-ajax');
-                            localeSelect.attr('data-session-id', session_id);
-                            localeSelect.attr('data-webinar-id', webinar_id);
-                        }
-                    }
-                });
+        })
+    }), e("body").on("click", "#savePrerequisites", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e("#addPrerequisitesModal .js-prerequisites-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", "#webinarAddFAQ", function(t) {
+        t.preventDefault();
+        var a = '<div id="addFAQsModal">';
+        a += e("#webinarFaqModal").html(), a += "</div>", Swal.fire({
+            html: a,
+            showCancelButton: !1,
+            showConfirmButton: !1,
+            customClass: {
+                content: "p-0 text-left"
+            },
+            width: "48rem"
+        })
+    }), e("body").on("click", "#saveFAQ", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e("#addFAQsModal .js-faq-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", "#add_new_learning_materials", function(a) {
+        a.preventDefault();
+        t();
+        var n = '<div id="extraDescriptionModal">';
+        n += e("#extraDescriptionForm").html(), n += "</div>", Swal.fire({
+            html: n,
+            showCancelButton: !1,
+            showConfirmButton: !1,
+            customClass: {
+                content: "p-0 text-left"
+            },
+            width: "48rem",
+            onOpen: function() {
+                e('#extraDescriptionModal input[name="type"]').val("learning_materials")
             }
-        });
-    }
-
-    $('body').on('click', '.edit-session', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-
+        })
+    }), e("body").on("click", "#add_new_company_logos", function(a) {
+        a.preventDefault();
+        var i = n(t());
+        Swal.fire({
+            html: i,
+            showCancelButton: !1,
+            showConfirmButton: !1,
+            customClass: {
+                content: "p-0 text-left"
+            },
+            width: "48rem",
+            onOpen: function() {
+                e('#extraDescriptionModal input[name="type"]').val("company_logos")
+            }
+        })
+    }), e("body").on("click", "#add_new_requirements", function(a) {
+        a.preventDefault();
+        t();
+        var n = '<div id="extraDescriptionModal">';
+        n += e("#extraDescriptionForm").html(), n += "</div>", Swal.fire({
+            html: n,
+            showCancelButton: !1,
+            showConfirmButton: !1,
+            customClass: {
+                content: "p-0 text-left"
+            },
+            width: "48rem",
+            onOpen: function() {
+                e('#extraDescriptionModal input[name="type"]').val("requirements")
+            }
+        })
+    }), e("body").on("click", "#saveExtraDescription", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e("#extraDescriptionModal .js-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".edit-extraDescription", function(t) {
+        t.preventDefault(), i(e(this))
+    }), e("body").on("change", ".js-edit-extraDescription-locale-ajax", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.val();
+        i(a, n)
+    }), e("body").on("click", "#webinarAddQuiz", function(t) {
+        var a = this;
+        t.preventDefault();
+        var n = '<div id="addQuizModal">';
+        n += e("#quizzesModal").html(), n = (n += "</div>").replaceAll("quiz-select2", "quiz-select22"), Swal.fire({
+            html: n,
+            showCancelButton: !1,
+            showConfirmButton: !1,
+            customClass: {
+                content: "p-0 text-left"
+            },
+            width: "30rem",
+            onOpen: function() {
+                e(".quiz-select22").select2({
+                    placeholder: e(a).data("placeholder"),
+                    allowClear: !0,
+                    width: "100%"
+                })
+            }
+        })
+    }), e("body").on("click", "#saveQuiz", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e("#addQuizModal .js-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".edit-ticket", function(t) {
+        t.preventDefault();
+        var a = e(this);
+        loadingSwl(), r(a)
+    }), e("body").on("change", ".js-edit-ticket-locale-ajax", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.val();
+        r(a, n)
+    }), e("body").on("click", ".edit-chapter", function(t) {
+        t.preventDefault();
+        var a = e(this);
+        loadingSwl(), o(a)
+    }), e("body").on("change", ".js-edit-chapter-locale-ajax", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.val();
+        o(a, n)
+    }), e("body").on("click", ".edit-session", function(t) {
+        t.preventDefault();
+        var a = e(this);
+        loadingSwl(), s(a)
+    }), e("body").on("change", ".js-edit-session-locale-ajax", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.val();
+        s(a, n)
+    }), e("body").on("change", ".js-video-demo-source", function(t) {
+        t.preventDefault();
+        var a = e(this).val(),
+            n = e(".js-video-demo-path-input .js-video-demo-path-upload"),
+            i = e(".js-video-demo-path-input .js-video-demo-path-links"),
+            r = e(".js-video-demo-path-input input");
+        n.addClass("d-none"), i.addClass("d-none"), "upload" === a ? n.removeClass("d-none") : i.removeClass("d-none"), videoDemoPathPlaceHolderBySource && r.attr("placeholder", videoDemoPathPlaceHolderBySource[a])
+    }), e("body").on("click", ".edit-prerequisite", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.attr("data-prerequisite-id"),
+            i = a.attr("data-webinar-id");
         loadingSwl();
-
-        editSession($this);
-    });
-
-    $('body').on('change', '.js-edit-session-locale-ajax', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const locale = $this.val();
-
-        editSession($this, locale);
-    });
-
-
-    $('body').on('change', '.js-video-demo-source', function (e) {
-        e.preventDefault();
-
-        const value = $(this).val();
-
-        const $filePathUploadButton = $('.js-video-demo-path-input .js-video-demo-path-upload');
-        const $filePathLinkButton = $('.js-video-demo-path-input .js-video-demo-path-links');
-        const $filePathInput = $('.js-video-demo-path-input input');
-
-        $filePathUploadButton.addClass('d-none');
-        $filePathLinkButton.addClass('d-none');
-
-        if (value === 'upload') {
-            $filePathUploadButton.removeClass('d-none');
-        } else {
-            $filePathLinkButton.removeClass('d-none');
-        }
-
-        if (videoDemoPathPlaceHolderBySource) {
-            $filePathInput.attr('placeholder', videoDemoPathPlaceHolderBySource[value]);
-        }
-    });
-
-    /*
-    * edit prerequisites
-    * */
-    $('body').on('click', '.edit-prerequisite', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const prerequisite_id = $this.attr('data-prerequisite-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
-        loadingSwl();
-
-        const edit_data = {
-            item_id: webinar_id
+        var r = {
+            item_id: i
         };
-
-        $.post('/admin/prerequisites/' + prerequisite_id + '/edit', edit_data, function (result) {
-            if (result && result.prerequisite) {
-                const prerequisite = result.prerequisite;
-
-                let edit_prerequisite_modal = '<div id="addPrerequisitesModal">';
-                edit_prerequisite_modal += $('#webinarPrerequisitesModal').html();
-                edit_prerequisite_modal += '</div>';
-                edit_prerequisite_modal = edit_prerequisite_modal.replaceAll('prerequisites-select', 'prerequisites-select2');
-                edit_prerequisite_modal = edit_prerequisite_modal.replaceAll('/admin/prerequisites/store', '/admin/prerequisites/' + prerequisite_id + '/update');
-                edit_prerequisite_modal = edit_prerequisite_modal.replaceAll('str_', '');
-
-                Swal.fire({
-                    html: edit_prerequisite_modal,
-                    showCancelButton: false,
-                    showConfirmButton: false,
+        e.post("/admin/prerequisites/" + n + "/edit", r, function(t) {
+            var a = this;
+            if (t && t.prerequisite) {
+                var i = t.prerequisite,
+                    r = '<div id="addPrerequisitesModal">';
+                r += e("#webinarPrerequisitesModal").html(), r = (r = (r = (r += "</div>").replaceAll("prerequisites-select", "prerequisites-select2")).replaceAll("/admin/prerequisites/store", "/admin/prerequisites/" + n + "/update")).replaceAll("str_", ""), Swal.fire({
+                    html: r,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
                     customClass: {
-                        content: 'p-0 text-left',
+                        content: "p-0 text-left"
                     },
-                    width: '48rem',
-                    onOpen: () => {
-                        $('.prerequisites-select2').append('<option selected="selected" value="' + prerequisite.webinar_id + '">' + prerequisite.webinar_title + '</option>');
-
-                        if (prerequisite.required === 1) {
-                            $('#addPrerequisitesModal').find('[name="required"]').prop('checked', true);
-                        }
-
-                        $('.prerequisites-select2').select2({
-                            placeholder: $(this).data('placeholder'),
+                    width: "48rem",
+                    onOpen: function() {
+                        e(".prerequisites-select2").append('<option selected="selected" value="' + i.webinar_id + '">' + i.webinar_title + "</option>"), 1 === i.required && e("#addPrerequisitesModal").find('[name="required"]').prop("checked", !0), e(".prerequisites-select2").select2({
+                            placeholder: e(a).data("placeholder"),
                             minimumInputLength: 3,
-                            allowClear: true,
+                            allowClear: !0,
                             ajax: {
-                                url: '/admin/webinars/search',
-                                dataType: 'json',
+                                url: "/admin/webinars/search",
+                                dataType: "json",
                                 type: "POST",
                                 quietMillis: 50,
-                                data: function (params) {
-                                    var queryParameters = {
-                                        term: params.term,
-                                        webinar_id: $(this).data('webinar-id')
-                                    }
-                                    return queryParameters;
-                                },
-                                processResults: function (data) {
+                                data: function(t) {
                                     return {
-                                        results: $.map(data, function (item) {
+                                        term: t.term,
+                                        webinar_id: e(this).data("webinar-id")
+                                    }
+                                },
+                                processResults: function(t) {
+                                    return {
+                                        results: e.map(t, function(e) {
                                             return {
-                                                text: item.title,
-                                                id: item.id
+                                                text: e.title,
+                                                id: e.id
                                             }
                                         })
-                                    };
+                                    }
                                 }
                             }
-                        });
+                        })
                     }
-                });
+                })
             }
-        });
-    });
-
-    /*
-   * edit FAQ
-   * */
-    function editFaq($this, locale = null) {
-        const faq_id = $this.attr('data-faq-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
-        const edit_data = {
-            item_id: webinar_id,
-            locale: locale
-        };
-
-        $.post('/admin/faqs/' + faq_id + '/edit', edit_data, function (result) {
-            if (result && result.faq) {
-                const faq = result.faq;
-
-                let edit_faq_modal = '<div id="addFAQsModal">';
-                edit_faq_modal += $('#webinarFaqModal').html();
-                edit_faq_modal += '</div>';
-                edit_faq_modal = edit_faq_modal.replaceAll('/admin/faqs/store', '/admin/faqs/' + faq_id + '/update');
-
-                Swal.fire({
-                    html: edit_faq_modal,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    customClass: {
-                        content: 'p-0 text-left',
-                    },
-                    width: '48rem',
-                    onOpen: () => {
-                        var $modal = $('#addFAQsModal');
-
-                        Object.keys(faq).forEach(key => {
-                            $modal.find('[name="' + key + '"]').val(faq[key]);
-                        });
-
-                        var localeSelect = $modal.find('select[name="locale"]');
-
-                        if (localeSelect) {
-                            localeSelect.addClass('js-edit-faq-locale-ajax');
-                            localeSelect.attr('data-faq-id', faq_id);
-                            localeSelect.attr('data-webinar-id', webinar_id);
-                        }
-                    }
-                });
-            }
-        });
-    }
-
-    $('body').on('click', '.edit-faq', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-
-        loadingSwl();
-
-        editFaq($this);
-    });
-
-    $('body').on('change', '.js-edit-faq-locale-ajax', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const locale = $this.val();
-
-        editFaq($this, locale);
-    });
-
-    $('body').on('click', '.js-get-faq-description', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const answer = $this.parent().find('input').val();
-
-        var html = '<div class="my-2">' + answer + '</div>';
-
+        })
+    }), e("body").on("click", ".edit-faq", function(t) {
+        t.preventDefault();
+        var a = e(this);
+        loadingSwl(), l(a)
+    }), e("body").on("change", ".js-edit-faq-locale-ajax", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.val();
+        l(a, n)
+    }), e("body").on("click", ".js-get-faq-description", function(t) {
+        t.preventDefault();
+        var a = '<div class="my-2">' + e(this).parent().find("input").val() + "</div>";
         Swal.fire({
-            html: html,
-            showCancelButton: false,
-            showConfirmButton: false,
+            html: a,
+            showCancelButton: !1,
+            showConfirmButton: !1,
             customClass: {
-                content: 'p-0 text-left',
+                content: "p-0 text-left"
             },
-            width: '30rem',
-        });
-    });
-
-    /*
-   * edit FAQ
-   * */
-    $('body').on('click', '.edit-webinar-quiz', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const webinar_quiz_id = $this.attr('data-webinar-quiz-id');
-        const webinar_id = $this.attr('data-webinar-id');
-
+            width: "30rem"
+        })
+    }), e("body").on("click", ".edit-webinar-quiz", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.attr("data-webinar-quiz-id"),
+            i = a.attr("data-webinar-id");
         loadingSwl();
-
-        const edit_data = {
-            item_id: webinar_id
+        var r = {
+            item_id: i
         };
-
-        $.post('/admin/webinar-quiz/' + webinar_quiz_id + '/edit', edit_data, function (result) {
-            if (result && result.webinarQuiz) {
-                const webinar_quiz = result.webinarQuiz;
-
-                let edit_webinar_quiz_modal = '<div id="addQuizModal">';
-                edit_webinar_quiz_modal += $('#quizzesModal').html();
-                edit_webinar_quiz_modal += '</div>';
-                edit_webinar_quiz_modal = edit_webinar_quiz_modal.replaceAll('/admin/webinar-quiz/store', '/admin/webinar-quiz/' + webinar_quiz_id + '/update');
-                edit_webinar_quiz_modal = edit_webinar_quiz_modal.replaceAll('quiz-select2', 'quiz-select22');
-
-                Swal.fire({
-                    html: edit_webinar_quiz_modal,
-                    showCancelButton: false,
-                    showConfirmButton: false,
+        e.post("/admin/webinar-quiz/" + n + "/edit", r, function(t) {
+            var a = this;
+            if (t && t.webinarQuiz) {
+                var i = t.webinarQuiz,
+                    r = '<div id="addQuizModal">';
+                r += e("#quizzesModal").html(), r = (r = (r += "</div>").replaceAll("/admin/webinar-quiz/store", "/admin/webinar-quiz/" + n + "/update")).replaceAll("quiz-select2", "quiz-select22"), Swal.fire({
+                    html: r,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
                     customClass: {
-                        content: 'p-0 text-left',
+                        content: "p-0 text-left"
                     },
-                    width: '30rem',
-                    onOpen: () => {
-
-                        $('.quiz-select22').append('<option selected="selected" value="' + webinar_quiz.id + '">' + webinar_quiz.title + '</option>');
-                        $(".quiz-select22").select2({
-                            placeholder: $(this).data('placeholder'),
-                            allowClear: true,
-                            width: '100%',
-                        });
-
-                        $('#addQuizModal').find('[name="chapter_id"]').val(webinar_quiz.chapter_id);
+                    width: "30rem",
+                    onOpen: function() {
+                        e(".quiz-select22").append('<option selected="selected" value="' + i.id + '">' + i.title + "</option>"), e(".quiz-select22").select2({
+                            placeholder: e(a).data("placeholder"),
+                            allowClear: !0,
+                            width: "100%"
+                        }), e("#addQuizModal").find('[name="chapter_id"]').val(i.chapter_id)
                     }
-                });
+                })
             }
-        });
-    });
-
-    /*
-    * ./
-    * */
-
-    $('body').on('change', 'select[name="type"]', function () {
-        const value = this.value;
-        const webinarItem = ['capacity', 'start_date'];
-
-        let show = true;
-
-        if (value !== 'webinar') {
-            show = false;
+        })
+    }), e("body").on("change", 'select[name="type"]', function() {
+        var t = !0;
+        "webinar" !== this.value && (t = !1);
+        for (var a = 0, n = ["capacity", "start_date"]; a < n.length; a++) {
+            var i = n[a];
+            t ? e(".js-" + i).removeClass("d-none") : e(".js-" + i).addClass("d-none")
         }
-
-        for (let item of webinarItem) {
-            if (show) {
-                $('.js-' + item).removeClass('d-none');
-            } else {
-                $('.js-' + item).addClass('d-none');
-            }
-        }
-    });
-
-    $('body').on('change', '.js-sequence-content-switch', function () {
-        const parent = $(this).closest('form');
-
-        const sequenceContentInputs = parent.find('.js-sequence-content-inputs');
-        sequenceContentInputs.addClass('d-none');
-
-        if (this.checked) {
-            sequenceContentInputs.removeClass('d-none');
-        }
-    });
-
-
-    $('body').on('click', '#bundleAddNewCourses', function (e) {
-        e.preventDefault();
-        let html = '<div id="addBundleWebinarModal">';
-        html += $('#bundleWebinarsModal').html();
-        html += '</div>';
-        html = html.replaceAll('bundleWebinars-select', 'bundleWebinars-select2');
-        html = html.replaceAll('str_', '');
-
-        Swal.fire({
-            html: html,
-            showCancelButton: false,
-            showConfirmButton: false,
+    }), e("body").on("change", ".js-sequence-content-switch", function() {
+        var t = e(this).closest("form").find(".js-sequence-content-inputs");
+        t.addClass("d-none"), this.checked && t.removeClass("d-none")
+    }), e("body").on("click", "#bundleAddNewCourses", function(t) {
+        t.preventDefault();
+        var a = '<div id="addBundleWebinarModal">';
+        a += e("#bundleWebinarsModal").html(), a = (a = (a += "</div>").replaceAll("bundleWebinars-select", "bundleWebinars-select2")).replaceAll("str_", ""), Swal.fire({
+            html: a,
+            showCancelButton: !1,
+            showConfirmButton: !1,
             customClass: {
-                content: 'p-0 text-left',
+                content: "p-0 text-left"
             },
-            width: '48rem',
-            onOpen: () => {
-                $('.bundleWebinars-select2').select2({
-                    allowClear: false,
-                });
-            },
-        });
-    });
-
-    $('body').on('click', '#saveBundleWebinar', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        let form = $('#addBundleWebinarModal form');
-        handleWebinarItemForm(form, $this);
-    });
-
-    $('body').on('click', '.edit-bundle-webinar', function (e) {
-        e.preventDefault();
-        const $this = $(this);
-        const item_id = $this.attr('data-item-id');
-        const bundle_id = $this.attr('data-bundle-id');
-
-        loadingSwl();
-
-        const edit_data = {
-            item_id: bundle_id
-        };
-
-        $.post('/admin/bundle-webinars/' + item_id + '/edit', edit_data, function (result) {
-            if (result && result.bundleWebinar) {
-                const bundleWebinar = result.bundleWebinar;
-
-                let html = '<div id="addBundleWebinarModal">';
-                html += $('#bundleWebinarsModal').html();
-                html += '</div>';
-                html = html.replaceAll('bundleWebinars-select', 'bundleWebinars-select2');
-                html = html.replaceAll('/admin/bundle-webinars/store', '/admin/bundle-webinars/' + item_id + '/update');
-                html = html.replaceAll('str_', '');
-
-                Swal.fire({
-                    html: html,
-                    showCancelButton: false,
-                    showConfirmButton: false,
-                    customClass: {
-                        content: 'p-0 text-left',
-                    },
-                    width: '48rem',
-                    onOpen: () => {
-                        var select = $('.bundleWebinars-select2');
-
-                        select.val(bundleWebinar.webinar_id);
-                        select.select2({
-                            allowClear: false,
-                        });
-                    }
-                });
+            width: "48rem",
+            onOpen: function() {
+                e(".bundleWebinars-select2").select2({
+                    allowClear: !1
+                })
             }
-        });
-    });
-
-
-    /* feather icons */
-    // **
-    // **
-    feather.replace();
-})(jQuery);
+        })
+    }), e("body").on("click", "#saveBundleWebinar", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = e("#addBundleWebinarModal .js-form");
+        handleWebinarItemForm(n, a)
+    }), e("body").on("click", ".edit-bundle-webinar", function(t) {
+        t.preventDefault();
+        var a = e(this),
+            n = a.attr("data-item-id"),
+            i = a.attr("data-bundle-id");
+        loadingSwl();
+        var r = {
+            item_id: i
+        };
+        e.post("/admin/bundle-webinars/" + n + "/edit", r, function(t) {
+            if (t && t.bundleWebinar) {
+                var a = t.bundleWebinar,
+                    i = '<div id="addBundleWebinarModal">';
+                i += e("#bundleWebinarsModal").html(), i = (i = (i = (i += "</div>").replaceAll("bundleWebinars-select", "bundleWebinars-select2")).replaceAll("/admin/bundle-webinars/store", "/admin/bundle-webinars/" + n + "/update")).replaceAll("str_", ""), Swal.fire({
+                    html: i,
+                    showCancelButton: !1,
+                    showConfirmButton: !1,
+                    customClass: {
+                        content: "p-0 text-left"
+                    },
+                    width: "48rem",
+                    onOpen: function() {
+                        var t = e(".bundleWebinars-select2");
+                        t.val(a.webinar_id), t.select2({
+                            allowClear: !1
+                        })
+                    }
+                })
+            }
+        })
+    }), feather.replace()
+}(jQuery);
