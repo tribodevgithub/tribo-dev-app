@@ -1046,10 +1046,10 @@ return [
     'company_logos_no_result' => 'No company logos!',
     'company_logos_no_result_hint' => 'Define company logos and display them on the course page and increase credibility.',
 
-    'requirements' => 'Requirements',
-    'add_requirements' => 'New requirement',
-    'requirements_no_result' => 'No requirements!',
-    'requirements_no_result_hint' => 'Define course requirements and help users to underestand them before enrolment.',
+    'requirements' => 'Requisitos',
+    'add_requirements' => 'Novos Requisitos',
+    'requirements_no_result' => 'Nenhum Requisito!',
+    'requirements_no_result_hint' => 'Defina os requisitos do curso e ajude os usuários a entendê-los antes da inscrição.',
 
     'new_item' => 'New item',
     'what_you_will_learn' => 'What you will learn?',

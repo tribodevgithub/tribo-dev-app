@@ -967,7 +967,7 @@ return [
     'end_date' => 'Fim',
     'capacity' => 'Capacidade',
     'price' => 'Preço',
-    'price_plans' => 'Pricing Planos',
+    'price_plans' => 'Planos de preços',
     'add_price_plan' => 'Novo Pricing Plano',
     'description' => 'Descrição',
     'course_type' => 'Curso Tipo',

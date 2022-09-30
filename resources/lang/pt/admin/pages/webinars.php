@@ -49,11 +49,11 @@ return [
     'page_lists_lead' => 'Lista de webinars. Você pode editar ou excluir qualquer linha.',
     'search_webinar' => 'Pesquisar webinar',
 
-    'admin_webinars' => 'Admin Webinars',
-    'admin_webinars_list' => 'Admin Webinars List',
-    'admin_webinars_create' => 'Admin Webinars Create',
-    'admin_webinars_edit' => 'Admin Webinars Edit',
-    'admin_webinars_delete' => 'Admin Webinars Delete',
+    'admin_webinars' => 'Webinars',
+    'admin_webinars_list' => 'Lsitar Webinars',
+    'admin_webinars_create' => 'Criar Webinars',
+    'admin_webinars_edit' => 'Editar Webinars',
+    'admin_webinars_delete' => 'Deletar Webinars',
 
     'feature_webinars' => 'Cursos em destaque',
     'feature_webinar_create' => 'criar webinar de recursos',
