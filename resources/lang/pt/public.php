@@ -254,14 +254,14 @@ return [
 
     'not_defined' => 'Not defined',
 
-    'days' => 'Days',
-    'day' => 'Day',
+    'days' => 'Dias',
+    'day' => 'Dia',
     'hr' => 'Hr',
-    'sec' => 'Sec',
+    'sec' => 'Seg',
     'off' => 'Off',
     'offer' => ':off% Offer',
 
-    'sort_by' => 'Sort by',
+    'sort_by' => 'Ordenar por',
     'in' => 'in',
     'created_by' => 'Created by',
     'created_at' => 'Created Date',
@@ -297,7 +297,7 @@ return [
     'wednesday' => 'Wednesday',
     'thursday' => 'Thursday',
     'friday' => 'Friday',
-    'all_days' => 'All Days',
+    'all_days' => 'Todos os dias',
 
     'my_panel' => 'My Panel',
     'my_profile' => 'My Profile',

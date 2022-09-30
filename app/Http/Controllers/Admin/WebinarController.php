@@ -708,6 +708,11 @@ class WebinarController extends Controller
 
         $webinar = $query->get();
 
+        echo '<pre >';
+                var_export($webinar);
+                echo '</pre><hr>';
+                exit();
+
         return response()->json($webinar, 200);
     }
 

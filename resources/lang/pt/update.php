@@ -1023,7 +1023,7 @@ return [
     'webinar_reminder_hint' => 'An email reminder will be sent to the user before starting live class sessions.',
     'meeting_reminder_hint' => 'An email reminder will be sent to the user before starting booked meetings.',
     'subscribe_reminder_hint' => 'An email reminder will be sent to the user before subscription expiration.',
-    'infinite_use' => 'Infinite use',
+    'infinite_use' => 'Uso Infinito',
     'extra_time_to_join' => 'Live Class Delay Time',
     'default_time' => 'Default Delay (Minutes)',
     'extra_time_hint' => 'Allow users to join live class sessions x minutes after starting class. You can also define it for each session separately.',
