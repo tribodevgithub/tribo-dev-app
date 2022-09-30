@@ -70,7 +70,7 @@ return [
 
     'add_time' => 'Add Time',
     'clear_all' => 'Limpar Tudo',
-    'additional_information' => 'Additional Information',
+    'additional_information' => 'Informação Adicional',
     'capacity' => 'Capacidade',
     'start_date' => 'Start Date',
     'time' => 'Time',
