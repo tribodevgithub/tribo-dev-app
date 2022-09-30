@@ -13,7 +13,7 @@ class PrerequisiteController extends Controller
     {
 
         echo '<pre >';
-                var_export($data);
+                var_export('fio');
                 echo '</pre><hr>';
                 exit();
         $this->authorize('admin_webinars_edit');
