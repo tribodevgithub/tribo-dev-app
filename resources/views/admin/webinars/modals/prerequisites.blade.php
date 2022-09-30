@@ -2,7 +2,7 @@
 <div class="d-none" id="webinarPrerequisitesModal">
     <h3 class="section-title after-line font-20 text-dark-blue mb-25">{{ trans('public.add_prerequisites') }}</h3>
 
-    <form action="/admin/prerequisites/store" method="post">
+    <div class="js-prerequisites-form" data-action="/admin/prerequisites/store">
         <input type="hidden" name="webinar_id" value="{{  !empty($webinar) ? $webinar->id :''  }}">
 
         <div class="form-group mt-15">
@@ -25,5 +25,5 @@
             <button type="button" id="savePrerequisites" class="btn btn-primary">{{ trans('public.save') }}</button>
             <button type="button" class="btn btn-danger ml-2 close-swl">{{ trans('public.close') }}</button>
         </div>
-    </form>
+    </div>
 </div>
