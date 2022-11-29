@@ -13036,7 +13036,7 @@ a.bg-gray200:focus, a.bg-gray200:hover, button.bg-gray200:focus, button.bg-gray2
 }
 
 .text-primary {
-    color: #43d477 !important
+    color: var(--primary) !important
 }
 
 a.text-primary:focus, a.text-primary:hover {
