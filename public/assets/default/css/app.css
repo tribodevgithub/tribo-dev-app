@@ -4462,7 +4462,7 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
 .btn {
     display: inline-block;
     font-weight: 400;
-    color: #343434;
+    color: #fff;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
