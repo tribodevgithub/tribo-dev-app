@@ -35,13 +35,13 @@
                         <div class="col-12 col-md-7 col-lg-6">
                             <h1 class="text-primary font-weight-bold">{{ $heroSectionData['title'] }}</h1>
                             <p class="slide-hint mt-20">{!! nl2br($heroSectionData['description']) !!}</p>
-
-                            <form action="/search" method="get" class="d-inline-flex mt-30 mt-lg-30 w-100">
+                            <a href="" class="btn btn-primary rounded-pill">Garanta sua Vaga!</a>
+                            {{-- <form action="/search" method="get" class="d-inline-flex mt-30 mt-lg-30 w-100">
                                 <div class="form-group d-flex align-items-center m-0 slider-search p-10 bg-white w-100">
                                     <input type="text" name="search" class="form-control border-0 mr-lg-50" placeholder="{{ trans('home.slider_search_placeholder') }}"/>
                                     <button type="submit" class="btn btn-primary rounded-pill">{{ trans('home.find') }}</button>
                                 </div>
-                            </form>
+                            </form> --}}
                         </div>
                         <div class="col-12 col-md-5 col-lg-6">
                             @if(!empty($heroSectionData['has_lottie']) and $heroSectionData['has_lottie'] == "1")
