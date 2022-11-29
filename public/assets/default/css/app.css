@@ -251,7 +251,7 @@
     --warning: #ffab00;
     --danger: #f63c3c;
     --light: #f8f9fa;
-    --dark: #343434;
+    --dark: #1c1c1c;
     --white: #fff;
     --gray: #818894;
     --gray300: #ececec;
@@ -4490,7 +4490,7 @@ select.form-control[multiple], select.form-control[size], textarea.form-control 
 }
 
 .btn:hover {
-    color: #343434;
+    color: #fff;
     text-decoration: none
 }
 
@@ -4517,14 +4517,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
+    color: var(--dark);
     background-color: #43d477;
     border-color: #43d477;
     box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(52, 52, 52, .075)
 }
 
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
-    color: #fff;
+    color: var(--dark);
     background-color: #2dc463;
     border-color: #2aba5e
 }
@@ -4534,13 +4534,13 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
+    color: var(--dark);
     background-color: #43d477;
     border-color: #43d477
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-    color: #fff;
+    color: var(--dark);
     background-color: #2aba5e;
     border-color: #28af59
 }
@@ -14966,7 +14966,7 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
-    border-bottom: 1px solid #ececec
+    /* border-bottom: 1px solid #ececec */
 }
 
 .navbar .navbar-toggler {
@@ -19882,7 +19882,7 @@ p {
 }
 
 .btn-primary {
-    color: var(--primary-btn-color);
+    color: var(--dark);
     background-color: var(--primary);
     border-color: var(--primary-border);
     box-shadow: var(--primary-btn-shadow);
@@ -19890,7 +19890,7 @@ p {
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active {
-    color: var(--primary-btn-color-hover);
+    color: var(--dark);
     background-color: var(--primary-hover);
     border-color: var(--primary-border-hover);
     box-shadow: var(--primary-btn-shadow-hover);
@@ -19898,7 +19898,7 @@ p {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    color: var(--primary-btn-color);
+    color: var(--dark);
     background-color: var(--primary);
     border-color: var(--primary-border)
 }

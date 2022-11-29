@@ -71,7 +71,7 @@
 
                 @include(getTemplate().'.includes.shopping-cart-dropdwon')
 
-                {{-- <div class="border-left mx-5 mx-lg-15"></div> --}}
+                <div class="border-left mx-5 mx-lg-15"></div>
 
                 @include(getTemplate().'.includes.notification-dropdown')
             </div>
