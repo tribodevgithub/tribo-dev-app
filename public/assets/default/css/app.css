@@ -245,7 +245,7 @@
     --gray-dark: #343a40;
     --panel-bg: #fbfbfd;
     --primary: #01fe13;
-    --secondary: #1f3b64;
+    --secondary: #262626;
     --success: #e7f4f0;
     --info: #ebf7ff;
     --warning: #ffab00;
@@ -15922,7 +15922,7 @@ p {
     direction: ltr;
     position: absolute !important;
     border-radius: 30px;
-    background-image: linear-gradient(180deg, #9effc1, var(--primary))
+    background-image: linear-gradient(180deg, #01930c, var(--primary))
 }
 
 @media (max-width:767px) {
