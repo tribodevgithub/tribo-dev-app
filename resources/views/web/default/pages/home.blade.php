@@ -15,7 +15,8 @@
             @endpush
         @endif
 
-        <section class="slider-container  {{ ($heroSection == "2") ? 'slider-hero-section2' : '' }}" @if(empty($heroSectionData['is_video_background'])) style="background-image: url('{{ $heroSectionData['hero_background'] }}')" @endif>
+        {{-- <section class="slider-container  {{ ($heroSection == "2") ? 'slider-hero-section2' : '' }}" @if(empty($heroSectionData['is_video_background'])) style="background-image: url('{{ $heroSectionData['hero_background'] }}')" @endif> --}}
+        <section class="slider-container">
 
             @if($heroSection == "1")
                 @if(!empty($heroSectionData['is_video_background']))
@@ -32,8 +33,8 @@
                 @if($heroSection == "2")
                     <div class="row slider-content align-items-center hero-section2 flex-column-reverse flex-md-row">
                         <div class="col-12 col-md-7 col-lg-6">
-                            <h1 class="text-secondary font-weight-bold">{{ $heroSectionData['title'] }}</h1>
-                            <p class="slide-hint text-gray mt-20">{!! nl2br($heroSectionData['description']) !!}</p>
+                            <h1 class="primary font-weight-bold">{{ $heroSectionData['title'] }}</h1>
+                            <p class="slide-hint mt-20">{!! nl2br($heroSectionData['description']) !!}</p>
 
                             <form action="/search" method="get" class="d-inline-flex mt-30 mt-lg-30 w-100">
                                 <div class="form-group d-flex align-items-center m-0 slider-search p-10 bg-white w-100">
