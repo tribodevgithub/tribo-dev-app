@@ -72,7 +72,7 @@
         </section>
     @endif
 
-    <div class="stats-container">
+    <div class="stats-container" hidden>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-lg-3 mt-25 mt-lg-0">
@@ -596,7 +596,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="">
-                            <h2 class="font-36 font-weight-bold text-dark">{{ $findInstructorSection['title'] ?? '' }}</h2>
+                            <h2 class="font-36 font-weight-bold">{{ $findInstructorSection['title'] ?? '' }}</h2>
                             <p class="font-16 font-weight-normal text-gray mt-10">{{ $findInstructorSection['description'] ?? '' }}</p>
 
                             <div class="mt-35 d-flex align-items-center">
@@ -678,7 +678,7 @@
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="">
-                            <h2 class="font-36 font-weight-bold text-dark">{{ $becomeInstructorSection['title'] ?? '' }}</h2>
+                            <h2 class="font-36 font-weight-bold">{{ $becomeInstructorSection['title'] ?? '' }}</h2>
                             <p class="font-16 font-weight-normal text-gray mt-10">{{ $becomeInstructorSection['description'] ?? '' }}</p>
 
                             <div class="mt-35 d-flex align-items-center">
