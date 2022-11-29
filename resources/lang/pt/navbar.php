@@ -8,16 +8,16 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'search_anything' => 'Search...',
+    'search_anything' => 'Buscar...',
     'home' => 'Home',
-    'about_us' => 'About us',
-    'contact' => 'Contact',
+    'about_us' => 'TriboDEV',
+    'contact' => 'Contato',
     'blog' => 'Blog',
-    'terms' => 'Terms',
+    'terms' => 'Termos',
     'items' => 'Items',
     'menu' => 'Menu',
-    'title' => 'Title',
-    'start_a_live_class' => 'Start a new course',
+    'title' => 'Titulo',
+    'start_a_live_class' => 'Iniciar um novo curso',
 
 
 

@@ -35,7 +35,7 @@
                 @endif
             </div>
 
-            <div class="d-flex align-items-center justify-content-between justify-content-md-center">
+            {{-- <div class="d-flex align-items-center justify-content-between justify-content-md-center">
                 @if(!empty($localLanguage) and count($localLanguage) > 1)
                     <form action="/locale" method="post" class="mr-15 mx-md-20">
                         {{ csrf_field() }}
@@ -51,7 +51,9 @@
                     </form>
                 @else
                     <div class="mr-15 mx-md-20"></div>
-                @endif
+                @endif --}}
+
+                <div class="mr-15 mx-md-20"></div>
 
 
                 <form action="/search" method="get" class="form-inline my-2 my-lg-0 navbar-search position-relative">
