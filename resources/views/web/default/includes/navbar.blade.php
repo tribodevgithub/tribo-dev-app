@@ -44,7 +44,7 @@
                 <ul class="navbar-nav mr-auto d-flex align-items-center">
                     @if(!empty($categories) and count($categories))
                         <li class="mr-lg-25">
-                            <div class="menu-category">
+                            <div class="menu-category" hidden>
                                 <ul>
                                     <li class="cursor-pointer user-select-none d-flex xs-categories-toggle">
                                         <i data-feather="grid" width="20" height="20" class="mr-10 d-none d-lg-block"></i>

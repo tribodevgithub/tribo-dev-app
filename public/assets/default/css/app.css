@@ -244,7 +244,7 @@
     --gray: #6c757d;
     --gray-dark: #343a40;
     --panel-bg: #fbfbfd;
-    --primary: #43d477;
+    --primary: #01fe13;
     --secondary: #1f3b64;
     --success: #e7f4f0;
     --info: #ebf7ff;
@@ -256,8 +256,8 @@
     --gray: #818894;
     --gray300: #ececec;
     --gray200: #f1f1f1;
-    --primary-hover: #1fb354;
-    --primary-border: #43d477;
+    --primary-hover: #65fd6f;
+    --primary-border: #01fe13;
     --primary-border-hover: #2aba5e;
     --primary-btn-shadow: 0 3px 6px 0 rgb(64 213 125/30%);
     --primary-btn-shadow-hover: 0 3px 8px 0 rgb(64 213 125/30%);
@@ -14145,7 +14145,6 @@ html.html-modal-open {
 
 .img-cover {
     width: 100%;
-    height: 100%;
     overflow: hidden;
     -o-object-fit: cover;
     object-fit: cover;
@@ -14820,7 +14819,7 @@ p {
 
 .top-navbar .navbar-user .user-name {
     line-height: 1.31;
-    color: var(--secondary)
+    color: var(--light)
 }
 
 .navbar-shopping-cart {
@@ -14958,7 +14957,7 @@ p {
 }
 
 .navbar {
-    background-color: #fff;
+    background-color: #262626;
     z-index: 491;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .03)
 }
@@ -14991,7 +14990,7 @@ p {
 .navbar .nav-item .nav-link {
     font-size: 14px;
     text-align: center;
-    color: #171347
+    color: #fff
 }
 
 @media (max-width:991px) {

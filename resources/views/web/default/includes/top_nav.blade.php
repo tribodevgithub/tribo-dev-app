@@ -13,7 +13,7 @@
 
 @endphp
 
-<div class="top-navbar d-flex border-bottom">
+<div class="top-navbar d-flex">
     <div class="container d-flex justify-content-between flex-column flex-lg-row">
         <div class="top-contact-box border-bottom d-flex flex-column flex-md-row align-items-center justify-content-center">
 
@@ -26,7 +26,7 @@
                 @endif
 
                 @if(!empty($generalSettings['site_email']))
-                    <div class="border-left mx-5 mx-lg-15 h-100"></div>
+                    {{-- <div class="border-left mx-5 mx-lg-15 h-100"></div> --}}
 
                     <span class="d-flex align-items-center py-10 py-lg-0  font-14">
                         <i data-feather="mail" width="20" height="20" class="mr-10"></i>
