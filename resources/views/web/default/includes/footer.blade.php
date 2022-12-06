@@ -34,7 +34,7 @@
                 </div> --}}
 
                 <div class=" footer-register d-block d-md-flex align-items-center justify-content-between" >
-                    <div class="flex-grow-1 ml-4 text-dark">
+                    <div class="flex-grow-1 ml-4 text-dark text-center">
                         <strong>Seja um desenvolvedor TriboDEV</strong>
                     </div>
                     <button type="submit" class="btn btn-primary bg-light rounded-pill"><b>Criar Conta</b></button>

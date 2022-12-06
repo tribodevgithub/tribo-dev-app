@@ -750,7 +750,7 @@
             <section class="home-sections home-sections-swiper position-relative">
                 <div class="home-video-mask"></div>
                 <div class="container home-video-container d-flex flex-column align-items-center justify-content-center position-relative" style="background-image: url('{{ $boxVideoOrImage['background'] ?? '' }}')">
-                    <a href="{{ $boxVideoOrImage['link'] ?? '' }}" class="home-video-play-button d-flex align-items-center justify-content-center position-relative">
+                    <a type="button"  class="home-video-play-button d-flex align-items-center justify-content-center position-relative" data-toggle="modal" data-src="{{ $boxVideoOrImage['link'] ?? '' }}" data-target="#modalVideo">
                         <i data-feather="play" width="36" height="36" class=""></i>
                     </a>
 
@@ -760,6 +760,25 @@
                     </div>
                 </div>
             </section>
+            <div class="container">
+                <h1>Play YouTube or Vimeo Videos in Bootstrap 4 Modal</h1>
+            <!-- Modal -->
+            <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-body">
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+            </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
         @endif
 
         @if($homeSection->name == \App\Models\HomeSection::$instructors and !empty($instructors) and !$instructors->isEmpty())
