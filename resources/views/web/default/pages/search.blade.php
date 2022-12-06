@@ -71,7 +71,7 @@
                                         <img src="{{ $teacher->getAvatar() }}" class="img-cover rounded-circle" alt="{{ $teacher->full_name }}">
                                     </div>
                                     <a href="{{ $teacher->getProfileUrl() }}">
-                                        <h4 class="font-16 font-weight-bold text-dark-blue mt-10">{{ $teacher->full_name }}</h4>
+                                        <h4 class="font-16 font-weight-bold text-white mt-10">{{ $teacher->full_name }}</h4>
                                         <span class="d-block font-14 text-gray mt-5">{{ $teacher->bio }}</span>
                                     </a>
                                 </div>
