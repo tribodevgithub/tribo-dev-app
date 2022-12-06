@@ -7,35 +7,34 @@ return [
     | Course page
     |--------------------------------------------------------------------------
     */
+    'course' => 'Curso',
+    'courses' => 'Cursos',
+    'text_course' => 'Curso de Texto',
+  'video_course' => 'Vídeo Curso',
+    'information' => 'Informações',
+    'content' => 'conteúdo',
+    'review' => 'Revisão',
+    'reviews' => 'Comentários',
 
-    'course' => 'Course',
-    'courses' => 'Courses',
-    'text_course' => 'Text Course',
-  	'video_course' => 'Video Course',
-    'information' => 'Information',
-    'content' => 'Content',
-    'review' => 'Review',
-    'reviews' => 'Reviews',
+    'Webinar_description' => 'Sobre este curso',
 
-    'Webinar_description' => 'About this course',
+    'post_comment' => 'Postar comentário',
+    'post_review' => 'Postar revisão',
 
-    'post_comment' => 'Post comment',
-    'post_review' => 'Post review',
+    'comment_success_store' => 'Comentário enviado com sucesso!',
+    'comment_success_store_msg' => 'Seu comentário será publicado depois de aprovado pelo administrador.',
 
-    'comment_success_store' => 'Comment sent successfully!',
-    'comment_success_store_msg' => 'Your comment will be published after approved by admin.',
+    'guarantee_text' => 'Garantia de devolução do dinheiro em 5 dias',
 
-    'guarantee_text' => '5 Days money back guarantee',
+    'product_designer' => 'Designer de Produto',
 
-    'product_designer' => 'Product Designer',
+    'content_quality' => 'Qualidade do conteúdo',
+    'instructor_skills' => 'habilidades do instrutor',
+    'purchase_worth' => 'Valor da compra',
+    'support_quality' => 'Qualidade do suporte',
 
-    'content_quality' => 'Content quality',
-    'instructor_skills' => 'Instructor skills',
-    'purchase_worth' => 'Purchase worth',
-    'support_quality' => 'Support quality',
-
-    'report_the_course' => 'Report course',
-    'reason' => 'Reason',
-    'select_reason' => 'Select a reason',
-    'report_modal_hint' => 'Please describe about the report short and clearly.',
+    'report_the_course' => 'Relatar curso',
+    'reason' => 'motivo',
+    'select_reason' => 'Selecione um motivo',
+    'report_modal_hint' => 'Descreva o relatório de forma curta e clara.',
 ];

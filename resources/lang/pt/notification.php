@@ -8,15 +8,15 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'all_notifications' => 'All notifications',
-    'sender' => 'Sender',
-    'notifications_page_lists_lead' => 'List of notifications. You can edit or delete...',
-    'send_notification' => 'Send notification',
-    'edit_notification' => 'Edit notification',
-    'empty_notifications' => 'Empty notifications',
-    'email_ignore_msg' => 'If you didnt submit this request, please ignore it.',
-    'send_noticeboard' => 'Send a new notice',
-    'edit_noticeboard' => 'Edit a notice',
-    'post_notice' => 'Send notice',
-	'receiver' => 'Receiver',
+    'all_notifications' => 'Todas as Notificações',
+    'sender' => 'Remetente',
+    'notifications_page_lists_lead' => 'Lista de notificações. Você pode editar ou excluir...',
+    'send_notification' => 'Enviar notificação',
+    'edit_notification' => 'Editar notificação',
+    'empty_notifications' => 'notificações vazias',
+    'email_ignore_msg' => 'Se você não enviou esta solicitação, ignore-a.',
+    'send_noticeboard' => 'Enviar um novo aviso',
+    'edit_noticeboard' => 'Editar um aviso',
+    'post_notice' => 'Enviar aviso',
+	'receiver' => 'Receptor',
 ];

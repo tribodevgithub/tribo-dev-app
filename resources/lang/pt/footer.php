@@ -8,9 +8,9 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'join' => 'Join',
-    'join_us_today' => 'Join us today',
-    'subscribe_content' => '#We will send the best deals and offers to your email.',
-    'enter_email_here' => 'Enter your email here',
+    'join' => 'Junte-se a nós',
+    'join_us_today' => 'Junte-se a nós hoje',
+    'subscribe_content' => '#Enviaremos as melhores promoções e ofertas para o seu e-mail.',
+    'enter_email_here' => 'Digite seu email aqui',
 
 ];
