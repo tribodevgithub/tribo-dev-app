@@ -46,7 +46,7 @@
                 <div class="footer-logo text-center">
                     <a href="/">
                         @if(!empty($generalSettings['footer_logo']))
-                            <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo" width"200">
+                            <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo" width="200">
                         @endif
                     </a>
                     <p class="font-16 font-weight-normal text-gray mt-10">Comece a avançar agora mesmo na direção dos seus objetivos <br>e
@@ -82,7 +82,7 @@
 
         </div>
 
-        <div class="mt-40 border-blue py-25 d-flex align-items-center justify-content-between">
+        <div class="mt-40 border-blue py-25 align-items-center ">
             <span class="header d-block text-white font-weight-bold">Copyright © 2023. Todos os Direitos Reservados <b class="text-primary">TriboDEV</b></span>
         </div>
     </div>
