@@ -385,11 +385,12 @@ sup {
 
 a {
     text-decoration: none;
-    background-color: transparent
+    background-color: transparent;
+    color: #d1d1d1
 }
 
-a, a:hover {
-    color: #343434
+ a:hover {
+    color: #fff
 }
 
 a:hover {
