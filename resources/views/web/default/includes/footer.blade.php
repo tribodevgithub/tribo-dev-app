@@ -82,7 +82,7 @@
 
         </div>
 
-        <div class="mt-40 border-blue py-25 align-items-center ">
+        <div class="mt-40 border-blue py-25 text-center ">
             <span class="header d-block text-white font-weight-bold">Copyright © 2023. Todos os Direitos Reservados <b class="text-primary">TriboDEV</b></span>
         </div>
     </div>
