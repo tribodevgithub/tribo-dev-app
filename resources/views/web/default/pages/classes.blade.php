@@ -63,7 +63,7 @@
                         <div class="mt-20 p-20 rounded-sm shadow-lg border border-gray300 filters-container">
 
                             <div class="">
-                                <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">{{ trans('public.type') }}</h3>
+                                <h3 class="category-filter-title font-20 font-weight-bold text-white">{{ trans('public.type') }}</h3>
 
                                 <div class="pt-10">
                                     @foreach(['bundle','webinar','course','text_lesson'] as $typeOption)
@@ -85,7 +85,7 @@
                             </div>
 
                             <div class="mt-25 pt-25 border-top border-gray300">
-                                <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">{{ trans('site.more_options') }}</h3>
+                                <h3 class="category-filter-title font-20 font-weight-bold text-white">{{ trans('site.more_options') }}</h3>
 
                                 <div class="pt-10">
                                     @foreach(['subscribe','certificate_included','with_quiz','featured'] as $moreOption)
