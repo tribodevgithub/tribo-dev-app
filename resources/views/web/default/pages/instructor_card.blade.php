@@ -27,7 +27,7 @@
             @endif
         </div>
 
-        <h3 class="mt-20 font-16 font-weight-bold text-dark-blue text-center">{{ $instructor->full_name }}</h3>
+        <h3 class="mt-20 font-16 font-weight-bold text-white text-center">{{ $instructor->full_name }}</h3>
     </a>
 
     <div class="mt-5 font-14 text-gray">
