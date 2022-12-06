@@ -122,7 +122,7 @@
             <section class="mt-30 pt-30">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <h2 class="font-24 text-dark-blue">{{ trans('site.best_rated_instructors') }}</h2>
+                        <h2 class="font-24 text-white">{{ trans('site.best_rated_instructors') }}</h2>
                         <span class="font-14 text-gray">{{ trans('site.best_rated_instructors_subtitle') }}</span>
                     </div>
 
@@ -154,7 +154,7 @@
             <section class="mt-50 pt-50">
                 <div class="d-flex justify-content-between">
                     <div>
-                        <h2 class="font-24 text-dark-blue">{{ trans('site.top_sellers') }}</h2>
+                        <h2 class="font-24 text-white">{{ trans('site.top_sellers') }}</h2>
                         <span class="font-14 text-gray">{{ trans('site.top_sellers_subtitle') }}</span>
                     </div>
 
