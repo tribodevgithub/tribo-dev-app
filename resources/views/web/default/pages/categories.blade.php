@@ -35,7 +35,7 @@
 
         @if(!empty($featureWebinars) and !$featureWebinars->isEmpty())
             <section class="mb-25 mb-lg-0">
-                <h2 class="font-24 text-dark-blue">{{ trans('home.featured_webinars') }}</h2>
+                <h2 class="font-24 text-white">{{ trans('home.featured_webinars') }}</h2>
                 <span class="font-14 text-gray font-weight-400">{{ trans('site.newest_courses_subtitle') }}</span>
 
                 <div class="position-relative mt-20">
@@ -90,7 +90,7 @@
                         <div class="mt-20 p-20 rounded-sm shadow-lg border border-gray300 filters-container">
 
                             <div class="">
-                                <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">{{ trans('public.type') }}</h3>
+                                <h3 class="category-filter-title font-20 font-weight-bold text-white">{{ trans('public.type') }}</h3>
 
                                 <div class="pt-10">
                                     @foreach(['webinar','course','text_lesson'] as $typeOption)
@@ -108,7 +108,7 @@
                             @if(!empty($category) and !empty($category->filters))
                                 @foreach($category->filters as $filter)
                                     <div class="mt-25 pt-25 border-top border-gray300">
-                                        <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">{{ $filter->title }}</h3>
+                                        <h3 class="category-filter-title font-20 font-weight-bold text-white">{{ $filter->title }}</h3>
 
                                         @if(!empty($filter->options))
                                             <div class="pt-10">
@@ -128,7 +128,7 @@
                             @endif
 
                             <div class="mt-25 pt-25 border-top border-gray300">
-                                <h3 class="category-filter-title font-20 font-weight-bold text-dark-blue">{{ trans('site.more_options') }}</h3>
+                                <h3 class="category-filter-title font-20 font-weight-bold text-white">{{ trans('site.more_options') }}</h3>
 
                                 <div class="pt-10">
                                     @foreach(['subscribe','certificate_included','with_quiz','featured'] as $moreOption)
