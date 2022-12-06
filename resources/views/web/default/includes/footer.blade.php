@@ -11,7 +11,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class=" footer-subscribe d-block d-md-flex align-items-center justify-content-between">
+                <div class=" footer-subscribe d-block d-md-flex align-items-center justify-content-between" hidden>
                     <div class="flex-grow-1">
                         <strong>{{ trans('footer.join_us_today') }}</strong>
                         <span class="d-block mt-5 text-white">{{ trans('footer.subscribe_content') }}</span>
@@ -32,6 +32,18 @@
                         </form>
                     </div>
                 </div>
+
+                <div class=" footer-register d-block d-md-flex align-items-center justify-content-between" hidden>
+                    <div class="flex-grow-1 ml-4">
+                        <strong>Seja um desenvolvedor TriboDEV</strong>
+                    </div>
+                    <div class="subscribe-input bg-white p-10 flex-grow-1 mt-30 mt-md-0">
+
+                        <button type="submit" class="btn btn-primary bg-light rounded-pill">Criar Conta</button>
+
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
