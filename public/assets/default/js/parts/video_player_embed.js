@@ -1,4 +1,3 @@
-$(document).ready(function() {
 
     // Gets the video src from the data-src on each button
     var $videoSrc;
@@ -22,9 +21,5 @@ $(document).ready(function() {
         // a poor man's stop video
         $("#video").attr('src',$videoSrc);
     })
-
-
-    // document ready
-    });
 
 
