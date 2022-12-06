@@ -40,11 +40,32 @@
         $columns = ['first_column','second_column','third_column','forth_column'];
     @endphp
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-logo text-center">
+                    <a href="/">
+                        @if(!empty($generalSettings['footer_logo']))
+                            <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo">
+                        @endif
+                    </a>
+                    <p class="font-16 font-weight-normal text-gray mt-10">Comece a avançar agora mesmo na direção dos seus objetivos e
+                        alcance o seu lugar como DEV.
+                    </p>
+                    <div class="footer-social">
+                        @if(!empty($socials) and count($socials))
+                            @foreach($socials as $social)
+                                <a href="{{ $social['link'] }}">
+                                    <img src="{{ $social['image'] }}" alt="{{ $social['title'] }}" class="mr-15">
+                                </a>
+                            @endforeach
+                        @endif
+                    </div>
+                </div>
+            </div>
 
             @foreach($columns as $column)
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3" hidden>
                     @if(!empty($footerColumns[$column]))
                         @if(!empty($footerColumns[$column]['title']))
                             <span class="header d-block text-white font-weight-bold">{{ $footerColumns[$column]['title'] }}</span>
@@ -62,22 +83,8 @@
         </div>
 
         <div class="mt-40 border-blue py-25 d-flex align-items-center justify-content-between">
-            <div class="footer-logo">
-                <a href="/">
-                    @if(!empty($generalSettings['footer_logo']))
-                        <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo">
-                    @endif
-                </a>
-            </div>
-            <div class="footer-social">
-                @if(!empty($socials) and count($socials))
-                    @foreach($socials as $social)
-                        <a href="{{ $social['link'] }}">
-                            <img src="{{ $social['image'] }}" alt="{{ $social['title'] }}" class="mr-15">
-                        </a>
-                    @endforeach
-                @endif
-            </div>
+.text-primary {
+            <span class="header d-block text-white font-weight-bold">Copyright © 2023. Todos os Direitos Reservados <b class="text-primary">TriboDEV</b></span>
         </div>
     </div>
 </footer>
