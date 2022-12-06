@@ -165,14 +165,14 @@
                                                         <div class="d-flex justify-content-between">
                                                             <div class="d-flex align-items-center">
                                                                 <i data-feather="clock" width="20" height="20" class="webinar-icon"></i>
-                                                                <span class="duration ml-5 text-dark-blue font-14">{{ convertMinutesToHourAndMinute($feature->webinar->duration) }} {{ trans('home.hours') }}</span>
+                                                                <span class="duration ml-5 text-white font-14">{{ convertMinutesToHourAndMinute($feature->webinar->duration) }} {{ trans('home.hours') }}</span>
                                                             </div>
 
                                                             <div class="vertical-line mx-10"></div>
 
                                                             <div class="d-flex align-items-center">
                                                                 <i data-feather="calendar" width="20" height="20" class="webinar-icon"></i>
-                                                                <span class="date-published ml-5 text-dark-blue font-14">{{ dateTimeFormat(!empty($feature->webinar->start_date) ? $feature->webinar->start_date : $feature->webinar->created_at,'j M Y') }}</span>
+                                                                <span class="date-published ml-5 text-white font-14">{{ dateTimeFormat(!empty($feature->webinar->start_date) ? $feature->webinar->start_date : $feature->webinar->created_at,'j M Y') }}</span>
                                                             </div>
                                                         </div>
 
@@ -655,7 +655,7 @@
 
                     <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                         <div class="">
-                            <h2 class="font-36 font-weight-bold text-dark">{{ $rewardProgramSection['title'] ?? '' }}</h2>
+                            <h2 class="font-36 font-weight-bold text-white">{{ $rewardProgramSection['title'] ?? '' }}</h2>
                             <p class="font-16 font-weight-normal text-gray mt-10">{{ $rewardProgramSection['description'] ?? '' }}</p>
 
                             <div class="mt-35 d-flex align-items-center">
@@ -728,7 +728,7 @@
 
                     <div class="col-12 col-lg-6">
                         <div class="">
-                            <h2 class="font-36 font-weight-bold text-dark">{{ $forumSection['title'] ?? '' }}</h2>
+                            <h2 class="font-36 font-weight-bold text-white">{{ $forumSection['title'] ?? '' }}</h2>
                             <p class="font-16 font-weight-normal text-gray mt-10">{{ $forumSection['description'] ?? '' }}</p>
 
                             <div class="mt-35 d-flex align-items-center">
@@ -785,7 +785,7 @@
                                         </div>
                                         <div class="instructors-card-info mt-10 text-center">
                                             <a href="{{ $instructor->getProfileUrl() }}" target="_blank">
-                                                <h3 class="font-16 font-weight-bold text-dark-blue">{{ $instructor->full_name }}</h3>
+                                                <h3 class="font-16 font-weight-bold text-white">{{ $instructor->full_name }}</h3>
                                             </a>
 
                                             <p class="font-14 text-gray mt-5">{{ $instructor->bio }}</p>
