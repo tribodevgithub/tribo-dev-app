@@ -15334,7 +15334,7 @@ p {
 
 .footer .footer-register {
     position: relative;
-    top: -60px;
+    top: -40px;
     background-image: url(/assets/default/img/footer/pattern.png);
     background-color: var(--primary);
     border-radius: 50px;
