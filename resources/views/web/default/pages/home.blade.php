@@ -921,4 +921,5 @@
     <script src="/assets/default/vendors/owl-carousel2/owl.carousel.min.js"></script>
     <script src="/assets/default/vendors/parallax/parallax.min.js"></script>
     <script src="/assets/default/js/parts/home.min.js"></script>
+    <script src="/assets/default/js/parts/video_player_embed.js"></script>
 @endpush
