@@ -15338,9 +15338,10 @@ p {
     background-image: url(/assets/default/img/footer/pattern.png);
     background-color: var(--primary);
     border-radius: 50px;
-    padding: 5px;
-    width: 60%;
+    padding: 20px;
+    width: 70%;
     margin:auto;
+    font-size: 23px;
 
 }
 
