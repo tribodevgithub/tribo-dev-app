@@ -36,7 +36,7 @@
                             <i data-feather="map-pin" width="50" height="50" class="text-white"></i>
                         </div>
 
-                        <h3 class="mt-30 font-16 font-weight-bold text-dark-blue">{{ trans('site.our_address') }}</h3>
+                        <h3 class="mt-30 font-16 font-weight-bold text-white">{{ trans('site.our_address') }}</h3>
                         @if(!empty($contactSettings['address']))
                         <p class="font-weight-500 font-14 text-gray mt-10">{!! nl2br($contactSettings['address']) !!}</p>
                         @else
@@ -51,7 +51,7 @@
                             <i data-feather="phone" width="50" height="50" class="text-white"></i>
                         </div>
 
-                        <h3 class="mt-30 font-16 font-weight-bold text-dark-blue">{{ trans('site.phone_number') }}</h3>
+                        <h3 class="mt-30 font-16 font-weight-bold text-white">{{ trans('site.phone_number') }}</h3>
                         @if(!empty($contactSettings['phones']))
                         <p class="font-weight-500 text-gray font-14 mt-10">{!! nl2br(str_replace(',','<br/>',$contactSettings['phones'])) !!}</p>
                         @else
@@ -66,7 +66,7 @@
                             <i data-feather="mail" width="50" height="50" class="text-white"></i>
                         </div>
 
-                        <h3 class="mt-30 font-16 font-weight-bold text-dark-blue">{{ trans('public.email') }}</h3>
+                        <h3 class="mt-30 font-16 font-weight-bold text-white">{{ trans('public.email') }}</h3>
                          @if(!empty($contactSettings['emails']))
                         <p class="font-weight-500 text-gray font-14 mt-10">{!! nl2br(str_replace(',','<br/>',$contactSettings['emails'])) !!}</p>
                         @else
