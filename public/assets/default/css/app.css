@@ -15376,7 +15376,8 @@ p {
 }
 
 .footer .border-blue {
-    border-top: 1px solid #305995
+    border-top: 1px solid #305995;
+    border-top: 2px dashed #222;
 }
 
 .time-counter-down .time-item {
