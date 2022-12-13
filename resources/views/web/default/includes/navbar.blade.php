@@ -11,11 +11,12 @@
         $navBtnText = trans('update.create_new_topic');
     } else {
         $navbarButton = getNavbarButton(!empty($authUser) ? $authUser->role_id : null);
-
-        if (!empty($navbarButton)) {
+        $navBtnUrl = 'panel/financial/pay-subscribes';
+        if (!empty($navbarButton) <> null) {
             //$navBtnUrl = $navbarButton->url;
             //$navBtnText = $navbarButton->title;
-            $navBtnUrl = 'panel/financial/pay-subscribes';
+            $navBtnText = 'Comece Agora!';
+        }else{
             $navBtnText = 'Criar Conta';
         }
     }
