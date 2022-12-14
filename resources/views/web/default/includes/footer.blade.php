@@ -52,11 +52,15 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="footer-logo text-center">
-                    <a href="/">
-                        @if(!empty($generalSettings['footer_logo']))
-                            <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo" width="200">
-                        @endif
-                    </a>
+                <div class="row justify-content-center ">
+                    <div class="col-2">
+                        <a href="/">
+                            @if(!empty($generalSettings['footer_logo']))
+                                <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo" width="200">
+                            @endif
+                        </a>
+                    </div>
+                </div>
                     <p class="font-16 font-weight-normal text-gray mt-10">Comece a avançar agora mesmo na direção dos seus objetivos <br>e
                         alcance o seu lugar como DEV.
                     </p>
