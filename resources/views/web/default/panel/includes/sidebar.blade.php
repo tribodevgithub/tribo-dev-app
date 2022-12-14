@@ -75,7 +75,7 @@
         @if($authUser->isOrganization())
             <li class="sidenav-item {{ (request()->is('panel/instructors') or request()->is('panel/manage/instructors*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#instructorsCollapse" role="button" aria-expanded="false" aria-controls="instructorsCollapse">
-                <span class="sidenav-item-icon assign-fill mr-10">
+                <span class="sidenav-item-icon mr-10">
                     @include('web.default.panel.includes.sidebar_icons.teachers')
                 </span>
                     <span class="font-14 text-white font-weight-500">{{ trans('public.instructors') }}</span>
@@ -95,7 +95,7 @@
 
             <li class="sidenav-item {{ (request()->is('panel/students') or request()->is('panel/manage/students*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#studentsCollapse" role="button" aria-expanded="false" aria-controls="studentsCollapse">
-                <span class="sidenav-item-icon assign-fill mr-10">
+                <span class="sidenav-item-icon mr-10">
                     @include('web.default.panel.includes.sidebar_icons.students')
                 </span>
                     <span class="font-14 text-white font-weight-500">{{ trans('quiz.students') }}</span>
