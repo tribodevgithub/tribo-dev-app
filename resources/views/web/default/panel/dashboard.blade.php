@@ -28,7 +28,7 @@
             </div>
         @endif
 
-        <div class="bg-white dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow rounded-sm">
+        <div class="bg-dark dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow rounded-sm">
             <h2 class="font-30 text-primary line-height-1">
                 <span class="d-block">{{ trans('panel.hi') }} {{ $authUser->full_name }},</span>
                 <span class="font-16 text-secondary font-weight-bold">{{ trans('panel.have_event',['count' => !empty($unReadNotifications) ? count($unReadNotifications) : 0]) }}</span>
@@ -57,7 +57,7 @@
     <section class="dashboard">
         <div class="row">
             <div class="col-12 col-lg-3 mt-35">
-                <div class="bg-white account-balance rounded-sm panel-shadow py-15 py-md-30 px-10 px-md-20">
+                <div class="bg-dark account-balance rounded-sm panel-shadow py-15 py-md-30 px-10 px-md-20">
                     <div class="text-center">
                         <img src="/assets/default/img/activity/36.svg" class="account-balance-icon" alt="">
 
@@ -127,7 +127,7 @@
             </div>
 
             <div class="col-12 col-lg-3 mt-35">
-                <div class="bg-white account-balance rounded-sm panel-shadow py-15 py-md-15 px-10 px-md-20">
+                <div class="bg-dark account-balance rounded-sm panel-shadow py-15 py-md-15 px-10 px-md-20">
                     <div data-percent="{{ !empty($nextBadge) ? $nextBadge['percent'] : 0 }}" data-label="{{ (!empty($nextBadge) and !empty($nextBadge['earned'])) ? $nextBadge['earned']->title : '' }}" id="nextBadgeChart" class="text-center">
                     </div>
                     <div class="mt-10 pt-10 border-top border-gray300 d-flex align-items-center justify-content-between">
@@ -140,7 +140,7 @@
 
         <div class="row">
             <div class="col-12 col-lg-6 mt-35">
-                <div class="bg-white noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
+                <div class="bg-dark noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                     <h3 class="font-16 text-dark-blue font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
 
                     @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
@@ -167,7 +167,7 @@
             </div>
 
             <div class="col-12 col-lg-6 mt-35">
-                <div class="bg-white monthly-sales-card rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
+                <div class="bg-dark monthly-sales-card rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                     <div class="d-flex align-items-center justify-content-between">
                         <h3 class="font-16 text-dark-blue font-weight-bold">{{ ($authUser->isUser()) ? trans('panel.learning_statistics') : trans('panel.monthly_sales') }}</h3>
 
