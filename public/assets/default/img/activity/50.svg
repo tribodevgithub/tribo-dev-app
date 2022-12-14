@@ -4,7 +4,7 @@
             <path id="Rectangle_292" fill="#fff" stroke="#707070" d="M0 0H64V64H0z" transform="translate(850 176)"/>
         </clipPath>
         <style>
-            .cls-4{fill:#fff}.cls-3{fill:#bdd3dd}.cls-5{fill:#1f3b64}
+            .cls-4{fill:#fff}.cls-3{fill:#bdd3dd}.cls-5{fill:#fff}
         </style>
     </defs>
     <g id="Mask_Group_50" clip-path="url(#clip-path)" transform="translate(-850 -176)">

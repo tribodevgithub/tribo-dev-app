@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="clock" width="44" height="44" viewBox="0 0 44 44">
     <defs>
         <style>
-            .cls-3{fill:#1f3b64}
+            .cls-3{fill:#fff}
         </style>
     </defs>
     <circle id="Ellipse_170" cx="16.438" cy="16.438" r="16.438" fill="#bdd3dd" transform="translate(5.386 5.386)"/>
