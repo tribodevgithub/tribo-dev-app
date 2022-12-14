@@ -14145,7 +14145,7 @@ html.html-modal-open {
 }
 
 .img-cover {
-    /* width: 100%; */
+    width: 100%;
     overflow: hidden;
     -o-object-fit: cover;
     object-fit: cover;
