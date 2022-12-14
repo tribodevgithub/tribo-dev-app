@@ -7041,7 +7041,7 @@ a.bg-gray300:focus, a.bg-gray300:hover, button.bg-gray300:focus, button.bg-gray3
 }
 
 .bg-gray200 {
-    background-color: #f1f1f1 !important
+    background-color: var(--secondary) !important
 }
 
 a.bg-gray200:focus, a.bg-gray200:hover, button.bg-gray200:focus, button.bg-gray200:hover {
