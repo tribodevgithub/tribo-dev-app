@@ -327,37 +327,37 @@
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a * {
     font-weight: 700 !important;
-    color: var(--primary) !important
+    color: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active svg {
-    color: var(--primary) !important
+    color: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-strock svg,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-strock svg * {
-    stroke: var(--primary) !important
+    stroke: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .assign-fill svg * {
-    fill: var(--primary) !important
+    fill: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active circle,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active polyline {
-    stroke: var(--primary) !important
+    stroke: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-1,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .cls-3 {
-    fill: var(--primary) !important
+    fill: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-1,
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active .sidenav-notification-icon .cls-3 {
     fill: none !important;
-    stroke: var(--primary) !important
+    stroke: var(--white) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon {
@@ -372,7 +372,7 @@
 
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-icon.sidenav-notification-icon .cls-1 {
     fill: none;
-    stroke: var(--secondary);
+    stroke: var(--white);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 1.5px
@@ -447,11 +447,11 @@
 
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active a {
     font-weight: 700;
-    color: var(--primary)
+    color: var(--white)
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li.active:before {
-    background-color: var(--primary)
+    background-color: var(--white)
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item .sidenav-item-collapse li a {
