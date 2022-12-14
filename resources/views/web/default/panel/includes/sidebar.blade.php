@@ -65,7 +65,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel')) ? 'sidenav-item-active' : '' }}">
             <a href="/panel" class="d-flex align-items-center">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.dashboard')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.dashboard') }}</span>
@@ -75,7 +75,7 @@
         @if($authUser->isOrganization())
             <li class="sidenav-item {{ (request()->is('panel/instructors') or request()->is('panel/manage/instructors*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#instructorsCollapse" role="button" aria-expanded="false" aria-controls="instructorsCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.teachers')
                 </span>
                     <span class="font-14 text-white font-weight-500">{{ trans('public.instructors') }}</span>
@@ -95,7 +95,7 @@
 
             <li class="sidenav-item {{ (request()->is('panel/students') or request()->is('panel/manage/students*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#studentsCollapse" role="button" aria-expanded="false" aria-controls="studentsCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.students')
                 </span>
                     <span class="font-14 text-white font-weight-500">{{ trans('quiz.students') }}</span>
@@ -116,7 +116,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/webinars') or request()->is('panel/webinars/*')) ? 'sidenav-item-active' : '' }}">
             <a class="d-flex align-items-center" data-toggle="collapse" href="#webinarCollapse" role="button" aria-expanded="false" aria-controls="webinarCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.webinars')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.webinars') }}</span>
@@ -191,7 +191,7 @@
         @if(getFeaturesSettings('webinar_assignment_status'))
             <li class="sidenav-item {{ (request()->is('panel/assignments') or request()->is('panel/assignments/*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#assignmentCollapse" role="button" aria-expanded="false" aria-controls="assignmentCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.assignments')
                 </span>
                     <span class="font-14 text-white font-weight-500">{{ trans('update.assignments') }}</span>
@@ -217,7 +217,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/meetings') or request()->is('panel/meetings/*')) ? 'sidenav-item-active' : '' }}">
             <a class="d-flex align-items-center" data-toggle="collapse" href="#meetingCollapse" role="button" aria-expanded="false" aria-controls="meetingCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.requests')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.meetings') }}</span>
@@ -245,7 +245,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/quizzes') or request()->is('panel/quizzes/*')) ? 'sidenav-item-active' : '' }}">
             <a class="d-flex align-items-center" data-toggle="collapse" href="#quizzesCollapse" role="button" aria-expanded="false" aria-controls="quizzesCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.quizzes')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.quizzes') }}</span>
@@ -278,7 +278,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/certificates') or request()->is('panel/certificates/*')) ? 'sidenav-item-active' : '' }}">
             <a class="d-flex align-items-center" data-toggle="collapse" href="#certificatesCollapse" role="button" aria-expanded="false" aria-controls="certificatesCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.certificate')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.certificates') }}</span>
@@ -362,7 +362,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/financial') or request()->is('panel/financial/*')) ? 'sidenav-item-active' : '' }}">
             <a class="d-flex align-items-center" data-toggle="collapse" href="#financialCollapse" role="button" aria-expanded="false" aria-controls="financialCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.financial')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.financial') }}</span>
@@ -428,7 +428,7 @@
         @if(!$authUser->isUser() or (!empty($referralSettings) and $referralSettings['status'] and $authUser->affiliate))
             <li class="sidenav-item {{ (request()->is('panel/marketing') or request()->is('panel/marketing/*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#marketingCollapse" role="button" aria-expanded="false" aria-controls="marketingCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.marketing')
                 </span>
                     <span class="font-14 text-white font-weight-500">{{ trans('panel.marketing') }}</span>
@@ -516,7 +516,7 @@
         @if($authUser->isOrganization() || $authUser->isTeacher())
             <li class="sidenav-item {{ (request()->is('panel/noticeboard*') or request()->is('panel/course-noticeboard*')) ? 'sidenav-item-active' : '' }}">
                 <a class="d-flex align-items-center" data-toggle="collapse" href="#noticeboardCollapse" role="button" aria-expanded="false" aria-controls="noticeboardCollapse">
-                <span class="sidenav-item-icon mr-10">
+                <span class="sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.noticeboard')
                 </span>
 
@@ -562,7 +562,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/notifications')) ? 'sidenav-item-active' : '' }}">
             <a href="/panel/notifications" class="d-flex align-items-center">
-            <span class="sidenav-notification-icon sidenav-item-icon mr-10">
+            <span class="sidenav-notification-icon sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.notifications')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.notifications') }}</span>
@@ -571,7 +571,7 @@
 
         <li class="sidenav-item {{ (request()->is('panel/setting')) ? 'sidenav-item-active' : '' }}">
             <a href="/panel/setting" class="d-flex align-items-center">
-                <span class="sidenav-setting-icon sidenav-item-icon mr-10">
+                <span class="sidenav-setting-icon sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.setting')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.settings') }}</span>
@@ -591,7 +591,7 @@
 
         <li class="sidenav-item">
             <a href="/logout" class="d-flex align-items-center">
-                <span class="sidenav-logout-icon sidenav-item-icon mr-10">
+                <span class="sidenav-logout-icon sidenav-item-icon assign-fill mr-10">
                     @include('web.default.panel.includes.sidebar_icons.logout')
                 </span>
                 <span class="font-14 text-white font-weight-500">{{ trans('panel.log_out') }}</span>
