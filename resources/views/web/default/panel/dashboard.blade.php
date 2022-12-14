@@ -22,7 +22,7 @@
         </div>
 
         @if(!$authUser->financial_approval and !$authUser->isUser())
-            <div class="p-15 mt-20 p-lg-20 not-verified-alert font-weight-500 text-dark-blue rounded-sm panel-shadow">
+            <div class="p-15 mt-20 p-lg-20 not-verified-alert font-weight-500 text-white rounded-sm panel-shadow">
                 {{ trans('panel.not_verified_alert') }}
                 <a href="/panel/setting/step/7" class="text-decoration-underline">{{ trans('panel.this_link') }}</a>.
             </div>
@@ -46,7 +46,7 @@
                 @endif
             </ul>
 
-            <a href="/panel/notifications" class="mt-15 font-weight-500 text-dark-blue d-inline-block">{{ trans('panel.view_all_events') }}</a>
+            <a href="/panel/notifications" class="mt-15 font-weight-500 text-white d-inline-block">{{ trans('panel.view_all_events') }}</a>
 
             <div class="dashboard-banner">
                 <img src="{{ getPageBackgroundSettings('dashboard') }}" alt="" class="img-cover">
@@ -76,7 +76,7 @@
                             <span class="font-16 font-weight-500 text-gray">{{ trans('panel.with_drawable') }}:</span>
                             <span class="font-16 font-weight-bold text-secondary">{{ addCurrencyToPrice($drawable) }}</span>
                         @else
-                            <a href="/panel/financial/account" class="font-16 font-weight-bold text-dark-blue">{{ trans('financial.charge_account') }}</a>
+                            <a href="/panel/financial/account" class="font-16 font-weight-bold text-white">{{ trans('financial.charge_account') }}</a>
                         @endif
                     </div>
                 </div>
@@ -141,7 +141,7 @@
         <div class="row">
             <div class="col-12 col-lg-6 mt-35">
                 <div class="bg-dark noticeboard rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
-                    <h3 class="font-16 text-dark-blue font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
+                    <h3 class="font-16 text-white font-weight-bold">{{ trans('panel.noticeboard') }}</h3>
 
                     @foreach($authUser->getUnreadNoticeboards() as $getUnreadNoticeboard)
                         <div class="noticeboard-item py-15">
@@ -169,7 +169,7 @@
             <div class="col-12 col-lg-6 mt-35">
                 <div class="bg-dark monthly-sales-card rounded-sm panel-shadow py-10 py-md-20 px-15 px-md-30">
                     <div class="d-flex align-items-center justify-content-between">
-                        <h3 class="font-16 text-dark-blue font-weight-bold">{{ ($authUser->isUser()) ? trans('panel.learning_statistics') : trans('panel.monthly_sales') }}</h3>
+                        <h3 class="font-16 text-white font-weight-bold">{{ ($authUser->isUser()) ? trans('panel.learning_statistics') : trans('panel.monthly_sales') }}</h3>
 
                         <span class="font-16 font-weight-500 text-gray">{{ dateTimeFormat(time(),'M Y') }}</span>
                     </div>
@@ -203,7 +203,7 @@
 
     <div class="d-none" id="noticeboardMessageModal">
         <div class="text-center">
-            <h3 class="modal-title font-20 font-weight-500 text-dark-blue"></h3>
+            <h3 class="modal-title font-20 font-weight-500 text-white"></h3>
             <span class="modal-time d-block font-12 text-gray mt-25"></span>
             <p class="modal-message font-weight-500 text-gray mt-4"></p>
         </div>
