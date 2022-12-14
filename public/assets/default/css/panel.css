@@ -317,7 +317,8 @@
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item {
-    padding: 12px 0
+    padding: 12px 0;
+    color: var(--primary) !important
 }
 
 .panel-sidebar .sidebar-menu .sidenav-item.sidenav-item-active>a,
