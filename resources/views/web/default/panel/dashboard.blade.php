@@ -31,7 +31,7 @@
         <div class="bg-dark dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow rounded-sm">
             <h2 class="font-30 text-primary line-height-1">
                 <span class="d-block">{{ trans('panel.hi') }} {{ $authUser->full_name }},</span>
-                <span class="font-16 text-secondary font-weight-bold">{{ trans('panel.have_event',['count' => !empty($unReadNotifications) ? count($unReadNotifications) : 0]) }}</span>
+                <span class="font-16 text-white font-weight-bold">{{ trans('panel.have_event',['count' => !empty($unReadNotifications) ? count($unReadNotifications) : 0]) }}</span>
             </h2>
 
             <ul class="mt-15 unread-notification-lists">
@@ -62,7 +62,7 @@
                         <img src="/assets/default/img/activity/36.svg" class="account-balance-icon" alt="">
 
                         <h3 class="font-16 font-weight-500 text-gray mt-25">{{ trans('panel.account_balance') }}</h3>
-                        <span class="mt-5 d-block font-30 text-secondary">{{ addCurrencyToPrice($authUser->getAccountingBalance()) }}</span>
+                        <span class="mt-5 d-block font-30 text-white">{{ addCurrencyToPrice($authUser->getAccountingBalance()) }}</span>
                     </div>
 
                     @php
@@ -74,7 +74,7 @@
                     <div class="mt-20 pt-30 border-top border-gray300 d-flex align-items-center @if($can_drawable) justify-content-between @else justify-content-center @endif">
                         @if($can_drawable)
                             <span class="font-16 font-weight-500 text-gray">{{ trans('panel.with_drawable') }}:</span>
-                            <span class="font-16 font-weight-bold text-secondary">{{ addCurrencyToPrice($drawable) }}</span>
+                            <span class="font-16 font-weight-bold text-white">{{ addCurrencyToPrice($drawable) }}</span>
                         @else
                             <a href="/panel/financial/account" class="font-16 font-weight-bold text-white">{{ trans('financial.charge_account') }}</a>
                         @endif
@@ -88,7 +88,7 @@
                         <img src="/assets/default/img/icons/request.svg" alt="">
                     </div>
                     <div class="d-flex flex-column ml-15">
-                        <span class="font-30 text-secondary">{{ !empty($pendingAppointments) ? $pendingAppointments : (!empty($webinarsCount) ? $webinarsCount : 0) }}</span>
+                        <span class="font-30 text-white">{{ !empty($pendingAppointments) ? $pendingAppointments : (!empty($webinarsCount) ? $webinarsCount : 0) }}</span>
                         <span class="font-16 text-gray font-weight-500">{{ $authUser->isUser() ? trans('panel.purchased_courses') : trans('panel.pending_appointments') }}</span>
                     </div>
                 </a>
@@ -98,7 +98,7 @@
                         <img src="@if($authUser->isUser()) /assets/default/img/icons/meeting.svg @else /assets/default/img/icons/monay.svg @endif" alt="">
                     </div>
                     <div class="d-flex flex-column ml-15">
-                        <span class="font-30 text-secondary">{{ !empty($monthlySalesCount) ? addCurrencyToPrice($monthlySalesCount) : (!empty($reserveMeetingsCount) ? addCurrencyToPrice($reserveMeetingsCount) : 0) }}</span>
+                        <span class="font-30 text-white">{{ !empty($monthlySalesCount) ? addCurrencyToPrice($monthlySalesCount) : (!empty($reserveMeetingsCount) ? addCurrencyToPrice($reserveMeetingsCount) : 0) }}</span>
                         <span class="font-16 text-gray font-weight-500">{{ $authUser->isUser() ? trans('panel.meetings') : trans('panel.monthly_sales') }}</span>
                     </div>
                 </a>
@@ -110,7 +110,7 @@
                         <img src="/assets/default/img/icons/support.svg" alt="">
                     </div>
                     <div class="d-flex flex-column ml-15">
-                        <span class="font-30 text-secondary">{{ !empty($supportsCount) ? $supportsCount : 0 }}</span>
+                        <span class="font-30 text-white">{{ !empty($supportsCount) ? $supportsCount : 0 }}</span>
                         <span class="font-16 text-gray font-weight-500">{{ trans('panel.support_messages') }}</span>
                     </div>
                 </a>
@@ -120,7 +120,7 @@
                         <img src="/assets/default/img/icons/comment.svg" alt="">
                     </div>
                     <div class="d-flex flex-column ml-15">
-                        <span class="font-30 text-secondary">{{ !empty($commentsCount) ? $commentsCount : 0 }}</span>
+                        <span class="font-30 text-white">{{ !empty($commentsCount) ? $commentsCount : 0 }}</span>
                         <span class="font-16 text-gray font-weight-500">{{ trans('panel.comments') }}</span>
                     </div>
                 </a>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="mt-10 pt-10 border-top border-gray300 d-flex align-items-center justify-content-between">
                         <span class="font-16 font-weight-500 text-gray">{{ trans('panel.next_badge') }}:</span>
-                        <span class="font-16 font-weight-bold text-secondary">{{ (!empty($nextBadge) and !empty($nextBadge['badge'])) ? $nextBadge['badge']->title : trans('public.not_defined') }}</span>
+                        <span class="font-16 font-weight-bold text-white">{{ (!empty($nextBadge) and !empty($nextBadge['badge'])) ? $nextBadge['badge']->title : trans('public.not_defined') }}</span>
                     </div>
                 </div>
             </div>
@@ -147,7 +147,7 @@
                         <div class="noticeboard-item py-15">
                             <div class="d-flex align-items-center justify-content-between">
                                 <div>
-                                    <h4 class="js-noticeboard-title font-weight-500 text-secondary">{!! truncate($getUnreadNoticeboard->title,150) !!}</h4>
+                                    <h4 class="js-noticeboard-title font-weight-500 text-white">{!! truncate($getUnreadNoticeboard->title,150) !!}</h4>
                                     <div class="font-12 text-gray mt-5">
                                         <span class="mr-5">{{ trans('public.created_by') }} {{ $getUnreadNoticeboard->sender }}</span>
                                         |
