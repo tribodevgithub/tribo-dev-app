@@ -24,7 +24,7 @@
         @if(!$authUser->financial_approval and !$authUser->isUser())
             <div class="p-15 mt-20 p-lg-20 not-verified-alert font-weight-500 text-dark rounded-sm panel-shadow">
                 {{ trans('panel.not_verified_alert') }} 
-                <a href="/panel/setting/step/7" class="text-decoration-underline text-primary">{{ trans('panel.this_link') }}</a>.
+                <a href="/panel/setting/step/7" class="text-decoration-underline text-dark">{{ trans('panel.this_link') }}</a>.
             </div>
         @endif
 
