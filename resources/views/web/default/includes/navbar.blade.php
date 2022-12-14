@@ -12,12 +12,10 @@
     } else {
         $navbarButton = getNavbarButton(!empty($authUser) ? $authUser->role_id : null);
         $navBtnUrl = 'panel/financial/pay-subscribes';
-        if (!empty($navbarButton) <> null) {
+        if (!empty($navbarButton)) {
             //$navBtnUrl = $navbarButton->url;
             //$navBtnText = $navbarButton->title;
             $navBtnText = 'Comece Agora!';
-        }else{
-            $navBtnText = 'Criar Conta';
         }
     }
 @endphp
