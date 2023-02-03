@@ -21893,8 +21893,8 @@ p {
 .btn-primary:focus,
 .btn-primary:hover,
 .btn-primary:not(:disabled):not(.disabled):active {
-    color: var(--primary);
-    background-color: var(--light);
+    color: var(--light);
+    background-color: var(--primary-hover);
     border-color: var(--primary-border-hover);
     box-shadow: var(--primary-btn-shadow-hover);
     transition: all .3s
