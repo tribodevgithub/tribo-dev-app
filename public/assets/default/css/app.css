@@ -15826,6 +15826,8 @@ a.badge-circle-warning:focus {
     padding: 0;
     line-height: 1.58;
     color: #fff;
+    margin-left: -18px;
+    margin-top: -15px;
     background-color: #f63c3c
 }
 
@@ -16646,8 +16648,8 @@ p {
 }
 
 .top-navbar .dropdown .badge {
-    width: 20px;
-    height: 20px
+    width: 15px;
+    height: 15px
 }
 
 .top-navbar .dropdown .dropdown-toggle:after {
