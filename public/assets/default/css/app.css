@@ -5058,7 +5058,6 @@ fieldset:disabled a.btn {
     color: var(--light);
     background-color: #43d477;
     border-color: #43d477;
-    box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, .15), 0 1px 1px rgba(52, 52, 52, .075)
 }
 
 .btn-primary.focus,
