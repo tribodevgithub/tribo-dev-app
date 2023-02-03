@@ -278,6 +278,7 @@
     --dark: #1c1c1c;
     --white: #fff;
     --gray: #818894;
+    --gray-text: ##e1e1e6;
     --gray300: #ececec;
     --gray200: #f1f1f1;
     --primary-hover: #fe4621;
@@ -17528,7 +17529,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
-    color: #fff;
+    color: var(--gray-text);
     pointer-events: none
 }
 
@@ -17545,7 +17546,7 @@ p {
 
 .slider-container .slider-content.hero-section2 h1 {
     font-size: 64px;
-    line-height: 1.5;
+    line-height: 1;
     pointer-events: none
 }
 
