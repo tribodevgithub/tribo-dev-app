@@ -15,7 +15,7 @@
         if (!empty($navbarButton)) {
             //$navBtnUrl = $navbarButton->url;
             //$navBtnText = $navbarButton->title;
-            $navBtnText = 'Comece Agora!';
+            $navBtnText = 'Assine Tribo Vip!';
         }
     }
 @endphp
