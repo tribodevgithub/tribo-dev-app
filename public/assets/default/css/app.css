@@ -280,7 +280,7 @@
     --gray: #818894;
     --gray300: #ececec;
     --gray200: #f1f1f1;
-    --primary-hover: #fd6749;
+    --primary-hover: #fe4621;
     --primary-border: #ff2e06;
     --primary-border-hover: #ff2e06;
     --primary-btn-shadow: 0 3px 6px 0 rgba(255, 77, 0, 0.3);
@@ -21883,7 +21883,6 @@ p {
     color: var(--light);
     background-color: var(--primary);
     border-color: var(--primary-border);
-    box-shadow: var(--primary-btn-shadow);
     transition: all .3s;
     font-weight: 600;
 
