@@ -8,24 +8,25 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'role' => 'Role',
-    'roles' => 'Roles',
-    'select_sections_level' => 'Select sections level',
-    'page_lists_title' => 'User Roles',
-    'page_lists_lead' => 'List of roles. You can edit or delete any row.',
-    'new_page_title' => 'New role',
+    'role' => 'Função',
+    'roles' => 'Funções',
+    'select_sections_level' => 'Selecionar nível de seções',
+    'page_lists_title' => 'Funções de Usuário',
+    'page_lists_lead' => 'Lista de funções. Você pode editar ou excluir qualquer linha.',
+    'new_page_title' => 'Nova função',
 
-    'sections' => 'Sections',
-    'new_page_lead' => 'You can create a new role.',
-    'select_type' => 'Select a type',
+    'sections' => 'Seções',
+    'new_page_lead' => 'Você pode criar uma nova função.',
+    'select_type' => 'Selecionar um tipo',
 
-    'create_field_name_placeholder' => 'example : admin',
-    'is_admin' => 'Admin Panel Access',
+    'create_field_name_placeholder' => 'exemplo: administrador',
+    'is_admin' => 'Acesso ao Painel Administrativo',
 
-    'admin_roles' => 'Roles',
-    'admin_roles_list' => 'Roles List',
-    'admin_roles_create' => 'Roles Create',
-    'admin_roles_edit' => 'Roles Edit',
-    'admin_roles_delete' => 'Roles Delete',
+    'admin_roles' => 'Funções',
+    'admin_roles_list' => 'Lista de Funções',
+    'admin_roles_create' => 'Criar Funções',
+    'admin_roles_edit' => 'Editar Funções',
+    'admin_roles_delete' => 'Excluir Funções',
+
 
 ];
