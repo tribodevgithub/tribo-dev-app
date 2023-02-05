@@ -1,5 +1,8 @@
 @extends(getTemplate() .'.panel.layouts.panel_layout')
 
+{{setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
+date_default_timezone_set('America/Sao_Paulo');}}
+
 @section('content')
     <section>
         <h2 class="section-title">{{ trans('panel.notifications') }}</h2>
