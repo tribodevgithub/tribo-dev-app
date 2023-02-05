@@ -1,7 +1,5 @@
 @extends(getTemplate() .'.panel.layouts.panel_layout')
 
-{{setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese')}}
-{{date_default_timezone_set('America/Sao_Paulo')}}
 
 @section('content')
     <section>
@@ -18,7 +16,7 @@
 
                             <div class="">
                                 <h3 class="notification-title font-16 font-weight-bold text-dark-blue">{{ $notification->title }}</h3>
-                                <span class="notification-time d-block font-12 text-gray mt-5">{{ dateTimeFormat($notification->created_at,'j M Y | H:i') }}</span>
+                                <span class="notification-time d-block font-12 text-gray mt-5">{{ dateTimeFormat($notification->created_at,'d/m/Y | H:i') }}</span>
                             </div>
                         </div>
 
