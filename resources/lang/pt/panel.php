@@ -289,5 +289,5 @@ return [
     'your_affiliate_code' => 'Seu código de afiliado',
     'affiliate_url' => 'Seu URL de afiliado',
     'content_defined' => 'Conteúdo definido',
-    'purchased_courses' => 'Cursos Comprados',
+    'purchased_courses' => 'Meus Cursos',
 ];

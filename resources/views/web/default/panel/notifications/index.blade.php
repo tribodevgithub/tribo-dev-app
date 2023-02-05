@@ -16,7 +16,7 @@
 
                             <div class="">
                                 <h3 class="notification-title font-16 font-weight-bold text-dark-blue">{{ $notification->title }}</h3>
-                                <span class="notification-time d-block font-12 text-gray mt-5">{{ dateTimeFormat($notification->created_at,'d/m/Y | H:i') }}</span>
+                                <span class="notification-time d-block font-12 text-gray mt-5">{{ dateTimeFormat($notification->created_at,'j M Y | H:i') }}</span>
                             </div>
                         </div>
 
