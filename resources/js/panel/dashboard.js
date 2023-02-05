@@ -81,7 +81,7 @@
                     opacityFrom: 1,
                     opacityTo: 1,
                     stops: [0, 100],
-                    gradientToColors: ['#a927f9'],
+                    gradientToColors: ['#ff2e06'],
                     type: 'horizontal'
                 },
                 strokeLinecap: 'round'
@@ -92,7 +92,7 @@
             },
 
             labels: [label],
-            colors: ['#0d6efd'],
+            colors: ['#ff2e06'],
         };
 
         var chart = new ApexCharts(document.querySelector("#nextBadgeChart"), options);
