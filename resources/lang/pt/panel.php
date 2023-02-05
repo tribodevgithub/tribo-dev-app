@@ -129,7 +129,7 @@ return [
     // dashboard
     'dashboard' => 'Painel',
     'i_not_available' => 'Ativar status off-line',
-    'hi' => 'Hi',
+    'hi' => 'Olá',
     'have_event' => 'Você tem :count novos eventos',
     'view_all_events' => 'Ver todos os eventos',
     'account_balance' => 'Saldo da conta',
@@ -157,8 +157,8 @@ return [
     'total_conversations' => 'Total de conversas',
     'messages_history' => 'Histórico de mensagens',
     'support_summary' => 'Resumo do suporte',
-  	'classes_support' => 'Cursos de suporte',
-  	'support_tickets' => 'Ingressos',
+    'classes_support' => 'Cursos de suporte',
+    'support_tickets' => 'Ingressos',
     'staff' => 'Funcionários',
     'teacher' => 'Instrutor',
     'open' => 'Abrir',
@@ -271,9 +271,9 @@ return [
     'noticeboard_success_send_to' => 'Novo quadro de avisos enviado com sucesso para :users_count',
 
     'more_info' => 'Mais informações',
-  	'partner_instructor_hint' => 'O instrutor parceiro terá acesso ao conteúdo do curso e seu perfil será exibido na página do curso.',
+    'partner_instructor_hint' => 'O instrutor parceiro terá acesso ao conteúdo do curso e seu perfil será exibido na página do curso.',
 
-  	'affiliate' => 'Afiliado',
+    'affiliate' => 'Afiliado',
     'affiliates' => 'Afiliados',
     'affiliates_page' => 'Marketing afiliado',
     'affiliate_statistics' => 'Estatísticas de afiliados',
@@ -288,6 +288,6 @@ return [
     'referred_user_registration_reward' => 'A receita do usuário referido quando se registra com seu código de afiliado',
     'your_affiliate_code' => 'Seu código de afiliado',
     'affiliate_url' => 'Seu URL de afiliado',
-	  'content_defined' => 'Conteúdo definido',
-  	'purchased_courses' => 'Cursos Comprados',
+    'content_defined' => 'Conteúdo definido',
+    'purchased_courses' => 'Cursos Comprados',
 ];
