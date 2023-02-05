@@ -14,7 +14,7 @@
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/36.svg" width="64" height="64" alt="">
                         <strong class="font-30 font-weight-bold mt-5">{{ $accountCharge ? addCurrencyToPrice($accountCharge) : 0 }}</strong>
-                        <span class="font-16 text-gray font-weight-500">{{ trans('financial.account_charge') }}</span>
+                        <span class="font-16 font-weight-500">{{ trans('financial.account_charge') }}</span>
                     </div>
                 </div>
 
@@ -22,7 +22,7 @@
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/37.svg" width="64" height="64" alt="">
                         <strong class="font-30 font-weight-bold mt-5">{{ $readyPayout ? addCurrencyToPrice($readyPayout) : 0 }}</strong>
-                        <span class="font-16 text-gray font-weight-500">{{ trans('financial.ready_to_payout') }}</span>
+                        <span class="font-16 font-weight-500">{{ trans('financial.ready_to_payout') }}</span>
                     </div>
                 </div>
 
@@ -30,7 +30,7 @@
                     <div class="d-flex flex-column align-items-center text-center">
                         <img src="/assets/default/img/activity/38.svg" width="64" height="64" alt="">
                         <strong class="font-30 font-weight-bold mt-5">{{ $totalIncome ? addCurrencyToPrice($totalIncome) : 0 }}</strong>
-                        <span class="font-16 text-gray font-weight-500">{{ trans('financial.total_income') }}</span>
+                        <span class="font-16 font-weight-500">{{ trans('financial.total_income') }}</span>
                     </div>
                 </div>
 
