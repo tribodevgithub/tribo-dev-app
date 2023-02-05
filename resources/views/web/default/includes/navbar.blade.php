@@ -90,13 +90,25 @@
                         </li>
                     @endif
 
-                    @if(!empty($navbarPages) and count($navbarPages))
+                    {{-- @if(!empty($navbarPages) and count($navbarPages))
                         @foreach($navbarPages as $navbarPage)
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ $navbarPage['link'] }}">{{ $navbarPage['title'] }}</a>
                             </li>
                         @endforeach
-                    @endif
+                    @endif --}}
+                    <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link" href="/">Tribo Vip</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link" href="/">A TriboDev</a>
+                    </li>
+                    <li class="nav-item">
+                                <a class="nav-link" href="/">Para Empresas</a>
+                    </li>
                 </ul>
             </div>
 
