@@ -297,7 +297,7 @@
 }
 
 .panel-sidebar .sidebar-menu {
-    height: calc(100% - 405px);
+    height: 100%;
     overflow: auto;
     padding-bottom: 35px
 }
@@ -320,7 +320,7 @@
     padding: 12px 0
 }
 
-.panel-sidebar .sidebar-menu .sidenav-item svg{
+.panel-sidebar .sidebar-menu .sidenav-item svg {
     color: var(--primary) !important
 }
 
