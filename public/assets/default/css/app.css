@@ -16351,7 +16351,7 @@ p {
 .activities-container {
     border-radius: 10px;
     box-shadow: 0 12px 23px 0 rgba(62, 73, 84, .04);
-    background-color: #fff
+    background-color: var(--primary)
 }
 
 @media (max-width:767px) {
