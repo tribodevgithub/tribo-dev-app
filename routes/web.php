@@ -203,7 +203,7 @@ Route::group(['namespace' => 'Web', 'middleware' => ['check_mobile_app', 'impers
         Route::get('/', 'UserController@organizations');
     });
 
-    Route::group(['prefix' => 'tribovip'], function () {
+    Route::group(['prefix' => 'vipPlan'], function () {
         Route::get('/tribovip', 'UserController@vipPlan');
     });
 
