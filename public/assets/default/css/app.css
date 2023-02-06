@@ -17873,6 +17873,9 @@ p {
         width: 40px;
         height: 40px
     }
+    .subscribes-container h1 {
+        font-size: 24px;
+    }
 }
 
 .subscribes-container #parallax5 {

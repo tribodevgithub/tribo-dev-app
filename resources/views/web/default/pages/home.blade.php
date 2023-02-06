@@ -523,29 +523,50 @@
                     <div class="text-center">
                         <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
                     </div>
-
-                    <div class="row">
-                <div class="col-xs-12 ">
-                    <nav>
-                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tribo Free</a>
-                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Tribo Vip</a>
-                        </div>
-                    </nav>
-                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                        </div>
-                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                            Et et consectetur ipsum labore excepteur est proident excepteur ad velit occaecat qui minim occaecat veniam. Fugiat veniam incididunt anim aliqua enim pariatur veniam sunt est aute sit dolor anim. Velit non irure adipisicing aliqua ullamco irure incididunt irure non esse consectetur nostrud minim non minim occaecat. Amet duis do nisi duis veniam non est eiusmod tempor incididunt tempor dolor ipsum in qui sit. Exercitation mollit sit culpa nisi culpa non adipisicing reprehenderit do dolore. Duis reprehenderit occaecat anim ullamco ad duis occaecat ex.
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
                     <div class="position-relative mt-30">
                         <div class="swiper-container subscribes-swiper px-12">
+                            <div class="row">
+                                <div class="col-xs-12 ">
+                                    <nav>
+                                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Tribo Free</a>
+                                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Tribo Vip</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h3>Dê os primeiros passos em sua jornada como programador gratuitamente</h3>
+                                                    <p>Cadastre-se gratuitamente e você fará parte de uma das comunidades mais ativa de desenvolvedores em todo o mundo, terá acesso a uma ampla seleção de cursos, participará de lives com especialistas da área muitos mais.  </p>
+                                                    <p>Não perca a chance de aprender e crescer com a Tribodev, inscreva-se agora e comece a desenvolver suas habilidades!</p>
+                                                    <button type="button" class="btn btn-primary btn-block mt-50">Criar Conta</button>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="/store/1/default_images/home_sections_banners/banner.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <h3>Eleve suas habilidades de programação para o próximo nível</h3>
+                                                    <p>Além de ter acesso a todos os recursos do plano grátis, você terá acesso a cursos avançados e desafiantes que o ajudarão a se destacar no mercado.</p>
+                                                    <p>Mostre suas habilidades ao competir com outros programadores em desafios exclusivos e tenha a chance de ganhar trabalhos remunerados</p>
+                                                    <p>Junte-se à elite da programação com o nosso plano VIP e alcance seu potencial máximo na Tribodev.</p>
+                                                    <button type="button" class="btn btn-primary btn-block mt-50">Saber Mais!</button>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="/store/1/default_images/home_sections_banners/banner2.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
                             <div class="swiper-wrapper py-20">
 
                                 @foreach($subscribes as $subscribe)
