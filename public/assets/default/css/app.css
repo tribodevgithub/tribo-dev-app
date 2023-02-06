@@ -22010,16 +22010,6 @@ p {
 }
 
 /* Tabs*/
-section {
-    padding: 60px 0;
-}
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
 
 #tabs {
     background: #007b5e;
