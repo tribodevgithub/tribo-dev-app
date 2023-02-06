@@ -918,7 +918,7 @@
         @endif
 
     @endforeach
-    <div class="container">
+    <div class="container subscribes-container">
             <section class="container home-sections home-sections-swiper">
                 <div class="text-center">
                 <h1>Escolha a jornada certa para sua carreira em tecnologia123</h1>
