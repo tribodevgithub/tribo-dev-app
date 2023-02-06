@@ -269,7 +269,7 @@ class UserController extends Controller
         return view('web.default.pages.instructors', $data);
     }
 
-    public function viPlan()
+    public function vipPlan()
     {
         $pageDescription = "Eleve suas habilidades de programação para o próximo nível com o nosso plano VIP na Tribodev";
 
