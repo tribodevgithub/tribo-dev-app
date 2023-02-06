@@ -17499,7 +17499,7 @@ p {
 
     .slider-container,
     .slider-container.slider-hero-section2 {
-        padding: 60px 0 100px
+        padding: 60px 0 50px
     }
 }
 
@@ -17638,6 +17638,10 @@ p {
     transform: translateY(50%) !important
 }
 
+.stats-container h1{
+    font-size: 48px;
+}
+
 @media (max-width:991px) {
     .swiper-pagination {
         bottom: unset
@@ -17645,6 +17649,10 @@ p {
 
     .swiper-pagination.features-swiper-pagination {
         bottom: -20px
+    }
+
+    .stats-container h1 {
+        font-size: 28px;
     }
 }
 
@@ -17803,7 +17811,7 @@ p {
 
 @media (max-width:991px) {
     .home-sections.home-sections-swiper {
-        margin-top: 80px
+        margin-top: 40px
     }
 }
 
@@ -17839,7 +17847,7 @@ p {
     direction: ltr;
     position: absolute !important;
     border-radius: 30px;
-    background-image: linear-gradient(180deg, #01930c, var(--primary))
+    background-image: linear-gradient(180deg, var(--primary), var(--primary))
 }
 
 @media (max-width:767px) {
@@ -18115,12 +18123,13 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-    padding-left: 50%;
+    padding-left: 40%;
 }
 
 @media (max-width:991px) {
     .home-video-container {
-        padding-top: 94px
+        padding-top: 94px;
+        padding-left: 60%;
     }
 }
 

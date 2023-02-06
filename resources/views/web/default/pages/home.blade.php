@@ -72,55 +72,7 @@
         </section>
     @endif
 
-    <div class="stats-container" hidden>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-lg-3 mt-25 mt-lg-0">
-                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
-                        <div class="stat-icon-box teacher">
-                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
-                        </div>
-                        <strong class="stat-number mt-10">{{ $skillfulTeachersCount }}</strong>
-                        <h4 class="stat-title">{{ trans('home.skillful_teachers') }}</h4>
-                        <p class="stat-desc mt-10">{{ trans('home.skillful_teachers_hint') }}</p>
-                    </div>
-                </div>
 
-                <div class="col-sm-6 col-lg-3 mt-25 mt-lg-0">
-                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
-                        <div class="stat-icon-box student">
-                            <img src="/assets/default/img/stats/student.svg" alt=""/>
-                        </div>
-                        <strong class="stat-number mt-10">{{ $studentsCount }}</strong>
-                        <h4 class="stat-title">{{ trans('home.happy_students') }}</h4>
-                        <p class="stat-desc mt-10">{{ trans('home.happy_students_hint') }}</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3 mt-25 mt-lg-0">
-                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
-                        <div class="stat-icon-box video">
-                            <img src="/assets/default/img/stats/video.svg" alt=""/>
-                        </div>
-                        <strong class="stat-number mt-10">{{ $liveClassCount }}</strong>
-                        <h4 class="stat-title">{{ trans('home.live_classes') }}</h4>
-                        <p class="stat-desc mt-10">{{ trans('home.live_classes_hint') }}</p>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-lg-3 mt-25 mt-lg-0">
-                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
-                        <div class="stat-icon-box course">
-                            <img src="/assets/default/img/stats/course.svg" alt=""/>
-                        </div>
-                        <strong class="stat-number mt-10">{{ $offlineCourseCount }}</strong>
-                        <h4 class="stat-title">{{ trans('home.offline_courses') }}</h4>
-                        <p class="stat-desc mt-10">{{ trans('home.offline_courses_hint') }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     @foreach($homeSections as $homeSection)
@@ -523,7 +475,7 @@
                     <div class="text-center">
                         <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
                     </div>
-                    <div class="position-relative mt-30">
+                    <div class="position-relative mt-50">
                         <div class="swiper-container subscribes-swiper px-12">
                             <div class="row">
                                 <div class="col-xs-12 ">
@@ -535,9 +487,9 @@
                                     </nav>
                                     <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                            <div class="row">
+                                            <div class="row mt-30">
                                                 <div class="col-md-6">
-                                                    <h2 class="mb-20">Dê os primeiros passos em sua jornada como programador gratuitamente</h2>
+                                                    <h2 class="mb-20">Dê os primeiros passos gratuitamente em sua jornada como programador </h2>
                                                     <p class="mb-20">Cadastre-se gratuitamente e você fará parte de uma das comunidades mais ativa de desenvolvedores em todo o mundo, terá acesso a uma ampla seleção de cursos, participará de lives com especialistas da área muitos mais.  </p>
                                                     <p class="mb-20">Não perca a chance de aprender e crescer com a Tribodev, inscreva-se agora e comece a desenvolver suas habilidades!</p>
                                                     <button type="button" class="btn btn-primary btn-block mt-50">Criar Conta</button>
@@ -567,7 +519,7 @@
                             </div>
 
 
-                            <div class="swiper-wrapper py-20">
+                            <div class="swiper-wrapper py-20" hidden>
 
                                 @foreach($subscribes as $subscribe)
                                     <div class="swiper-slide">
@@ -631,6 +583,80 @@
                 </div>
             </div>
         @endif
+
+        <div class="stats-container">
+        <div class="container">
+            <div class="text-center">
+                <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Comunidade Experiente</h4>
+                        <p class="stat-desc mt-10">Tenha acesso a uma comunidade de desenvolvedores experientes que compartilham conhecimentos, dicas e suporte.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Comunidade Experiente</h4>
+                        <p class="stat-desc mt-10">Tenha acesso a uma comunidade de desenvolvedores experientes que compartilham conhecimentos, dicas e suporte.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Prove suas habilidades</h4>
+                        <p class="stat-desc mt-10">Mostre suas habilidades e tenha a oportunidade de receber projetos remunerados de programação</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Construa o seu portfólio</h4>
+                        <p class="stat-desc mt-10">A TriboDev oferece a oportunidade de construir o seu portfólio com projetos reais de programação remunerados.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Formação completa</h4>
+                        <p class="stat-desc mt-10">você terá acesso a formação ministrada por profissionais da área, garantindo um aprendizado ainda mais completo e atualizado.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Acesso a projetos reais</h4>
+                        <p class="stat-desc mt-10">Tenha acesso a projetos reais e terá a oportunidade de colocar em prática o que aprendeu.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Ensino democrático</h4>
+                        <p class="stat-desc mt-10">Conteúdos de formação independentemente do nível de conhecimento, para que todos possam evoluir juntos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         @if($homeSection->name == \App\Models\HomeSection::$find_instructors and !empty($findInstructorSection))
             <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
