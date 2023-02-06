@@ -17857,6 +17857,10 @@ p {
     transform: rotate(45deg)
 }
 
+.subscribes-container h1{
+    font-size: 48px;
+}
+
 @media (min-width:767px) and (max-width:991px) {
     .subscribes-container .left-gradient-box {
         width: 80px;

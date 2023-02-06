@@ -521,8 +521,7 @@
 
                 <section class="container home-sections home-sections-swiper">
                     <div class="text-center">
-                        <h2 class="section-title">{{ trans('home.subscribe_now') }}</h2>
-                        <p class="section-hint">{{ trans('home.subscribe_now_hint') }}</p>
+                        <h1 class="section-title">Escolha a jornada certa para sua carreira em tecnologia</h1>
                     </div>
 
                     <div class="row">
