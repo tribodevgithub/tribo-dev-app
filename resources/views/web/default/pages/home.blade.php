@@ -567,20 +567,20 @@
                             </div>
 
                         </div>
-                        <div class="d-flex justify-content-center" hidden>
+                        {{-- <div class="d-flex justify-content-center" >
                             <div class="swiper-pagination subscribes-swiper-pagination"></div>
-                        </div>
+                        </div> --}}
 
                     </div>
                 </section>
 
-                <div id="parallax5" class="ltr d-none d-md-block">
+                {{-- <div id="parallax5" class="ltr d-none d-md-block">
                     <div data-depth="0.4" class="gradient-box right-gradient-box"></div>
                 </div>
 
                 <div id="parallax6" class="ltr d-none d-md-block">
                     <div data-depth="0.6" class="gradient-box bottom-gradient-box"></div>
-                </div>
+                </div> --}}
             </div>
         @endif
 
