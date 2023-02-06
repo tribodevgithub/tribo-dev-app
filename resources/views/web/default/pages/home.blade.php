@@ -907,7 +907,7 @@
         @endif
 
     @endforeach
-    <div class="container subscribes-container">
+        <div class="container subscribes-container">
             <section class="container home-sections home-sections-swiper">
                 <div class="text-center">
                 <h1>Por que a TriboDev é a melhor escolha para sua carreira em tecnologia?</h1>
@@ -968,6 +968,25 @@
                     </div>
                 </div>
             </div>
+            </section>
+        </div>
+
+        <div class="container subscribes-container">
+            <section class="container home-sections home-sections-swiper">
+                <div class="text-center">
+                    <h1>TriboDEV para Empresas</h1>
+                </div>
+                <div class="row mt-30">
+                    <div class="col-md-6">
+                        <h2 class="mb-20">Talentos de ponta para impulsionar seus resultados</h2>
+                        <p class="mb-20">Transforme sua equipe de tecnologia com os melhores talentos da TriboDev.</p>
+                        <p class="mb-20">Entre em contato agora e tenha acesso a planos personalizados para empresas de todos os tamanhos!</p>
+                        <button type="button" class="btn btn-primary btn-block mt-50">Saber Mais</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/store/1/default_images/home_sections_banners/forbusines.png">
+                    </div>
+                </div>
             </section>
         </div>
 @endsection

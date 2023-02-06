@@ -17560,7 +17560,6 @@ p {
 
 .stats-container {
     position: relative;
-    top: -100px;
     z-index: 8
 }
 
@@ -17638,7 +17637,7 @@ p {
     transform: translateY(50%) !important
 }
 
-.stats-container h1{
+.stats-container h1 {
     font-size: 48px;
 }
 
@@ -17802,7 +17801,7 @@ p {
 }
 
 .home-sections {
-    margin-top: 80px
+    margin-top: 150px
 }
 
 .home-sections.home-sections-swiper {
