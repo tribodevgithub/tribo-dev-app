@@ -2717,9 +2717,9 @@ a.badge-gray200:focus {
 }
 
 .nav-tabs .nav-link {
-    border: 1px solid transparent;
+    /* border: 1px solid transparent;
     border-top-left-radius: .3125rem;
-    border-top-right-radius: .3125rem
+    border-top-right-radius: .3125rem */
 }
 
 .nav-tabs .nav-link:focus,

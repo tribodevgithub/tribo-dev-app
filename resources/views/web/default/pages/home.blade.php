@@ -521,7 +521,7 @@
 
                 <section class="container home-sections home-sections-swiper">
                     <div class="text-center">
-                        <h1 class="section-title">Escolha a jornada certa para sua carreira em tecnologia</h1>
+                        <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
                     </div>
 
                     <div class="row">
