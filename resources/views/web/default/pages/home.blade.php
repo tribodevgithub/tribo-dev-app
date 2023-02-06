@@ -667,7 +667,7 @@
         @endif
 
         @if($homeSection->name == \App\Models\HomeSection::$become_instructor and !empty($becomeInstructorSection))
-            <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
+            <section class="home-sections home-sections-swiper container find-instructor-section position-relative" hidden>
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="">
@@ -709,7 +709,7 @@
         @endif
 
         @if($homeSection->name == \App\Models\HomeSection::$forum_section and !empty($forumSection))
-            <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
+            <section class="home-sections home-sections-swiper container find-instructor-section position-relative" hidden>
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6 mt-20 mt-lg-0">
                         <div class="position-relative ">
