@@ -22012,7 +22012,6 @@ p {
 /* Tabs*/
 
 #tabs {
-    background: #007b5e;
     color: #eee;
 }
 
@@ -22024,7 +22023,7 @@ p {
 .nav-tabs .nav-link.active {
     color: #f3f3f3;
     background-color: transparent;
-    border-color: transparent transparent #f3f3f3;
+    border-color: transparent transparent var(--primary);
     border-bottom: 4px solid !important;
     font-size: 20px;
     font-weight: bold;
