@@ -584,19 +584,8 @@
             </div>
         @endif
 
-
-
-    <div class="stats-container_">
-        <div class="container">
-            <div class="text-center">
-                <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
-            </div>
-
-        </div>
-    </div>
-
         @if($homeSection->name == \App\Models\HomeSection::$find_instructors and !empty($findInstructorSection))
-            <section class="home-sections home-sections-swiper container find-instructor-section position-relative">
+            <section class="home-sections home-sections-swiper container find-instructor-section position-relative" hidden>
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-6">
                         <div class="">
@@ -921,7 +910,7 @@
     <div class="container subscribes-container">
             <section class="container home-sections home-sections-swiper">
                 <div class="text-center">
-                <h1>Escolha a jornada certa para sua carreira em tecnologia123</h1>
+                <h1>Por que a TriboDev é a melhor escolha para sua carreira em tecnologia?</h1>
                 </div>
                 <div class="row">
                 <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
@@ -948,7 +937,7 @@
                             <img src="/assets/default/img/stats/teacher.svg" alt=""/>
                         </div>
                         <h4 class="stat-title">Construa o seu portfólio</h4>
-                        <p class="stat-desc mt-10">A TriboDev oferece a oportunidade de construir o seu portfólio com projetos reais de programação remunerados.</p>
+                        <p class="stat-desc mt-10">A TriboDev oferece a oportunidade de construir o seu portfólio com projetos reais de programação.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
@@ -957,7 +946,7 @@
                             <img src="/assets/default/img/stats/teacher.svg" alt=""/>
                         </div>
                         <h4 class="stat-title">Formação completa</h4>
-                        <p class="stat-desc mt-10">você terá acesso a formação ministrada por profissionais da área, garantindo um aprendizado ainda mais completo e atualizado.</p>
+                        <p class="stat-desc mt-10">Você terá acesso a formação ministrada por profissionais da área, garantindo um aprendizado ainda mais completo e atualizado.</p>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
