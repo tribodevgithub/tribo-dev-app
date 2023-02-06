@@ -500,7 +500,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                                            <div class="row">
+                                            <div class="row mt-30">
                                                 <div class="col-md-6">
                                                     <h2 class="mb-20">Eleve suas habilidades de programação para o próximo nível</h2>
                                                     <p class="mb-20">Além de ter acesso a todos os recursos do plano grátis, você terá acesso a cursos avançados e desafiantes que o ajudarão a se destacar no mercado.</p>
@@ -977,13 +977,13 @@
                     <h1>TriboDEV para Empresas</h1>
                 </div>
                 <div class="row mt-30">
-                    <div class="col-md-6">
-                        <h2 class="mb-20">Talentos de ponta para impulsionar seus resultados</h2>
+                    <div class="col-md-9">
+                        <h2 class="mb-20 mt-30">Talentos de ponta para impulsionar seus resultados</h2>
                         <p class="mb-20">Transforme sua equipe de tecnologia com os melhores talentos da TriboDev.</p>
-                        <p class="mb-20">Entre em contato agora e tenha acesso a planos personalizados para empresas de todos os tamanhos!</p>
+                        <p class="mb-50">Entre em contato agora e tenha acesso a planos personalizados para empresas de todos os tamanhos!</p>
                         <button type="button" class="btn btn-primary btn-block mt-50">Saber Mais</button>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-3">
                         <img src="/store/1/default_images/home_sections_banners/forbusines.png">
                     </div>
                 </div>

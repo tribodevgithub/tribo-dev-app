@@ -147,7 +147,6 @@ Route::group(['namespace' => 'Web', 'middleware' => ['check_mobile_app', 'impers
             Route::get('/packages', 'BecomeInstructorController@packages')->name('becomeInstructorPackages');
             Route::post('/', 'BecomeInstructorController@store');
         });
-
     });
 
     Route::group(['prefix' => 'meetings'], function () {
@@ -202,6 +201,10 @@ Route::group(['namespace' => 'Web', 'middleware' => ['check_mobile_app', 'impers
 
     Route::group(['prefix' => 'organizations'], function () {
         Route::get('/', 'UserController@organizations');
+    });
+
+    Route::group(['prefix' => 'tribovip'], function () {
+        Route::get('/tribovip', 'UserController@viPlan');
     });
 
     Route::group(['prefix' => 'load_more'], function () {
@@ -305,4 +308,3 @@ Route::group(['namespace' => 'Web', 'middleware' => ['check_mobile_app', 'impers
         Route::post('/customize', 'CookieSecurityController@setCustomize');
     });
 });
-

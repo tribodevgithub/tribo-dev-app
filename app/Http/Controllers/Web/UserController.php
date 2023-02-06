@@ -269,6 +269,18 @@ class UserController extends Controller
         return view('web.default.pages.instructors', $data);
     }
 
+    public function viPlan()
+    {
+        $pageDescription = "Eleve suas habilidades de programação para o próximo nível com o nosso plano VIP na Tribodev";
+
+        $data['title'] = "Tribo Vip";
+        $data['page'] = 'tribovip';
+        $data['pageTitle'] = $data['title'];
+        $data['pageDescription'] = $pageDescription;
+
+        return view('web.default.pages.tribovip', $data);
+    }
+
     public function organizations(Request $request)
     {
         $seoSettings = getSeoMetas('organizations');
