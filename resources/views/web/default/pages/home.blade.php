@@ -584,12 +584,75 @@
             </div>
         @endif
 
+        <div class="container">
+            <section class="container home-sections home-sections-swiper">
+                <div class="text-center">
+                <h1>Escolha a jornada certa para sua carreira em tecnologia123</h1>
+            </div>
+            </section>
+        </div>
+
     <div class="stats-container_">
         <div class="container">
             <div class="text-center">
                 <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
             </div>
-
+            <div class="row">
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Comunidade Experiente</h4>
+                        <p class="stat-desc mt-10">Tenha acesso a uma comunidade de desenvolvedores experientes que compartilham conhecimentos, dicas e suporte.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Prove suas habilidades</h4>
+                        <p class="stat-desc mt-10">Mostre suas habilidades e tenha a oportunidade de receber projetos remunerados de programação</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Construa o seu portfólio</h4>
+                        <p class="stat-desc mt-10">A TriboDev oferece a oportunidade de construir o seu portfólio com projetos reais de programação remunerados.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Formação completa</h4>
+                        <p class="stat-desc mt-10">você terá acesso a formação ministrada por profissionais da área, garantindo um aprendizado ainda mais completo e atualizado.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Acesso a projetos reais</h4>
+                        <p class="stat-desc mt-10">Tenha acesso a projetos reais e terá a oportunidade de colocar em prática o que aprendeu.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
+                    <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
+                        <div class="stat-icon-box teacher">
+                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                        </div>
+                        <h4 class="stat-title">Ensino democrático</h4>
+                        <p class="stat-desc mt-10">Conteúdos de formação independentemente do nível de conhecimento, para que todos possam evoluir juntos.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
