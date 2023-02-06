@@ -17865,6 +17865,11 @@ p {
     font-size: 32px;
 }
 
+.subscribes-container img {
+    width: 100%;
+
+}
+
 @media (min-width:767px) and (max-width:991px) {
     .subscribes-container .left-gradient-box {
         width: 80px;
@@ -17880,6 +17885,10 @@ p {
 
     .subscribes-container h1 {
         font-size: 24px;
+    }
+
+    .subscribes-container h2 {
+        font-size: 20px;
     }
 }
 
