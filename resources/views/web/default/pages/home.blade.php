@@ -567,7 +567,7 @@
                             </div>
 
                         </div>
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center" hidden>
                             <div class="swiper-pagination subscribes-swiper-pagination"></div>
                         </div>
 
@@ -584,7 +584,7 @@
             </div>
         @endif
 
-    <div class="stats-container">
+    <div class="stats-container_">
         <div class="container">
             <div class="text-center">
                 <h1>Escolha a jornada certa para sua carreira em tecnologia</h1>
