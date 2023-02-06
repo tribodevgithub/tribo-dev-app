@@ -17857,8 +17857,12 @@ p {
     transform: rotate(45deg)
 }
 
-.subscribes-container h1{
+.subscribes-container h1 {
     font-size: 48px;
+}
+
+.subscribes-container h2 {
+    font-size: 32px;
 }
 
 @media (min-width:767px) and (max-width:991px) {
@@ -17873,6 +17877,7 @@ p {
         width: 40px;
         height: 40px
     }
+
     .subscribes-container h1 {
         font-size: 24px;
     }
@@ -22039,4 +22044,8 @@ p {
 #tabs .nav-tabs .nav-link {
     color: #eee;
     font-size: 20px;
+}
+
+.tab-pane {
+    padding: 3px;
 }

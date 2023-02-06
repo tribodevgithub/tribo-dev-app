@@ -537,9 +537,9 @@
                                         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <h3>Dê os primeiros passos em sua jornada como programador gratuitamente</h3>
-                                                    <p>Cadastre-se gratuitamente e você fará parte de uma das comunidades mais ativa de desenvolvedores em todo o mundo, terá acesso a uma ampla seleção de cursos, participará de lives com especialistas da área muitos mais.  </p>
-                                                    <p>Não perca a chance de aprender e crescer com a Tribodev, inscreva-se agora e comece a desenvolver suas habilidades!</p>
+                                                    <h2 class="mb-20">Dê os primeiros passos em sua jornada como programador gratuitamente</h2>
+                                                    <p class="mb-20">Cadastre-se gratuitamente e você fará parte de uma das comunidades mais ativa de desenvolvedores em todo o mundo, terá acesso a uma ampla seleção de cursos, participará de lives com especialistas da área muitos mais.  </p>
+                                                    <p class="mb-20">Não perca a chance de aprender e crescer com a Tribodev, inscreva-se agora e comece a desenvolver suas habilidades!</p>
                                                     <button type="button" class="btn btn-primary btn-block mt-50">Criar Conta</button>
                                                 </div>
                                                 <div class="col-md-6">
@@ -550,10 +550,10 @@
                                         <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <h3>Eleve suas habilidades de programação para o próximo nível</h3>
-                                                    <p>Além de ter acesso a todos os recursos do plano grátis, você terá acesso a cursos avançados e desafiantes que o ajudarão a se destacar no mercado.</p>
-                                                    <p>Mostre suas habilidades ao competir com outros programadores em desafios exclusivos e tenha a chance de ganhar trabalhos remunerados</p>
-                                                    <p>Junte-se à elite da programação com o nosso plano VIP e alcance seu potencial máximo na Tribodev.</p>
+                                                    <h2 class="mb-20">Eleve suas habilidades de programação para o próximo nível</h2>
+                                                    <p class="mb-20">Além de ter acesso a todos os recursos do plano grátis, você terá acesso a cursos avançados e desafiantes que o ajudarão a se destacar no mercado.</p>
+                                                    <p class="mb-20">Mostre suas habilidades ao competir com outros programadores em desafios exclusivos e tenha a chance de ganhar trabalhos remunerados</p>
+                                                    <p class="mb-20">Junte-se à elite da programação com o nosso plano VIP e alcance seu potencial máximo na Tribodev.</p>
                                                     <button type="button" class="btn btn-primary btn-block mt-50">Saber Mais!</button>
                                                 </div>
                                                 <div class="col-md-6">
