@@ -269,6 +269,18 @@ class UserController extends Controller
         return view('web.default.pages.instructors', $data);
     }
 
+    public function forBusines()
+    {
+        $pageDescription = "Otimize seu processo de desenvolvimento. Contrate uma equipe de desenvolvedores Tribodev";
+
+        $data['title'] = "Para Empresas";
+        $data['page'] = 'forBusines';
+        $data['pageTitle'] = $data['title'];
+        $data['pageDescription'] = $pageDescription;
+
+        return view('web.default.pages.empresas', $data);
+    }
+
     public function vipPlan()
     {
         $pageDescription = "Eleve suas habilidades de programação para o próximo nível com o nosso plano VIP na Tribodev";
