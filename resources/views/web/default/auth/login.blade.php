@@ -48,7 +48,7 @@
                     </form>
 
                     <div class="text-center mt-20">
-                        <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
+                        <span class="badge badge-circle-gray300 text-primary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
                     </div>
 
                     <a href="/google" target="_blank" class="social-login mt-20 p-10 text-center d-flex align-items-center justify-content-center">
@@ -67,7 +67,7 @@
 
                     <div class="mt-20 text-center">
                         <span>{{ trans('auth.dont_have_account') }}</span>
-                        <a href="/register" class="text-secondary font-weight-bold">{{ trans('auth.signup') }}</a>
+                        <a href="/register" class="text-primary font-weight-bold">{{ trans('auth.signup') }}</a>
                     </div>
                 </div>
             </div>
