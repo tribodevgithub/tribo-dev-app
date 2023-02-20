@@ -104,7 +104,7 @@
                                 <a class="nav-link" href="/tribovip">Assine</a>
                     </li>
                     <li class="nav-item">
-                                <a class="nav-link" href="/atribodev">A TriboDev</a>
+                                <a class="nav-link" href="/pages/about">A TriboDev</a>
                     </li>
                     <li class="nav-item">
                                 <a class="nav-link" href="/empresas">Para Empresas</a>
