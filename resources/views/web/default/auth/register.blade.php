@@ -121,7 +121,7 @@
                         <div class="custom-control custom-checkbox">
                             <input type="checkbox" name="term" value="1" {{ (!empty(old('term')) and old('term') == '1') ? 'checked' : '' }} class="custom-control-input @error('term') is-invalid @enderror" id="term">
                             <label class="custom-control-label font-14" for="term">{{ trans('auth.i_agree_with') }}
-                                <a href="pages/terms" target="_blank" class="text-secondary font-weight-bold font-14">{{ trans('auth.terms_and_rules') }}</a>
+                                <a href="pages/terms" target="_blank" class="text-primary font-weight-bold font-14">{{ trans('auth.terms_and_rules') }}</a>
                             </label>
 
                             @error('term')
@@ -140,9 +140,9 @@
                     </form>
 
                     <div class="text-center mt-20">
-                        <span class="text-secondary">
+                        <span class="text-primary">
                             {{ trans('auth.already_have_an_account') }}
-                            <a href="/login" class="text-secondary font-weight-bold">{{ trans('auth.login') }}</a>
+                            <a href="/login" class="text-primary font-weight-bold">{{ trans('auth.login') }}</a>
                         </span>
                     </div>
 
