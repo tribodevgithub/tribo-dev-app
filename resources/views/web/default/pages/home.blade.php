@@ -961,9 +961,9 @@
                 <div class="col-sm-6 col-lg-4 mt-25 mt-lg-0">
                     <div class="stats-item d-flex flex-column align-items-center text-center py-30 px-5 w-100">
                         <div class="stat-icon-box teacher">
-                            <img src="/assets/default/img/stats/teacher.svg" alt=""/>
+                            <img src="/assets/default/img/stats/Ensino_democratico.png" alt=""/>
                         </div>
-                        <h4 class="stat-title">Ensino_democratico</h4>
+                        <h4 class="stat-title">Ensino democrático</h4>
                         <p class="stat-desc mt-10">Conteúdos de formação independentemente do nível de conhecimento, para que todos possam evoluir juntos.</p>
                     </div>
                 </div>
