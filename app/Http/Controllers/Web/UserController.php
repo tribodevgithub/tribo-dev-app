@@ -278,7 +278,7 @@ class UserController extends Controller
         $data['pageTitle'] = $data['title'];
         $data['pageDescription'] = $pageDescription;
 
-        return view('web.default.pages.empresas', $data);
+        return view('web.default.pages.for_busines', $data);
     }
 
     public function vipPlan()
