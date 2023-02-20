@@ -15,7 +15,7 @@
         if (!empty($navbarButton)) {
             //$navBtnUrl = $navbarButton->url;
             //$navBtnText = $navbarButton->title;
-            $navBtnText = 'Assine <br>Tribo Vip!';
+            $navBtnText = 'Assine Tribo Vip!';
         }
     }
 @endphp
@@ -116,11 +116,11 @@
 
                 @if(!empty($navBtnUrl))
                     <a href="{{ $navBtnUrl }}" class="d-none d-lg-flex btn btn-sm btn-primary nav-start-a-live-btn">
-                        {{ $navBtnText }}
+                        Assine <br>Tribo Vip!
                     </a>
 
                     <a href="{{ $navBtnUrl }}" class="d-flex d-lg-none text-primary nav-start-a-live-btn font-weight-500 text-center">
-                        {{ $navBtnText }}
+                        Assine <br>Tribo Vip!
                     </a>
                 @endif
 

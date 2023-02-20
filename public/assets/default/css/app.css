@@ -17138,7 +17138,7 @@ p {
         height: 100%;
         z-index: 501;
         display: block !important;
-        background-color: #fff;
+        background-color: #262626;
         transition: top .4s cubic-bezier(.43, .83, .54, 1.02), opacity .4s linear;
         border-radius: 0;
         padding: 20px
@@ -17154,7 +17154,8 @@ p {
     }
 
     .navbar .navbar-nav>li .nav-link {
-        text-align: left
+        text-align: left;
+        font-size: 24px !important;
     }
 
     .rtl .navbar .navbar-nav>li .nav-link {
