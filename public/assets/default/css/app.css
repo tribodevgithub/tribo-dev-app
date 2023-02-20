@@ -22067,3 +22067,7 @@ p {
 .tab-pane {
     padding: 3px;
 }
+
+.tab-pane img {
+    width: 100%;
+}
