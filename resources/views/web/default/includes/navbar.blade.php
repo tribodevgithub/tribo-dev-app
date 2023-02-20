@@ -101,13 +101,13 @@
                                 <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                                <a class="nav-link" href="/">Assine</a>
+                                <a class="nav-link" href="/tribovip">Assine</a>
                     </li>
                     <li class="nav-item">
-                                <a class="nav-link" href="/">A TriboDev</a>
+                                <a class="nav-link" href="/atribodev">A TriboDev</a>
                     </li>
                     <li class="nav-item">
-                                <a class="nav-link" href="/">Para Empresas</a>
+                                <a class="nav-link" href="/empresas">Para Empresas</a>
                     </li>
                 </ul>
             </div>
