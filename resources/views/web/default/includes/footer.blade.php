@@ -34,7 +34,7 @@
                 </div> --}}
 
                 <div class=" footer-register d-block d-md-flex align-items-center justify-content-between text-center" >
-                    <div class="flex-grow-1 ml-4 text-center">
+                    <div class="flex-grow-1 text-center">
                         <strong>Junte-se agora à nossa tribo</strong>
                     </div>
                     <button type="submit" class="btn btn-primary bg-light  text-dark rounded-pill"><b>Criar Conta</b></button>
