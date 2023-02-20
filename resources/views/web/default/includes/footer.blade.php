@@ -53,7 +53,7 @@
             <div class="col-lg-12">
                 <div class="footer-logo text-center">
                 <div class="row justify-content-center ">
-                    <div class="col-2">
+                    <div class="col-sm-2 col-sm-4">
                         <a href="/">
                             @if(!empty($generalSettings['footer_logo']))
                                 <img src="{{ $generalSettings['footer_logo'] }}" class="img-cover" alt="footer logo" width="200">

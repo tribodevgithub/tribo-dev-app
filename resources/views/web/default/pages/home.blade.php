@@ -975,7 +975,7 @@
                 <div class="row mt-30">
                     <div class="col-md-9  text-center">
                         <h2 class="mb-20 mt-30">Talentos de ponta para impulsionar seus resultados</h2>
-                        <p class="mb-20">Transforme sua equipe de tecnologia com os melhores talentos da TriboDev.</p>
+                        <p>Transforme sua equipe de tecnologia com os melhores talentos da TriboDev.</p>
                         <p class="mb-50">Entre em contato agora e tenha acesso a planos personalizados para empresas de todos os tamanhos!</p>
                         <img width="200" class="d-lg-none" src="/store/1/default_images/home_sections_banners/forbusines.png">
                         <button type="button" class="btn btn-primary btn-block mt-50">Saber Mais</button>
