@@ -17873,8 +17873,9 @@ p {
 }
 
 .subscribes-container img {
-    width: 100%;
+    width: 40%;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 @media (min-width:767px) and (max-width:991px) {
