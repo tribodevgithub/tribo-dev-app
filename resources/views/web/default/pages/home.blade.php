@@ -35,7 +35,7 @@
                         <div class="col-12 col-md-7 col-lg-6">
                             <h1 class="text-primary font-weight-bold">{{ $heroSectionData['title'] }}</h1>
                             <p class="slide-hint mt-20 mb-40">{!! nl2br($heroSectionData['description']) !!}</p>
-                            <a href="" class="btn btn-primary rounded-pill">Garanta sua Vaga!</a>
+                            <a href="https://tribodev.com.br/lp/" class="btn btn-primary rounded-pill">Garanta sua Vaga!</a>
                             {{-- <form action="/search" method="get" class="d-inline-flex mt-30 mt-lg-30 w-100">
                                 <div class="form-group d-flex align-items-center m-0 slider-search p-10 bg-white w-100">
                                     <input type="text" name="search" class="form-control border-0 mr-lg-50" placeholder="{{ trans('home.slider_search_placeholder') }}"/>
@@ -490,7 +490,7 @@
                                                     <h2 class="mb-20">Dê os primeiros passos gratuitamente em sua jornada como programador </h2>
                                                     <p class="mb-20">Cadastre-se gratuitamente e você fará parte de uma das comunidades mais ativa de desenvolvedores em todo o mundo, terá acesso a uma ampla seleção de cursos, participará de lives com especialistas da área muitos mais.  </p>
                                                     <p class="mb-20">Não perca a chance de aprender e crescer com a Tribodev, inscreva-se agora e comece a desenvolver suas habilidades!</p>
-                                                    <button type="button" class="btn btn-primary btn-block mt-50">Criar Conta</button>
+                                                    <a href="/register" type="button" class="btn btn-primary btn-block mt-50">Criar Conta</a>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <img src="/store/1/default_images/home_sections_banners/banner.png">
@@ -504,7 +504,7 @@
                                                     <p class="mb-20">Além de ter acesso a todos os recursos do plano grátis, você terá acesso a cursos avançados e desafiantes que o ajudarão a se destacar no mercado.</p>
                                                     <p class="mb-20">Mostre suas habilidades ao competir com outros programadores em desafios exclusivos e tenha a chance de ganhar trabalhos remunerados</p>
                                                     <p class="mb-20">Junte-se à elite da programação com o nosso plano VIP e alcance seu potencial máximo na Tribodev.</p>
-                                                    <button type="button" class="btn btn-primary btn-block mt-50">Saber Mais!</button>
+                                                    <a href="/tribovip" type="button" class="btn btn-primary btn-block mt-50">Saber Mais!</a>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <img src="/store/1/default_images/home_sections_banners/banner2.png">
