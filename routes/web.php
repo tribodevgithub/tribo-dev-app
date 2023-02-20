@@ -207,6 +207,10 @@ Route::group(['namespace' => 'Web', 'middleware' => ['check_mobile_app', 'impers
         Route::get('/', 'UserController@vipPlan');
     });
 
+    Route::group(['prefix' => 'empresas'], function () {
+        Route::get('/', 'UserController@paraEmpresas');
+    });
+
     Route::group(['prefix' => 'load_more'], function () {
         Route::get('/{role}', 'UserController@handleInstructorsOrOrganizationsPage');
     });
