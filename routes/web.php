@@ -208,7 +208,7 @@ Route::group(['namespace' => 'Web', 'middleware' => ['check_mobile_app', 'impers
     });
 
     Route::group(['prefix' => 'empresas'], function () {
-        Route::get('/', 'UserController@paraEmpresas');
+        Route::get('/', 'UserController@forBusines');
     });
 
     Route::group(['prefix' => 'load_more'], function () {
