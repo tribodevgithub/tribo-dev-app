@@ -7,7 +7,7 @@
             @endif
         </a>
 
-        <div class="top-contact-box border-bottom d-flex flex-column flex-md-row align-items-center justify-content-center">
+        <div class="d-none top-contact-box border-bottom d-flex flex-column flex-md-row align-items-center justify-content-center">
             <div class="d-flex align-items-center justify-content-center">
                 @if(!empty($generalSettings['site_phone']))
                     <span class="d-flex align-items-center py-10 py-lg-0 text-dark-blue font-14">
