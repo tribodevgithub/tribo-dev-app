@@ -47,7 +47,7 @@
                         <button type="submit" class="btn btn-primary btn-block mt-20">{{ trans('auth.login') }}</button>
                     </form>
 
-                    <div class="text-center mt-20">
+                    <div hidden class="text-center mt-20">
                         <span class="badge badge-circle-gray300 text-primary d-inline-flex align-items-center justify-content-center">{{ trans('auth.or') }}</span>
                     </div>
 
