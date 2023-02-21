@@ -16602,7 +16602,7 @@ p {
 }
 
 .no-result.default-no-result .no-result-logo {
-    background-image: linear-gradient(180deg, #dbffe8, var(--primary))
+    background-image: var(--primary)
 }
 
 @media (max-width:767px) {
