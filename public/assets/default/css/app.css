@@ -17410,6 +17410,11 @@ p {
     .login-container {
         margin: 60px 0 70px
     }
+
+    .login-container img {
+        margin-top: 120px
+    }
+
 }
 
 .login-card {
