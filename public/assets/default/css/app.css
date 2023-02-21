@@ -17399,7 +17399,8 @@ p {
 .login-container {
     margin: 120px 0 70px;
     border-radius: 15px;
-    border: 1px solid #ececec
+    border: 1px solid;
+    border-color: var(--primary-border);
 }
 
 .login-container img {
