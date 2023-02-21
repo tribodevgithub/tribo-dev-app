@@ -17407,6 +17407,10 @@ p {
     margin-top: 120px;
 }
 
+.login-card {
+    padding: 75px 45px
+}
+
 @media (max-width:991px) {
     .login-container {
         margin: 60px 0 70px
@@ -17422,9 +17426,7 @@ p {
 
 }
 
-.login-card {
-    padding: 75px 45px
-}
+
 
 .social-login {
     border-radius: 8px;
