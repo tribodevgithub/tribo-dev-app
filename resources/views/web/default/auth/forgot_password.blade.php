@@ -29,7 +29,7 @@
                     </form>
 
                     <div class="text-center mt-20">
-                        <span class="badge badge-circle-gray300 text-primary d-inline-flex align-items-center justify-content-center">or</span>
+                        <span class="badge badge-circle-gray300 text-primary d-inline-flex align-items-center justify-content-center">Ou</span>
                     </div>
 
                     <div class="text-center mt-20">
