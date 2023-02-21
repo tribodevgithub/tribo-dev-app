@@ -29,12 +29,12 @@
                     </form>
 
                     <div class="text-center mt-20">
-                        <span class="badge badge-circle-gray300 text-secondary d-inline-flex align-items-center justify-content-center">or</span>
+                        <span class="badge badge-circle-gray300 text-primary d-inline-flex align-items-center justify-content-center">or</span>
                     </div>
 
                     <div class="text-center mt-20">
-                        <span class="text-secondary">
-                            <a href="/login" class="text-secondary font-weight-bold">{{ trans('auth.login') }}</a>
+                        <span class="text-primary">
+                            <a href="/login" class="text-primary font-weight-bold">{{ trans('auth.login') }}</a>
                         </span>
                     </div>
 
