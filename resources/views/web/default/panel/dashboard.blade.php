@@ -28,6 +28,12 @@
             </div>
         @endif
 
+        <div class="row" style="
+    margin-bottom: -100px;
+">
+            <div class="col-12 col-lg-3 mt-35"><a href="panel/financial/subscribes" type="button" class="btn btn-primary btn-block mt-50">Assine Tribo Vip!</a>
+
+        </div></div>
         <div class="bg-dark dashboard-banner-container position-relative px-15 px-ld-35 py-10 panel-shadow rounded-sm">
             <h2 class="font-30 text-primary line-height-1">
                 <span class="d-block">{{ trans('panel.hi') }} {{ $authUser->full_name }},</span>
