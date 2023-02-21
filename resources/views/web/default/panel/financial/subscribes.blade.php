@@ -18,7 +18,7 @@
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img src="/assets/default/img/activity/53.svg" width="64" height="64" alt="">
-                            <strong class="font-30 text-dark-blue font-weight-bold mt-5">
+                            <strong class="font-30 text-primary font-weight-bold mt-5">
                                 @if($activeSubscribe->infinite_use)
                                     {{ trans('update.unlimited') }}
                                 @else
@@ -32,7 +32,7 @@
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
                             <img src="/assets/default/img/activity/54.svg" width="64" height="64" alt="">
-                            <strong class="font-30 text-dark-blue text-dark-blue font-weight-bold mt-5">{{ $activeSubscribe->days - $dayOfUse }}</strong>
+                            <strong class="font-30 text-primary font-weight-bold mt-5">{{ $activeSubscribe->days - $dayOfUse }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('financial.days_remained') }}</span>
                         </div>
                     </div>
