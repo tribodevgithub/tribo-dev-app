@@ -9,7 +9,6 @@
                 <div class="row">
                     <div class="col-4 d-flex align-items-center justify-content-center">
                         <div class="d-flex flex-column align-items-center text-center">
-                            <img src="/assets/default/img/activity/webinars.svg" width="64" height="64" alt="">
                             <strong class="font-30 font-weight-bold mt-5">{{ $activeSubscribe->title }}</strong>
                             <span class="font-16 text-gray font-weight-500">{{ trans('financial.active_plan') }}</span>
                         </div>
