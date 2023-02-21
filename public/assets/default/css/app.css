@@ -17403,7 +17403,9 @@ p {
 }
 
 .login-container img {
-    border-radius: 10px 0 0 10px
+    border-radius: 10px 0 0 10px;
+    margin-top: 120px;
+}
 }
 
 @media (max-width:991px) {
@@ -17412,7 +17414,7 @@ p {
     }
 
     .login-container img {
-        margin-top: 120px
+        margin-top: 50px
     }
 
 }
