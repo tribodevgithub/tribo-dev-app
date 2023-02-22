@@ -71,7 +71,7 @@ return [
     'my_comments_no_result' => 'Você não criou nenhum comentário!',
     'my_comments_no_result_hint' => "Seus comentários ajudarão a melhorar a qualidade da comunidade...",
 
-    'my_purchases' => 'Minhas compras',
+    'my_purchases' => 'Meus Cursos',
     'no_result_purchases' => 'Nenhum cursor comprado!',
     'no_result_purchases_hint' => 'Comece a aprender com os melhores instrutores e aproveite...',
     'purchase_date' => 'Data de compra',
