@@ -225,7 +225,7 @@
                         @endif
 
                         <div class="mt-35">
-                            <strong class="d-block text-secondary font-weight-bold">{{ trans('webinars.this_webinar_includes',['classes' => trans('webinars.'.$course->type)]) }}</strong>
+                            <strong class="d-block text-light font-weight-bold">{{ trans('webinars.this_webinar_includes',['classes' => trans('webinars.'.$course->type)]) }}</strong>
                             @if($course->isDownloadable())
                                 <div class="mt-20 d-flex align-items-center text-gray">
                                     <i data-feather="download-cloud" width="20" height="20"></i>
@@ -302,7 +302,7 @@
                 @endif
 
                 <div class="rounded-lg shadow-sm mt-35 px-25 py-20">
-                    <h3 class="sidebar-title font-16 text-secondary font-weight-bold">{{ trans('webinars.'.$course->type) .' '. trans('webinars.specifications') }}</h3>
+                    <h3 class="sidebar-title font-16 text-light font-weight-bold">{{ trans('webinars.'.$course->type) .' '. trans('webinars.specifications') }}</h3>
 
                     <div class="mt-30">
                         @if($course->isWebinar())
@@ -396,7 +396,7 @@
                 {{-- tags --}}
                 @if($course->tags->count() > 0)
                     <div class="rounded-lg tags-card shadow-sm mt-35 px-25 py-20">
-                        <h3 class="sidebar-title font-16 text-secondary font-weight-bold">{{ trans('public.tags') }}</h3>
+                        <h3 class="sidebar-title font-16 text-light font-weight-bold">{{ trans('public.tags') }}</h3>
 
                         <div class="d-flex flex-wrap mt-10">
                             @foreach($course->tags as $tag)
