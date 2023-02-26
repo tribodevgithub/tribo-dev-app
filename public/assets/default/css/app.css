@@ -19368,6 +19368,10 @@ p {
     padding-top: 15px
 }
 
+.course-content-sidebar-card {
+    background-color: #262626;
+}
+
 .course-content-sidebar .course-img {
     position: relative;
     height: 250px

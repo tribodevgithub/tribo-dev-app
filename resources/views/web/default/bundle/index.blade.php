@@ -77,7 +77,7 @@
             </div>
 
             <div class="course-content-sidebar col-12 col-lg-4 mt-25 mt-lg-0">
-                <div class="rounded-lg shadow-sm">
+                <div class="rounded-lg shadow-sm course-content-sidebar-card course-content-sidebar-card">
                     <div class="course-img {{ $bundle->video_demo ? 'has-video' :'' }}">
 
                         <img src="{{ $bundle->getImage() }}" class="img-cover" alt="">
@@ -214,7 +214,7 @@
                 </div>
 
                 @if($bundle->teacher->offline)
-                    <div class="rounded-lg shadow-sm mt-35 d-flex">
+                    <div class="rounded-lg shadow-sm course-content-sidebar-card mt-35 d-flex">
                         <div class="offline-icon offline-icon-left d-flex align-items-stretch">
                             <div class="d-flex align-items-center">
                                 <img src="/assets/default/img/profile/time-icon.png" alt="offline">
@@ -228,7 +228,7 @@
                     </div>
                 @endif
 
-                <div class="rounded-lg shadow-sm mt-35 px-25 py-20">
+                <div class="rounded-lg shadow-sm course-content-sidebar-card mt-35 px-25 py-20">
                     <h3 class="sidebar-title font-16 text-secondary font-weight-bold">{{ trans('update.bundle_specifications') }}</h3>
 
                     <div class="mt-30">

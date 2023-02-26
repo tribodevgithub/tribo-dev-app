@@ -70,17 +70,17 @@
                     <div class="mt-35">
                         <ul class="nav nav-tabs bg-secondary rounded-sm p-15 d-flex align-items-center justify-content-between" id="tabs-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="position-relative font-14 text-white {{ (empty(request()->get('tab','')) or request()->get('tab','') == 'information') ? 'active' : '' }}" id="information-tab"
+                                <a class="position-relative font-14 text-dark {{ (empty(request()->get('tab','')) or request()->get('tab','') == 'information') ? 'active' : '' }}" id="information-tab"
                                    data-toggle="tab" href="#information" role="tab" aria-controls="information"
                                    aria-selected="true">{{ trans('product.information') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="position-relative font-14 text-white {{ (request()->get('tab','') == 'content') ? 'active' : '' }}" id="content-tab" data-toggle="tab"
+                                <a class="position-relative font-14 text-dark {{ (request()->get('tab','') == 'content') ? 'active' : '' }}" id="content-tab" data-toggle="tab"
                                    href="#content" role="tab" aria-controls="content"
                                    aria-selected="false">{{ trans('product.content') }} ({{ $webinarContentCount }})</a>
                             </li>
                             <li class="nav-item">
-                                <a class="position-relative font-14 text-white {{ (request()->get('tab','') == 'reviews') ? 'active' : '' }}" id="reviews-tab" data-toggle="tab"
+                                <a class="position-relative font-14 text-dark {{ (request()->get('tab','') == 'reviews') ? 'active' : '' }}" id="reviews-tab" data-toggle="tab"
                                    href="#reviews" role="tab" aria-controls="reviews"
                                    aria-selected="false">{{ trans('product.reviews') }} ({{ $course->reviews->count() > 0 ? $course->reviews->pluck('creator_id')->count() : 0 }})</a>
                             </li>
@@ -104,7 +104,7 @@
             </div>
 
             <div class="course-content-sidebar col-12 col-lg-4 mt-25 mt-lg-0">
-                <div class="rounded-lg shadow-sm">
+                <div class="rounded-lg shadow-sm course-content-sidebar-card course-content-sidebar-card">
                     <div class="course-img {{ $course->video_demo ? 'has-video' :'' }}">
 
                         <img src="{{ $course->getImage() }}" class="img-cover" alt="">
@@ -287,7 +287,7 @@
                 </div>
 
                 @if($course->teacher->offline)
-                    <div class="rounded-lg shadow-sm mt-35 d-flex">
+                    <div class="rounded-lg shadow-sm course-content-sidebar-card mt-35 d-flex">
                         <div class="offline-icon offline-icon-left d-flex align-items-stretch">
                             <div class="d-flex align-items-center">
                                 <img src="/assets/default/img/profile/time-icon.png" alt="offline">
@@ -301,7 +301,7 @@
                     </div>
                 @endif
 
-                <div class="rounded-lg shadow-sm mt-35 px-25 py-20">
+                <div class="rounded-lg shadow-sm course-content-sidebar-card mt-35 px-25 py-20">
                     <h3 class="sidebar-title font-16 text-light font-weight-bold">{{ trans('webinars.'.$course->type) .' '. trans('webinars.specifications') }}</h3>
 
                     <div class="mt-30">
