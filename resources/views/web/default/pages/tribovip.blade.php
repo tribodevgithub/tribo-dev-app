@@ -9,7 +9,7 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-50">
                     <div class="default-title">
                         <h1>Transforme sua carreira - Aprenda programação com cursos avançados e projetos reais.</h1>
                         <p>O <b class="text-primary"></b>TriboVIP é a escolha perfeita para quem deseja iniciar ou progredir na carreira de programação. Com acesso a cursos avançados, projetos reais e mentorias semanais, você terá a garantia de que está sempre aprendendo e evoluindo. Não perca mais tempo e junte-se ao Tribo VIP agora mesmo para alcançar o sucesso em sua carreira de programação!</p>
