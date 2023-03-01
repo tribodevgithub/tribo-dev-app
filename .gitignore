@@ -5,3 +5,4 @@ package.json
 composer.json
 .env
 vendor
+public/store
