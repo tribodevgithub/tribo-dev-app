@@ -43,7 +43,7 @@
     </section>
     <section>
         <div class="container mt-50 mb-50 pt-50 pb-50">
-            <div class="row">
+            <div class="row">col-2
                 <div class="col-lg-4">
                     <h1>PARTICIPE DOS DESAFIOS PARA TRABALHOS REMUNERADOS</h1>
                     <p class="mt-30 mb-30 text-gray">
@@ -55,10 +55,10 @@
                     <div class="card mb-10">
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-2">
+                                <div class="col-3">
                                 <h1 class="font-48 text-primary font-weight-bolder"> 01</h1>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-9">
                                     <p class="text-gray">
                                     Escolha o desafio disponível de acordo com suas habilidades;
                                     </p>
@@ -69,10 +69,10 @@
                     <div class="card mb-10">
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-2">
+                                <div class="col-3">
                                 <h1 class="font-48 text-primary font-weight-bolder"> 02</h1>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-9">
                                     <p class="text-gray">
                                     Resolva o desafio em menor tempo possível
                                     </p>
@@ -83,10 +83,10 @@
                     <div class="card mb-10">
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-2">
+                                <div class="col-3">
                                 <h1 class="font-48 text-primary font-weight-bolder"> 03</h1>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-9">
                                     <p class="text-gray">
                                     Sua solução será avaliada por nossos gestores
                                     </p>
@@ -97,10 +97,10 @@
                     <div class="card mb-10">
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-2">
+                                <div class="col-3">
                                 <h1 class="font-48 text-primary font-weight-bolder"> 04</h1>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-9">
                                     <p class="text-gray">
                                     Se aprovada, você será encaminhado para a entrevista técnica
                                     </p>
@@ -111,10 +111,10 @@
                     <div class="card mb-10">
                         <div class="card-body">
                             <div class="row align-items-center">
-                                <div class="col-2">
+                                <div class="col-3">
                                 <h1 class="font-48 text-primary font-weight-bolder"> 05</h1>
                                 </div>
-                                <div class="col-10">
+                                <div class="col-9">
                                     <p class="text-gray">
                                     Com sucesso na entrevista, o job é seu!
                                     </p>
