@@ -43,7 +43,7 @@
     </section>
     <section>
         <div class="container mt-50 mb-50 pt-50 pb-50">
-            <div class="row">col-2
+            <div class="row">
                 <div class="col-lg-4">
                     <h1>PARTICIPE DOS DESAFIOS PARA TRABALHOS REMUNERADOS</h1>
                     <p class="mt-30 mb-30 text-gray">
