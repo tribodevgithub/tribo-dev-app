@@ -41,6 +41,40 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container mt-50 mb-50 pt-50 pb-50">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1>PARTICIPE DOS DESAFIOS PARA TRABALHOS REMUNERADOS</h1>
+                    <p class="mt-30 mb-30 text-gray">
+                        A TriboDev também é uma softhouse, ou seja, que se dedica ao desenvolvimento de soluções tecnológicas e à alocação de recursos para empresas. Nossos profissionais, que antes foram nossos alunos, são altamente preparados para entregar resultados de qualidade para nossos clientes, o que nos torna muito requisitados.
+                        Ao se tornar um membro da nossa comunidade VIP, você terá acesso a desafios que lhe proporcionarão novas oportunidades de contratação.
+                    </p>
+                </div>
+                <div class="col-lg-4 border-right">
+                    <div class="card">
+                        <div class="card-body mt-10 mb-10">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                <h1 class="font-52 text-primary font-weight-bolder"> 01</h1>
+                                </div>
+                                <div class="col-10">
+                                    <p class="text-gray font-20">
+                                    Escolha o desafio disponível de acordo com suas habilidades;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mt-30 mb-30 text-gray">
+                        Com um processo simples e eficaz, você terá a chance de desenvolver suas habilidades e mostrar todo o seu potencial para nossos gestores. Com a TriboDev, você terá a oportunidade de se destacar na área de tecnologia e alcançar o sucesso em sua carreira. Junte-se a nós e torne-se um membro da nossa comunidade Vip agora mesmo!
+                    </p>
+                </div>
+        </div>
+    </section>
+
 @endsection
 
 @push('scripts_bottom')

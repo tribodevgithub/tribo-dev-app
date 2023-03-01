@@ -3816,10 +3816,10 @@ a.badge-gray200:focus {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #262626;
     background-clip: border-box;
     border: 1px solid rgba(52, 52, 52, .125);
-    border-radius: .3125rem
+    border-radius: .9rem
 }
 
 .card>hr {
@@ -8151,7 +8151,7 @@ button.bg-gray200:hover {
 }
 
 .border-primary {
-    border-color: #43d477 !important
+    border-color: var(--primary-border) !important
 }
 
 .border-secondary {
@@ -15422,6 +15422,10 @@ body {
     font-size: 4.5rem
 }
 
+.font-52 {
+    font-size: 3.3rem
+}
+
 .font-48,
 .font-72 {
     font-weight: 700;
@@ -15429,7 +15433,7 @@ body {
 }
 
 .font-48 {
-    font-size: 3rem
+    font-size: 3rem !important;
 }
 
 .font-36 {
