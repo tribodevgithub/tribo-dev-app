@@ -51,16 +51,72 @@
                         Ao se tornar um membro da nossa comunidade VIP, você terá acesso a desafios que lhe proporcionarão novas oportunidades de contratação.
                     </p>
                 </div>
-                <div class="col-lg-4 border-right">
-                    <div class="card">
-                        <div class="card-body mt-10 mb-10">
+                <div class="col-lg-4 border-right border-primary">
+                    <div class="card mb-10">
+                        <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-2">
-                                <h1 class="font-52 text-primary font-weight-bolder"> 01</h1>
+                                <h1 class="font-48 text-primary font-weight-bolder"> 01</h1>
                                 </div>
                                 <div class="col-10">
-                                    <p class="text-gray font-20">
+                                    <p class="text-gray">
                                     Escolha o desafio disponível de acordo com suas habilidades;
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    <div class="card mb-10">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                <h1 class="font-48 text-primary font-weight-bolder"> 02</h1>
+                                </div>
+                                <div class="col-10">
+                                    <p class="text-gray">
+                                    Resolva o desafio em menor tempo possível
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-10">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                <h1 class="font-48 text-primary font-weight-bolder"> 03</h1>
+                                </div>
+                                <div class="col-10">
+                                    <p class="text-gray">
+                                    Sua solução será avaliada por nossos gestores
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-10">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                <h1 class="font-48 text-primary font-weight-bolder"> 04</h1>
+                                </div>
+                                <div class="col-10">
+                                    <p class="text-gray">
+                                    Se aprovada, você será encaminhado para a entrevista técnica
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-10">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-2">
+                                <h1 class="font-48 text-primary font-weight-bolder"> 05</h1>
+                                </div>
+                                <div class="col-10">
+                                    <p class="text-gray">
+                                    Com sucesso na entrevista, o job é seu!
                                     </p>
                                 </div>
                             </div>
