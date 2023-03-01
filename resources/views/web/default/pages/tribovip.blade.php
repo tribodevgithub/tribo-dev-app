@@ -56,7 +56,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-3">
-                                <h1 class="font-48 text-primary font-weight-bolder"> 01</h1>
+                                <h1 class="font-36 text-primary font-weight-bolder"> 01</h1>
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
@@ -70,7 +70,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-3">
-                                <h1 class="font-48 text-primary font-weight-bolder"> 02</h1>
+                                <h1 class="font-36 text-primary font-weight-bolder"> 02</h1>
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
@@ -84,7 +84,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-3">
-                                <h1 class="font-48 text-primary font-weight-bolder"> 03</h1>
+                                <h1 class="font-36 text-primary font-weight-bolder"> 03</h1>
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
@@ -98,7 +98,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-3">
-                                <h1 class="font-48 text-primary font-weight-bolder"> 04</h1>
+                                <h1 class="font-36 text-primary font-weight-bolder"> 04</h1>
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
@@ -112,7 +112,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-3">
-                                <h1 class="font-48 text-primary font-weight-bolder"> 05</h1>
+                                <h1 class="font-36 text-primary font-weight-bolder"> 05</h1>
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
