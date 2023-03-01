@@ -45,7 +45,7 @@
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row">
                 <div class="col-lg-4">
-                    <h1>PARTICIPE DOS DESAFIOS PARA TRABALHOS REMUNERADOS</h1>
+                    <h1 class="font-36">PARTICIPE DOS DESAFIOS PARA TRABALHOS REMUNERADOS</h1>
                     <p class="mt-30 mb-30 text-gray">
                         A TriboDev também é uma softhouse, ou seja, que se dedica ao desenvolvimento de soluções tecnológicas e à alocação de recursos para empresas. Nossos profissionais, que antes foram nossos alunos, são altamente preparados para entregar resultados de qualidade para nossos clientes, o que nos torna muito requisitados.
                         Ao se tornar um membro da nossa comunidade VIP, você terá acesso a desafios que lhe proporcionarão novas oportunidades de contratação.
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
-                                    Escolha o desafio disponível de acordo com suas habilidades;
+                                    Escolha o desafio dentro de suas habilidades
                                     </p>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
-                                    Se aprovada, você será encaminhado para a entrevista técnica
+                                    Você será encaminhado para a entrevista técnica
                                     </p>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="col-9">
                                     <p class="text-gray">
-                                    Com sucesso na entrevista, o job é seu!
+                                    Com sucesso na entrevista, <b>o job é seu!</b>
                                     </p>
                                 </div>
                             </div>
