@@ -279,7 +279,7 @@
     --white: #fff;
     --gray: #818894;
     --gray-text: ##e1e1e6;
-    --gray300: #ececec;
+    --gray300: #cdcdcd;
     --gray200: #f1f1f1;
     --primary-hover: #fe4621;
     --primary-border: #ff2e06;
@@ -15081,7 +15081,7 @@ a.text-white:hover {
 }
 
 .text-gray {
-    color: #818894 !important
+    color: var(--gray300) !important
 }
 
 a.text-gray:focus,
@@ -15395,7 +15395,8 @@ body {
 }
 
 .default-title h1 {
-    font-size: 48px;
+    font-size: 43px;
+    line-height: 1.1;
 }
 
 .default-title h2 {
