@@ -2127,6 +2127,25 @@ h6 {
     font-size: 1rem
 }
 
+.default-title h1 {
+    font-size: 48px;
+}
+
+.default-title h2 {
+    font-size: 32px;
+}
+
+@media (max-width:767px) {
+
+    .default-title h1 {
+        font-size: 24px;
+    }
+
+    .default-title h2 {
+        font-size: 20px;
+    }
+}
+
 .lead {
     font-size: 1.25rem;
     font-weight: 300
