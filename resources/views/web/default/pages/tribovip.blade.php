@@ -124,7 +124,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <p class="mt-30 mb-30 text-gray">
+                    <p class="mt-30 mb-30 text-gray font-22">
                         Com um processo simples e eficaz, você terá a chance de desenvolver suas habilidades e mostrar todo o seu potencial para nossos gestores. Com a TriboDev, você terá a oportunidade de se destacar na área de tecnologia e alcançar o sucesso em sua carreira. Junte-se a nós e torne-se um membro da nossa comunidade Vip agora mesmo!
                     </p>
                 </div>
