@@ -7,7 +7,7 @@
 
 @section('content')
     <section>
-        <div class="container mt-50 mb-50">
+        <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row">
                 <div class="col-lg-6 ">
                     <div class="default-title">
@@ -23,9 +23,9 @@
         </div>
     </section>
     <section>
-        <div class="container mt-50">
+        <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row align-items-center">
-                <div class="col-lg-6 mt-50">
+                <div class="col-lg-6">
                     <div class="default-title">
                         <h1 class="text-primary">Você já sonhou em ganhar em dólar ou euro e morar na Europa ou nos Estados Unidos?</h1>
 
