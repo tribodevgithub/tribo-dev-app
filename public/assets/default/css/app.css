@@ -15472,6 +15472,11 @@ body {
     }
 }
 
+.font-22 {
+    font-size: 1.25rem;
+    line-height: 1.4
+}
+
 .font-20 {
     font-size: 1.25rem;
     line-height: 1.4
