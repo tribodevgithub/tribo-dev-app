@@ -372,10 +372,10 @@
 <section>
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="mt-20">
-   <h2 class="section-title after-line">PERGUNTAS FREQUENTES</h2>
+   <h1 class="text-primary mb-10">Razões para se tornar um membro Tribo Vip</h1>
    <div class="accordion-content-wrapper mt-15" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="accordion-row rounded-sm shadow-lg border mt-20 py-20 px-35">
-         <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_49">
+      <div class="accordion-row rounded-sm shadow-lg border border-primary mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_49">
             <div href="#collapseFaq49" aria-controls="collapseFaq49" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
                <span>What is the course level??</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather collapse-chevron-icon feather-chevron-down">
@@ -389,8 +389,8 @@
             </div>
          </div>
       </div>
-      <div class="accordion-row rounded-sm shadow-lg border mt-20 py-20 px-35">
-         <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_50">
+      <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_50">
             <div href="#collapseFaq50" aria-controls="collapseFaq50" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
                <span>How can I get course updates??</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
@@ -404,8 +404,8 @@
             </div>
          </div>
       </div>
-      <div class="accordion-row rounded-sm shadow-lg border mt-20 py-20 px-35">
-         <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_51">
+      <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_51">
             <div href="#collapseFaq51" aria-controls="collapseFaq51" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
                <span>Is it a supported course??</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
