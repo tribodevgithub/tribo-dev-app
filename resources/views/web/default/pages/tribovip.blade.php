@@ -137,6 +137,7 @@
                     <img src="/assets/default/img/tribovip/img_td_efx_002.png" style="filter: drop-shadow(5px 25px 20px #000);">
                 </div>
                 <div class="col-lg-7">
+                    <h1 class="font-36">Para quem o Tribo VIP foi feito?</h1>
                      <div class="row">
                         <div class="col-lg-6 mb-20">
                             <div class="card mb-10">
@@ -277,7 +278,7 @@
                     </div>
                     <p class="mt-10 font-16 text-gra font-weight-300">Dados: Glassdor | salários convertidos para o Real</p>
                 </div>
-                <div class="col-lg-6 bg-primary">
+                <div class="col-lg-6 text-right">
                     <img src="/assets/default/img/tribovip/img_td_efx_004.png">
                 </div>
             </div>
@@ -310,7 +311,7 @@
         </div>
     </section>
 
-    <section id="assinar">
+    <section id="assinar" class="bg-img-1">
    <div class="container mt-50 mb-50 pt-50 pb-50">
       <div class="row">
          <div class="col-lg-7">
