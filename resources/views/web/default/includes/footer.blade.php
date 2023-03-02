@@ -37,7 +37,7 @@
                     <div class="flex-grow-1 text-center">
                         <strong>Junte-se agora à nossa tribo</strong>
                     </div>
-                    <button type="submit" class="btn btn-primary bg-light  text-dark rounded-pill"><b>Criar Conta</b></button>
+                    <a href="/register" class="btn btn-primary bg-light  text-dark rounded-pill"><b>Criar Conta</b></a>
                 </div>
 
             </div>
