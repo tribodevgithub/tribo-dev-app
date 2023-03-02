@@ -277,12 +277,8 @@
                     </div>
                     <p class="mt-10 font-16 text-gra font-weight-300">Dados: Glassdor | salários convertidos para o Real</p>
                 </div>
-                <div class="col-lg-6 align-items-center">
-                    <p class="mt-30 mb-20 font-20 text-gray">
-                        Assinando o <b class="text-primary">TriboVIP</b>, você terá acesso aos melhores treinamentos para prepará-lo de forma rápida e eficaz para vagas internacionais. Com nossos cursos, você aprenderá como criar um currículo internacional impressionante, atrair a atenção de empresas de todo o mundo e aprimorar seu inglês técnico para profissionais de tecnologia.
-                    </p>
+                <div class="col-lg-6 bg-primary">
 
-                    <a href="#" type="button" class="btn btn-outline-primary btn-block mt-30">Assinar TriboVIP</a>
                 </div>
             </div>
         </div>
