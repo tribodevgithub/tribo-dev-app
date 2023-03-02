@@ -16340,6 +16340,10 @@ p {
     background-color: #f7fafd
 }
 
+.bg-texture-1 {
+    background-image: url(/assets/default/img/tribovip/texture_tribe.png);
+}
+
 .status-badge-dark {
     border: 1px solid #343434;
     color: #343434;
