@@ -132,9 +132,9 @@
     </section>
     <section class="bg-primary">
         <div class="container mt-50 mb-50 pt-50 pb-50">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-5">
-                    <img src="/assets/default/img/tribovip/img_td_efx_002.png">
+                    <img src="/assets/default/img/tribovip/img_td_efx_002.png" style="filter: drop-shadow(5px 25px 20px #000);">
                 </div>
                 <div class="col-lg-7">
                      <div class="row">

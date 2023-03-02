@@ -16348,6 +16348,7 @@ p {
 .bg-img-1 {
     background-image: url(/assets/default/img/tribovip/img_td_efx_003) no-repeat;
     background-size: contain;
+    background-position: right;
 }
 
 .status-badge-dark {
