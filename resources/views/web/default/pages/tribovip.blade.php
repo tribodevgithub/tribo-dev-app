@@ -8,7 +8,7 @@
 @section('content')
     <section>
         <div class="container mt-50 mb-50 pt-50 pb-50">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-lg-6 ">
                     <div class="default-title">
                         <h1><span class="text-primary">Transforme sua carreira</span><br>Aprenda programação com cursos avançados e projetos reais.</h1>
