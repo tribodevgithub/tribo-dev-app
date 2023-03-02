@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-
+                    <img src="/assets/default/img/tribovip/img_td_efx_001.png">
                 </div>
             </div>
         </div>
