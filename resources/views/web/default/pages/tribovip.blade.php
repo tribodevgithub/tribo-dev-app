@@ -204,13 +204,46 @@
                             </div>
                         </div>
                      </div>
-
                 </div>
-                <div class="col-lg-4">
-                    <p class="mt-30 mb-30 text-gray font-22">
-                        Com um processo simples e eficaz, você terá a chance de desenvolver suas habilidades e mostrar todo o seu potencial para nossos gestores. Com a TriboDev, você terá a oportunidade de se destacar na área de tecnologia e alcançar o sucesso em sua carreira. Junte-se a nós e torne-se um membro da nossa comunidade Vip agora mesmo!
+        </div>
+    </section>
+    <section>
+        <div class="container mt-50 mb-50 pt-50 pb-50">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="default-title">
+                        <h1 class="font-36">Alcance ótimos salários como Desenvolvedor</h1>
+                    </div>
+                    <p class="mt-10 font-20 text-primary font-weight-500">
+                    <div class="card mb-10 border-primary">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-6 border-right border-primary">
+                                <h1 class="font-22 text-primary ">Junior</h1>
+                                <p class="mt-10 font-20 text-gray">
+                                    Com até um ano de experiência
+                                </p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-gray font-22 font-weight-300">
+                                        BRASIL <b class="text-primary">3-5k</b>
+                                    </p>
+                                    <p class="text-gray font-22 font-weight-300">
+                                        MUNDO <b class="text-primary">7-11k</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 align-items-center">
+                    <p class="mt-30 mb-20 font-20 text-gray">
+                        Assinando o <b class="text-primary">TriboVIP</b>, você terá acesso aos melhores treinamentos para prepará-lo de forma rápida e eficaz para vagas internacionais. Com nossos cursos, você aprenderá como criar um currículo internacional impressionante, atrair a atenção de empresas de todo o mundo e aprimorar seu inglês técnico para profissionais de tecnologia.
                     </p>
+
+                    <a href="#" type="button" class="btn btn-outline-primary btn-block mt-30">Assinar TriboVIP</a>
                 </div>
+            </div>
         </div>
     </section>
 
