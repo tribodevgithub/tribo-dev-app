@@ -179,7 +179,7 @@
                                         </div>
                                         <div class="col-8">
                                             <p class="text-gray font-14">
-                                           Para quem já fez algum curso ou faculdade, mas ainda não se sente pronto para entrar no mercado.
+                                           Para quem já fez algum curso ou faculdade, mas ainda não se sente pronto para o mercado.
                                             </p>
                                         </div>
                                     </div>
