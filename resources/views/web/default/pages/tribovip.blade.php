@@ -7,7 +7,7 @@
 
 @section('content')
     <section>
-        <div class="container mt-50 mb-50 pt-50 pb-50">
+        <div class="container mt-50 pt-50 pb-50">
             <div class="row align-items-center">
                 <div class="col-lg-6 ">
                     <div class="default-title">
@@ -23,7 +23,7 @@
         </div>
     </section>
     <section class="bg-texture-1">
-        <div class="container mt-50 mb-50 pt-50 pb-50">
+        <div class="container mb-50 pt-50 pb-50">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="default-title">
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 align-items-center">
-                    <p class="mt-30 mb-20 font-20 text-gray">
+                    <p class="mt-30 mb-20 font-20">
                         Assinando o <b class="text-primary">TriboVIP</b>, você terá acesso aos melhores treinamentos para prepará-lo de forma rápida e eficaz para vagas internacionais. Com nossos cursos, você aprenderá como criar um currículo internacional impressionante, atrair a atenção de empresas de todo o mundo e aprimorar seu inglês técnico para profissionais de tecnologia.
                     </p>
 
@@ -286,7 +286,7 @@
     </section>
 
     <section class="bg-texture-1">
-        <div class="container mt-50 mb-50 pt-50 pb-50">
+        <div class="container mt-50 pt-50 pb-50">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="default-title">
@@ -297,22 +297,22 @@
                 </div>
                 <div class="col-lg-6 align-items-center">
                     <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">01</p>
-                    <p class="mb-20 font-20 text-gray">Mentorias semanais para solucionar dúvidas e direcionar os estudos.</p>
+                    <p class="mb-20 font-20">Mentorias semanais para solucionar dúvidas e direcionar os estudos.</p>
                     <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">02</p>
-                    <p class="mb-20 font-20 text-gray">Plano de estudos organizado e direcionado, mesmo para completos iniciantes.</p>
+                    <p class="mb-20 font-20">Plano de estudos organizado e direcionado, mesmo para completos iniciantes.</p>
                     <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">03</p>
-                    <p class="mb-20 font-20 text-gray">Comunidade exclusiva para compartilhar conhecimentos, aprender juntos e se motivar.</p>
+                    <p class="mb-20 font-20">Comunidade exclusiva para compartilhar conhecimentos, aprender juntos e se motivar.</p>
                     <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">04</p>
-                    <p class="mb-20 font-20 text-gray">Desafios com possibilidade de contratação, te preparando para entrar no mercado.</p>
+                    <p class="mb-20 font-20">Desafios com possibilidade de contratação, te preparando para entrar no mercado.</p>
                     <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">05</p>
-                    <p class="mb-20 font-20 text-gray">Plataforma exclusiva de acompanhamento da jornada, com relatórios, metas e feedbacks.</p>
+                    <p class="mb-20 font-20">Plataforma exclusiva de acompanhamento da jornada, com relatórios, metas e feedbacks.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="assinar" class="bg-img-1">
-   <div class="container mt-50 mb-50 pt-50 pb-50">
+   <div class="container  mb-50 pt-50 pb-50">
       <div class="row">
          <div class="col-lg-7">
             <div class="row">
@@ -321,7 +321,7 @@
                      <div class="card-body">
                         <div class="row align-items-center">
                            <div class="col-6 border-right border-primary">
-                              <h1 class="font-24">Escolha a forma de pagamento que mais se adequa a você</h1>
+                              <h1 class="font-24 text-gray">Escolha a forma de pagamento que mais se adequa a você</h1>
                            </div>
                            <div class="col-6">
                               <p class=" font-20 text-primary font-weight-500">Faça parte da TriboVIP agora mesmo!
