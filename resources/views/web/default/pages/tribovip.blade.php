@@ -319,7 +319,7 @@
                   <div class="card mb-10">
                      <div class="card-body">
                         <div class="row align-items-center">
-                           <div class="col-6 border-right border-primary">
+                           <div class="col-6 border-right border">
                               <h1 class="font-24">Escolha a forma de pagamento que mais se adequa a você</h1>
                            </div>
                            <div class="col-6">
@@ -369,6 +369,60 @@
       </div>
    </div>
 </section>
+<section>
+        <div class="container mt-50 mb-50 pt-50 pb-50">
+            <div class="mt-20">
+   <h2 class="section-title after-line">PERGUNTAS FREQUENTES</h2>
+   <div class="accordion-content-wrapper mt-15" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="accordion-row rounded-sm shadow-lg border mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_49">
+            <div href="#collapseFaq49" aria-controls="collapseFaq49" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>What is the course level??</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather collapse-chevron-icon feather-chevron-down">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </div>
+         <div id="collapseFaq49" aria-labelledby="faq_49" class="collapse" role="tabpanel" style="">
+            <div class="panel-collapse text-gray">
+               This is a course for beginners so you will get familiar with the topic from scratch.
+            </div>
+         </div>
+      </div>
+      <div class="accordion-row rounded-sm shadow-lg border mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_50">
+            <div href="#collapseFaq50" aria-controls="collapseFaq50" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>How can I get course updates??</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </div>
+         <div id="collapseFaq50" aria-labelledby="faq_50" class=" collapse" role="tabpanel">
+            <div class="panel-collapse text-gray">
+               You will receive a notification after each update is released so you can download updated files from the course page.
+            </div>
+         </div>
+      </div>
+      <div class="accordion-row rounded-sm shadow-lg border mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_51">
+            <div href="#collapseFaq51" aria-controls="collapseFaq51" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>Is it a supported course??</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </div>
+         <div id="collapseFaq51" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
+            <div class="panel-collapse text-gray">
+               Yes, you can get in touch with the instructor using the support system.
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+        </div>
+    </section>
 
 @endsection
 
