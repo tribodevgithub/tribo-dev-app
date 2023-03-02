@@ -214,14 +214,14 @@
                     <div class="default-title">
                         <h1 class="font-36">Alcance ótimos salários como Desenvolvedor</h1>
                     </div>
-                    <p class="mt-10 font-20 text-primary font-weight-500">
-                    <div class="card mb-10 border-primary">
+                    <p class="mt-10 font-20 text-primary font-weight-500">Media salaria - Brasil/Mundo</p>
+                    <div class="card mb-10 border-primary bg-gray200">
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col-6 border-right border-primary">
                                 <h1 class="font-22 text-primary ">Junior</h1>
-                                <p class="mt-10 font-20 text-gray">
-                                    Com até um ano de experiência
+                                <p class="font-20 text-gray">
+                                    Com até 1 ano de experiência
                                 </p>
                                 </div>
                                 <div class="col-6">
@@ -235,6 +235,47 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card mb-10 border-primary bg-gray200">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-6 border-right border-primary">
+                                <h1 class="font-22 text-primary ">Pleno</h1>
+                                <p class="font-20 text-gray">
+                                    Com até 3 anos de experiência
+                                </p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-gray font-22 font-weight-300">
+                                        BRASIL <b class="text-primary">6-8k</b>
+                                    </p>
+                                    <p class="text-gray font-22 font-weight-300">
+                                        MUNDO <b class="text-primary">9-18k</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-primary bg-gray200">
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-6 border-right border-primary">
+                                <h1 class="font-22 text-primary ">Sênior</h1>
+                                <p class="font-20 text-gray">
+                                    Acima de 3 anos de experiência
+                                </p>
+                                </div>
+                                <div class="col-6">
+                                    <p class="text-gray font-22 font-weight-300">
+                                        BRASIL <b class="text-primary">9-15k</b>
+                                    </p>
+                                    <p class="text-gray font-22 font-weight-300">
+                                        MUNDO <b class="text-primary">20-45k</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-10 font-16 text-gra font-weight-300">Dados: Glassdor | salários convertidos para o Real</p>
                 </div>
                 <div class="col-lg-6 align-items-center">
                     <p class="mt-30 mb-20 font-20 text-gray">
