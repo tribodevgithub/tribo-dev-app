@@ -12,7 +12,7 @@
                 <div class="col-lg-6 ">
                     <div class="default-title">
                         <h1><span class="text-primary">Transforme sua carreira</span><br>Aprenda programação com cursos avançados e projetos reais.</h1>
-                        <p class="mt-30 mb-30 text-gray">O <b class="text-primary">TriboVIP</b> é a escolha perfeita para quem deseja iniciar ou progredir na carreira de programação. Com acesso a cursos avançados, projetos reais e mentorias semanais, você terá a garantia de que está sempre aprendendo e evoluindo. Não perca mais tempo e junte-se ao Tribo VIP agora mesmo para alcançar o sucesso em sua carreira de programação!</p>
+                        <p class="mt-30 mb-30 text-gray">O <b class="text-primary">TriboVIP</b> é a escolha perfeita para quem deseja iniciar ou progredir na carreira de programação. Com acesso a cursos avançados, projetos reais e mentorias semanais, você terá a garantia de que está sempre aprendendo e evoluindo. Não perca mais tempo e junte-se ao TriboVIP agora mesmo para alcançar o sucesso em sua carreira de programação!</p>
                         <a href="#" class="btn btn-primary rounded-pill">Assinar Agora!</a>
                     </div>
                 </div>
@@ -289,7 +289,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="default-title">
-                        <h1 class="text-primary mb-10">Razões para se tornar um membro Tribo Vip</h1>
+                        <h1 class="text-primary mb-10">Razões para se tornar um membro TriboVIP</h1>
                         <h3>Acesso a cursos avançados e projetos reais para uma formação completa e prática.</h3>
 
                     </div>
@@ -323,7 +323,7 @@
                               <h1 class="font-24">Escolha a forma de pagamento que mais se adequa a você</h1>
                            </div>
                            <div class="col-6">
-                              <p class=" font-20 text-primary font-weight-500">Faça parte da Tribo Vip agora mesmo!
+                              <p class=" font-20 text-primary font-weight-500">Faça parte da TriboVIP agora mesmo!
                               </p>
                            </div>
                            <div class="col-12 mt-40">
@@ -377,7 +377,7 @@
       <div class="accordion-row rounded-sm shadow-lg border border-primary mt-20 py-20 px-35">
          <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_49">
             <div href="#tribovipFaq1" aria-controls="tribovipFaq1" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
-               <span>O Tribo VIP é um curso?</span>
+               <span>O TriboVIP é um curso?</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather collapse-chevron-icon feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
                </svg>
@@ -392,7 +392,7 @@
       <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
          <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_50">
             <div href="#tribovipFaq2" aria-controls="tribovipFaq2" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
-               <span>Eu já sei programar, por que assinar Tribo VIP?</span>
+               <span>Eu já sei programar, por que assinar TriboVIP?</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
                   <polyline points="6 9 12 15 18 9"></polyline>
                </svg>
@@ -415,7 +415,7 @@
          </div>
          <div id="tribovipFaq3" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
             <div class="panel-collapse text-gray">
-               O acesso à plataforma é vitalício, porem para aproveitar de todos os recursos, é necessário que sua assinatura Tribo VIP esteja em dias.
+               O acesso à plataforma é vitalício, porem para aproveitar de todos os recursos, é necessário que sua assinatura TriboVIP esteja em dias.
             </div>
          </div>
       </div>
