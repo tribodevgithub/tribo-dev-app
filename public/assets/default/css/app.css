@@ -16342,6 +16342,7 @@ p {
 
 .bg-texture-1 {
     background-image: url(/assets/default/img/tribovip/texture_tribe.png);
+    background-size: contain;
 }
 
 .status-badge-dark {
