@@ -142,7 +142,7 @@
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
-                                        <div class="col-3 border-right border-primary">
+                                        <div class="col-3 border-right border-primary text-center">
                                         <h1 class="font-36 text-primary font-weight-300"> 01</h1>
                                         </div>
                                         <div class="col-9">
@@ -158,10 +158,10 @@
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
-                                        <div class="col-3 border-right border-primary">
+                                        <div class="col-4 border-right border-primary text-center">
                                         <h1 class="font-36 text-primary font-weight-300"> 02</h1>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8">
                                             <p class="text-gray font-14">
                                            Para profissionais de qualquer área que desejam migrar para a carreira de programação.
                                             </p>
@@ -174,10 +174,10 @@
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
-                                        <div class="col-3 border-right border-primary">
-                                        <h1 class="font-36 text-primary font-weight-300"> 02</h1>
+                                        <div class="col-4 border-right border-primary text-center">
+                                        <h1 class="font-36 text-primary font-weight-300"> 03</h1>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8">
                                             <p class="text-gray font-14">
                                            Para quem já fez algum curso ou faculdade, mas ainda não se sente pronto para entrar no mercado.
                                             </p>
@@ -190,10 +190,10 @@
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
-                                        <div class="col-3 border-right border-primary">
-                                        <h1 class="font-36 text-primary font-weight-300"> 02</h1>
+                                        <div class="col-4 border-right border-primary text-center">
+                                        <h1 class="font-36 text-primary font-weight-300"> 04</h1>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8">
                                             <p class="text-gray font-14">
                                            Para programadores que desejam se especializar e crescer principalmente na carreira internacional.
 
