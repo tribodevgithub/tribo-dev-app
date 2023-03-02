@@ -372,53 +372,98 @@
 <section>
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="mt-20">
-   <h1 class="text-primary mb-10">Razões para se tornar um membro Tribo Vip</h1>
+   <h1 class="text-primary mb-10">Perguntas Frequentes:</h1>
    <div class="accordion-content-wrapper mt-15" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="accordion-row rounded-sm shadow-lg border border-primary mt-20 py-20 px-35">
          <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_49">
-            <div href="#collapseFaq49" aria-controls="collapseFaq49" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
-               <span>What is the course level??</span>
+            <div href="#tribovipFaq1" aria-controls="tribovipFaq1" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>O Tribo VIP é um curso?</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather collapse-chevron-icon feather-chevron-down">
                   <polyline points="6 9 12 15 18 9"></polyline>
                </svg>
             </div>
          </div>
-         <div id="collapseFaq49" aria-labelledby="faq_49" class="collapse" role="tabpanel" style="">
+         <div id="tribovipFaq1" aria-labelledby="faq_49" class="collapse" role="tabpanel" style="">
             <div class="panel-collapse text-gray">
-               This is a course for beginners so you will get familiar with the topic from scratch.
+               Não, o TriboVIP, é um plano de assinatura o qual te dá acesso a todos os recursos da plataforma, inclusive a todos os cursos.
             </div>
          </div>
       </div>
       <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
          <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_50">
-            <div href="#collapseFaq50" aria-controls="collapseFaq50" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
-               <span>How can I get course updates??</span>
+            <div href="#tribovipFaq2" aria-controls="tribovipFaq2" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>Eu já sei programar, por que assinar Tribo VIP?</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
                   <polyline points="6 9 12 15 18 9"></polyline>
                </svg>
             </div>
          </div>
-         <div id="collapseFaq50" aria-labelledby="faq_50" class=" collapse" role="tabpanel">
+         <div id="tribovipFaq2" aria-labelledby="faq_50" class=" collapse" role="tabpanel">
             <div class="panel-collapse text-gray">
-               You will receive a notification after each update is released so you can download updated files from the course page.
+               O plano não contempla apenas cursos como vantagens, mas também a possibilidade de fazer network, aumentar suas hards skills além de participar de desafios com a possibilidade de ser contratado para um trabalho real e remunerado.
             </div>
          </div>
       </div>
       <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
          <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_51">
-            <div href="#collapseFaq51" aria-controls="collapseFaq51" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
-               <span>Is it a supported course??</span>
+            <div href="#tribovipFaq3" aria-controls="tribovipFaq3" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>Terei quanto tempo de acesso à plataforma?</span>
                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
                   <polyline points="6 9 12 15 18 9"></polyline>
                </svg>
             </div>
          </div>
-         <div id="collapseFaq51" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
+         <div id="tribovipFaq3" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
             <div class="panel-collapse text-gray">
-               Yes, you can get in touch with the instructor using the support system.
+               O acesso à plataforma é vitalício, porem para aproveitar de todos os recursos, é necessário que sua assinatura Tribo VIP esteja em dias.
             </div>
          </div>
       </div>
+      <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_51">
+            <div href="#tribovipFaq4" aria-controls="tribovipFaq4" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>Quais são as formas de pagamento?</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </div>
+         <div id="tribovipFaq4" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
+            <div class="panel-collapse text-gray">
+                Você pode pagar com cartão de crédito, boleto ou PIX.</div>
+         </div>
+      </div>
+      <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_51">
+            <div href="#tribovipFaq5" aria-controls="tribovipFaq5" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>E se eu tiver alguma dúvida?</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </div>
+         <div id="tribovipFaq5" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
+            <div class="panel-collapse text-gray">
+                Com nosso elenco de instrutores altamente qualificados, você pode ter a tranquilidade de saber que todas as suas questões serão resolvidas com eficiência. Eles estão sempre à disposição para orientá-lo em sua jornada de aprendizado. Além disso, nossos instrutores são muito ativos na comunidade no Discord, interagindo e ajudando a esclarecer qualquer dúvida que você possa ter sobre o treinamento, o mercado e a profissão. Com esse apoio constante, você pode se concentrar em sua evolução profissional e alcançar seus objetivos de forma mais rápida e efetiva.
+            </div>
+         </div>
+      </div>
+      <div class="accordion-row rounded-sm shadow-lg border border-primary  mt-20 py-20 px-35">
+         <div class="font-weight-bold font-14 text-primary" role="tab" id="faq_51">
+            <div href="#tribovipFaq6" aria-controls="tribovipFaq6" class="d-flex align-items-center justify-content-between collapsed" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="false">
+               <span>Tenho alguma garantia?</span>
+               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down collapse-chevron-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+               </svg>
+            </div>
+         </div>
+         <div id="tribovipFaq6" aria-labelledby="faq_51" class=" collapse" role="tabpanel">
+            <div class="panel-collapse text-gray">
+                Você tem o direto de garantia durante 7 dias após a compra. Dentro deste período, você consegue pedir o reembolso sem a necessidade de nenhuma justificativa.
+            </div>
+         </div>
+      </div>
+
    </div>
 </div>
         </div>
