@@ -16345,6 +16345,11 @@ p {
     background-size: contain;
 }
 
+.bg-img-1 {
+    background-image: url(/assets/default/img/tribovip/img_td_efx_003) no-repeat;
+    background-size: contain;
+}
+
 .status-badge-dark {
     border: 1px solid #343434;
     color: #343434;
