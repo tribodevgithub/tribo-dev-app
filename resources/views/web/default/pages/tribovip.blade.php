@@ -22,7 +22,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-texture-1">
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -130,11 +130,11 @@
                 </div>
         </div>
     </section>
-    <section>
+    <section class="bg-primary">
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row">
                 <div class="col-lg-5">
-
+                    <img src="/assets/default/img/tribovip/img_td_efx_002.png">
                 </div>
                 <div class="col-lg-7">
                      <div class="row">
@@ -278,13 +278,13 @@
                     <p class="mt-10 font-16 text-gra font-weight-300">Dados: Glassdor | salários convertidos para o Real</p>
                 </div>
                 <div class="col-lg-6 bg-primary">
-
+                    <img src="/assets/default/img/tribovip/img_td_efx_004.png">
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="bg-texture-1">
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -319,7 +319,7 @@
                   <div class="card mb-10">
                      <div class="card-body">
                         <div class="row align-items-center">
-                           <div class="col-6 border-right border">
+                           <div class="col-6 border-right border-primary">
                               <h1 class="font-24">Escolha a forma de pagamento que mais se adequa a você</h1>
                            </div>
                            <div class="col-6">
@@ -328,7 +328,7 @@
                            </div>
                            <div class="col-12 mt-40">
                               <div class="card bg-light">
-                                 <div class="badge badge-pill badge-dark mt-n20 col-lg-4 font-14 p-5 border-primary">RECOMENDADO</div>
+                                 <div class="badge badge-pill badge-dark mt-n20 col-lg-4 font-14 p-5 border">RECOMENDADO</div>
                                  <div class="card-body text-dark text-center font-weight-500">
                                     <div class="row">
                                        <div class="col-lg-6 col-sm-12">
