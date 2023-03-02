@@ -133,20 +133,20 @@
     <section>
         <div class="container mt-50 mb-50 pt-50 pb-50">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-5">
 
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                      <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-20">
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-3 border-right border-primary">
-                                        <h1 class="font-48 font-weight-300"> 01</h1>
+                                        <h1 class="font-36 text-primary font-weight-300"> 01</h1>
                                         </div>
                                         <div class="col-9">
-                                            <p class="text-gray">
+                                            <p class="text-gray font-14">
                                             Para quem nunca programou e deseja começar do zero e se tornar um profissional requisitado.
                                             </p>
                                         </div>
@@ -154,15 +154,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-20">
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-3 border-right border-primary">
-                                        <h1 class="font-48 font-weight-300"> 02</h1>
+                                        <h1 class="font-36 text-primary font-weight-300"> 02</h1>
                                         </div>
                                         <div class="col-9">
-                                            <p class="text-gray">
+                                            <p class="text-gray font-14">
                                            Para profissionais de qualquer área que desejam migrar para a carreira de programação.
                                             </p>
                                         </div>
@@ -170,15 +170,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 mb-20">
                             <div class="card mb-10">
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-3 border-right border-primary">
-                                        <h1 class="font-48 font-weight-300"> 02</h1>
+                                        <h1 class="font-36 text-primary font-weight-300"> 02</h1>
                                         </div>
                                         <div class="col-9">
-                                            <p class="text-gray">
+                                            <p class="text-gray font-14">
                                            Para quem já fez algum curso ou faculdade, mas ainda não se sente pronto para entrar no mercado.
                                             </p>
                                         </div>
@@ -191,10 +191,10 @@
                                 <div class="card-body">
                                     <div class="row align-items-center">
                                         <div class="col-3 border-right border-primary">
-                                        <h1 class="font-48 font-weight-300"> 02</h1>
+                                        <h1 class="font-36 text-primary font-weight-300"> 02</h1>
                                         </div>
                                         <div class="col-9">
-                                            <p class="text-gray">
+                                            <p class="text-gray font-14">
                                            Para programadores que desejam se especializar e crescer principalmente na carreira internacional.
 
                                             </p>
