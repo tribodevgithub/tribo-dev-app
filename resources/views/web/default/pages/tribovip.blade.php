@@ -130,6 +130,89 @@
                 </div>
         </div>
     </section>
+    <section>
+        <div class="container mt-50 mb-50 pt-50 pb-50">
+            <div class="row">
+                <div class="col-lg-6">
+
+                </div>
+                <div class="col-lg-6">
+                     <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card mb-10">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 border-right border-primary">
+                                        <h1 class="font-48 font-weight-300"> 01</h1>
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="text-gray">
+                                            Para quem nunca programou e deseja começar do zero e se tornar um profissional requisitado.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card mb-10">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 border-right border-primary">
+                                        <h1 class="font-48 font-weight-300"> 02</h1>
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="text-gray">
+                                           Para profissionais de qualquer área que desejam migrar para a carreira de programação.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card mb-10">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 border-right border-primary">
+                                        <h1 class="font-48 font-weight-300"> 02</h1>
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="text-gray">
+                                           Para quem já fez algum curso ou faculdade, mas ainda não se sente pronto para entrar no mercado.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card mb-10">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-3 border-right border-primary">
+                                        <h1 class="font-48 font-weight-300"> 02</h1>
+                                        </div>
+                                        <div class="col-9">
+                                            <p class="text-gray">
+                                           Para programadores que desejam se especializar e crescer principalmente na carreira internacional.
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <p class="mt-30 mb-30 text-gray font-22">
+                        Com um processo simples e eficaz, você terá a chance de desenvolver suas habilidades e mostrar todo o seu potencial para nossos gestores. Com a TriboDev, você terá a oportunidade de se destacar na área de tecnologia e alcançar o sucesso em sua carreira. Junte-se a nós e torne-se um membro da nossa comunidade Vip agora mesmo!
+                    </p>
+                </div>
+        </div>
+    </section>
 
 @endsection
 
