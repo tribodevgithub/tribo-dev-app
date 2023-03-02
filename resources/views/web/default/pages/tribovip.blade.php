@@ -137,7 +137,7 @@
                     <img src="/assets/default/img/tribovip/img_td_efx_002.png" style="filter: drop-shadow(5px 25px 20px #000);">
                 </div>
                 <div class="col-lg-7">
-                    <h1 class="font-36">Para quem o Tribo VIP foi feito?</h1>
+                    <h1 class="font-36  mb-40">Para quem o Tribo VIP foi feito?</h1>
                      <div class="row">
                         <div class="col-lg-6 mb-20">
                             <div class="card mb-10">
@@ -215,7 +215,7 @@
                     <div class="default-title">
                         <h1 class="font-36">Alcance ótimos salários como Desenvolvedor</h1>
                     </div>
-                    <p class="mt-10 font-20 text-primary font-weight-500">Media salaria - Brasil/Mundo</p>
+                    <p class="mt-30 font-20 text-primary font-weight-500">Media salaria - Brasil/Mundo</p>
                     <div class="card mb-10 border-primary bg-gray200">
                         <div class="card-body">
                             <div class="row align-items-center">
