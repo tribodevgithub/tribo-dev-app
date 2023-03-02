@@ -289,15 +289,22 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="default-title">
-                        <h1 class="text-primary">Razões para se tornar um membro Tribo Vip</h1>
+                        <h1 class="text-primary mb-10">Razões para se tornar um membro Tribo Vip</h1>
                         <h3>Acesso a cursos avançados e projetos reais para uma formação completa e prática.</h3>
 
                     </div>
                 </div>
                 <div class="col-lg-6 align-items-center">
-                    <p class="border-bottom col-4 border-primary text-primary font-weight-500 pl-0">01</p>
+                    <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">01</p>
                     <p class="mb-20 font-20 text-gray">Mentorias semanais para solucionar dúvidas e direcionar os estudos.</p>
-
+                    <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">02</p>
+                    <p class="mb-20 font-20 text-gray">Plano de estudos organizado e direcionado, mesmo para completos iniciantes.</p>
+                    <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">03</p>
+                    <p class="mb-20 font-20 text-gray">Comunidade exclusiva para compartilhar conhecimentos, aprender juntos e se motivar.</p>
+                    <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">04</p>
+                    <p class="mb-20 font-20 text-gray">Desafios com possibilidade de contratação, te preparando para entrar no mercado.</p>
+                    <p class="border-bottom col-4 border-primary text-primary font-weight-700 pl-0 mb-10">05</p>
+                    <p class="mb-20 font-20 text-gray">Plataforma exclusiva de acompanhamento da jornada, com relatórios, metas e feedbacks.</p>
                 </div>
             </div>
         </div>
