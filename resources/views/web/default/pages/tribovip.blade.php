@@ -309,123 +309,18 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container mt-50 mb-50 pt-50 pb-50">
-            <div class="row">
-                <div class="col-lg-5">
 
-                </div>
-                <div class="col-lg-7">
-                     <div class="row">
-                        <div class="col-lg-12 mb-20">
-                            <div class="card mb-10">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-6 border-right border-primary">
-                                        <h1 class="font-24">Escolha a forma de <br> pagamento que mais  <br>se adequa você</h1>
-                                        </div>
-                                        <div class="col-6">
-                                            <p class=" font-20 text-primary font-weight-500">Faça parte da Tribo Vip<br> agora mesmo!
-
-</p>
-                                        </div>
-
-<div class="col-12 mt-40">
-                                            <div class="card bg-light">
-    <div class="badge badge-pill badge-dark mt-n20 col-4 font-14 p-5 border-primary">RECOMENDADO</div>
-                                                <div class="card-body text-dark text-center font-weight-500">
-    <div class="row">
-        <div class="col-6">
-            <p>ASSINATURA ANUAL</p>
-                                                    <span class="align-items-center text-primary font-weight-700">R$<b class="font-52 mr-n10">97</b>,90 / mês</span>
-                                                    <p class="mt-n10">ou à vista R$ 1.174,80</p>
-        </div>
-        <div class="col-6">
-            <a href="#" class="btn btn-primary rounded-pill mt-20">ASSINAR ANUAL</a>
-        </div>
-    </div>
-
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 mt-40">
-                                            <div class="card bg-light">
-
-                                                <div class="card-body text-dark text-center font-weight-500">
-    <div class="row">
-        <div class="col-6">
-            <p>ASSINATURA MENSAL</p>
-                                                    <span class="align-items-center text-primary font-weight-700">R$<b class="font-52 mr-n10">107</b>,90 / mês</span>
-
-        </div>
-        <div class="col-6">
-            <a href="#" class="btn btn-primary rounded-pill mt-20">ASSINAR MENSAL</a>
-        </div>
-    </div>
-
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mb-20">
-
-                        </div>
-                        <div class="col-lg-6 mb-20">
-                            <div class="card mb-10">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-4 border-right border-primary text-center">
-                                        <h1 class="font-36 text-primary font-weight-300"> 03</h1>
-                                        </div>
-                                        <div class="col-8">
-                                            <p class="text-gray font-14">
-                                           Para quem já fez algum curso ou faculdade, mas ainda não se sente pronto para o mercado.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="card mb-10">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col-4 border-right border-primary text-center">
-                                        <h1 class="font-36 text-primary font-weight-300"> 04</h1>
-                                        </div>
-                                        <div class="col-8">
-                                            <p class="text-gray font-14">
-                                           Para programadores que desejam se especializar e crescer principalmente na carreira internacional.
-
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                     </div>
-                </div>
-        </div>
-    </div></section>
     <section>
    <div class="container mt-50 mb-50 pt-50 pb-50">
       <div class="row">
-         <div class="col-lg-6">
+         <div class="col-lg-7">
             <div class="row">
                <div class="col-lg-12 mb-20">
                   <div class="card mb-10">
                      <div class="card-body">
                         <div class="row align-items-center">
                            <div class="col-6 border-right border-primary">
-                              <h1 class="font-24">Escolha a forma de <br> pagamento que mais  <br>se adequa você</h1>
+                              <h1 class="font-24">Escolha a forma de <br> pagamento que mais  <br>se adequa a você</h1>
                            </div>
                            <div class="col-6">
                               <p class=" font-20 text-primary font-weight-500">Faça parte da Tribo Vip<br> agora mesmo!
@@ -469,7 +364,7 @@
                </div>
             </div>
          </div>
-         <div class="col-lg-6">
+         <div class="col-lg-5">
          </div>
       </div>
    </div>
