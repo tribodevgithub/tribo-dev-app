@@ -47,10 +47,10 @@
 
 @if(!empty($requirementsExtraDescription) and count($requirementsExtraDescription))
     <div class="mt-20">
-        <h3 class="font-16 text-secondary font-weight-bold mb-15">{{ trans('update.requirements') }}</h3>
+        <h3 class="font-16 text-primary font-weight-bold mb-15">{{ trans('update.requirements') }}</h3>
 
         @foreach($requirementsExtraDescription as $requirementExtraDescription)
-            <p class="d-flex align-items-start font-14 text-gray mt-10">
+            <p class="d-flex align-items-start font-14 text-primary mt-10">
                 <i data-feather="check" width="18" height="18" class="mr-10 webinar-extra-description-check-icon"></i>
                 <span class="">{{ $requirementExtraDescription->value }}</span>
             </p>
@@ -84,11 +84,11 @@
                     <div class="font-weight-bold font-14 text-secondary" role="tab" id="faq_{{ $faq->id }}">
                         <div href="#collapseFaq{{ $faq->id }}" aria-controls="collapseFaq{{ $faq->id }}" class="d-flex align-items-center justify-content-between" role="button" data-toggle="collapse" data-parent="#accordion" aria-expanded="true">
                             <span>{{ clean($faq->title,'title') }}?</span>
-                            <i class="collapse-chevron-icon" data-feather="chevron-down" width="25" class="text-gray"></i>
+                            <i class="collapse-chevron-icon" data-feather="chevron-down" width="25" class="text-primary"></i>
                         </div>
                     </div>
                     <div id="collapseFaq{{ $faq->id }}" aria-labelledby="faq_{{ $faq->id }}" class=" collapse" role="tabpanel">
-                        <div class="panel-collapse text-gray">
+                        <div class="panel-collapse text-primary">
                             {{ clean($faq->answer,'answer') }}
                         </div>
                     </div>

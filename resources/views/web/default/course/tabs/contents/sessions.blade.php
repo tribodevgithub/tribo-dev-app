@@ -17,7 +17,7 @@
                     <i data-feather="bell" width="20" height="20" class="text-gray"></i>
                 </span>
             @endif
-            <span class="font-weight-bold text-secondary font-14">{{ $session->title }}</span>
+            <span class="font-weight-bold text-primary font-14">{{ $session->title }}</span>
         </div>
 
         <i class="collapse-chevron-icon" data-feather="chevron-down" height="20" href="#collapseSession{{ !empty($session) ? $session->id :'record' }}" aria-controls="collapseSession{{ !empty($session) ? $session->id :'record' }}" data-parent="#{{ $accordionParent }}" role="button" data-toggle="collapse" aria-expanded="true"></i>
