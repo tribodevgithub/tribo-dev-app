@@ -14,7 +14,7 @@
             </span>
 
             <div class="">
-                <span class="font-weight-bold font-14 text-secondary d-block">{{ $quiz->title }}</span>
+                <span class="font-weight-bold font-14 text-primary d-block">{{ $quiz->title }}</span>
             </div>
         </div>
 

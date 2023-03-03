@@ -11,7 +11,7 @@
                                     <i data-feather="grid" class=""></i>
                                 </span>
 
-                                <span class="font-weight-bold text-secondary font-14">{{ $chapter->title }}</span>
+                                <span class="font-weight-bold text-primary font-14">{{ $chapter->title }}</span>
                             </div>
 
                             <div class="d-flex align-items-center">

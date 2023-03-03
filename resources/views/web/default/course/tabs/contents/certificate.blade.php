@@ -11,7 +11,7 @@
                                         <i data-feather="award" width="20" height="20" class="text-gray"></i>
                                     </span>
 
-                                <span class="font-weight-bold font-14 text-secondary d-block">{{ $quiz->title }}</span>
+                                <span class="font-weight-bold font-14 text-primary d-block">{{ $quiz->title }}</span>
                             </div>
 
                             <i class="collapse-chevron-icon" data-feather="chevron-down" height="20" href="#collapseQuizCertificate{{ !empty($quiz) ? $quiz->id :'record' }}" aria-controls="collapseQuizCertificate{{ !empty($quiz) ? $quiz->id :'record' }}" data-parent="#certificateAccordion" role="button" data-toggle="collapse" aria-expanded="true"></i>
