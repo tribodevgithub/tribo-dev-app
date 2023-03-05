@@ -159,7 +159,7 @@
                                             <img src="{{ $comment->user->getAvatar() }}" class="img-cover" alt="{{ $comment->user->full_name }}">
                                         </div>
                                         <div class="d-flex flex-column ml-5">
-                                            <span class="font-weight-500 text-secondary">{{ $comment->user->full_name }}</span>
+                                            <span class="font-weight-500 text-primary">{{ $comment->user->full_name }}</span>
                                         </div>
                                     </div>
 

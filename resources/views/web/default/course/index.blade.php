@@ -386,11 +386,13 @@
                 {{-- teacher --}}
                 @include('web.default.course.sidebar_instructor_profile', ['courseTeacher' => $course->teacher])
 
-                @if($course->webinarPartnerTeacher->count() > 0)
+                {{--
+                    @if($course->webinarPartnerTeacher->count() > 0)
                     @foreach($course->webinarPartnerTeacher as $webinarPartnerTeacher)
                         @include('web.default.course.sidebar_instructor_profile', ['courseTeacher' => $webinarPartnerTeacher->teacher])
                     @endforeach
                 @endif
+                --}}
                 {{-- ./ teacher --}}
 
                 {{-- tags --}}
