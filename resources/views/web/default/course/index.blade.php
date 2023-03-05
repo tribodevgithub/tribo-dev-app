@@ -386,7 +386,9 @@
                 @endif
                 --}}
                 {{-- teacher --}}
+                {{--
                 @include('web.default.course.sidebar_instructor_profile', ['courseTeacher' => $course->teacher])
+                --}}
 
                 {{--
                     @if($course->webinarPartnerTeacher->count() > 0)
