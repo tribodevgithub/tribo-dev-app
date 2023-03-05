@@ -380,9 +380,11 @@
                 </div>
 
                 {{-- organization --}}
+                {{--
                 @if($course->creator_id != $course->teacher_id)
                     @include('web.default.course.sidebar_instructor_profile', ['courseTeacher' => $course->creator])
                 @endif
+                --}}
                 {{-- teacher --}}
                 @include('web.default.course.sidebar_instructor_profile', ['courseTeacher' => $course->teacher])
 
