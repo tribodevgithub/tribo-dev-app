@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-// General | Side Menu | Buttons
+    // General | Side Menu | Buttons
 
     'crm' => 'CRM',
     'content' => 'Conteúdo',
@@ -147,7 +147,7 @@ return [
     'content_promotion' => 'Conteúdo Promoção',
     'newsletters' => 'Newsletters',
 
-//Reunião
+    //Reunião
 
     'consultant' => 'Consultor',
     'consultants' => 'Consultores',
@@ -168,11 +168,11 @@ return [
     'available' => 'Disponível',
     'pending_appointments' => 'Pendente Reunião',
 
-//Blog
+    //Blog
 
     'blog' => 'Blog',
     'articles' => 'Articles',
-  	'posts' => 'Posts',
+    'posts' => 'Posts',
     'blog_categories' => 'Blog Categorias',
     'create_category' => 'Novo Categoria',
     'author' => 'Author',
@@ -184,7 +184,7 @@ return [
     'edit_blog' => 'Editar Blog Post',
     'comments_section' => 'Enable Comentários',
 
-//Categorias
+    //Categorias
 
     'categories_list_page_title' => 'Categorias Lista',
     'categories' => 'Categorias',
@@ -209,11 +209,11 @@ return [
     'trend_color_placeholder' => 'Example: #3dbca7 or rgb(0,0,0)',
     'create_trend_category' => 'Novo Trend Categoria',
 
-//Certificado
+    //Certificado
 
     'certificate_list_page_title' => 'Certificados Lista',
     'certificate' => 'Certificado',
-  	'certificate_id' => 'Certificado ID',
+    'certificate_id' => 'Certificado ID',
     'certificate_count' => 'Certificados',
     'sub_certificate' => 'Sub-certificate',
     'has_sub_certificate' => 'Incluir Sub-certificate',
@@ -227,7 +227,7 @@ return [
     'certificate_new_template_page_title' => 'Novo Certificado Template',
     'certificate_template_edit_page_title' => 'Editar Certificado Template',
 
-//Comentários
+    //Comentários
 
     'classes_comments' => 'Curso Comentários',
     'blog_comments' => 'Blog Comentários',
@@ -258,7 +258,7 @@ return [
     'testimonial_user_avatar_placeholder' => 'Leave it blank to load the default profile image.',
     'testimonial_rate_placeholder' => 'Only Numbers (0 to 5)',
 
-//Painel
+    //Painel
 
     'dashboard' => 'Principal',
     'admin_dashboard_show' => 'Mostrar Painel',
@@ -272,12 +272,12 @@ return [
     'this_month' => 'Mês',
     'this_year' => 'Ano',
     'total_incomes' => 'Total Receita',
-  	'salescount' => 'Contar Vendas',
+    'salescount' => 'Contar Vendas',
     'total_sales_statistics' => 'Total Vendas',
     'new_sale' => 'Nova Oferta',
     'new_comment' => 'Novo Comentário',
     'pending_review' => 'Pendente Review',
-  	'pending_review_classes' => 'Pendente Review Cursos',
+    'pending_review_classes' => 'Pendente Review Cursos',
     'sales_statistics' => 'Vendas Statistics',
     'month' => 'Mês',
     'year' => 'Ano',
@@ -305,7 +305,7 @@ return [
     'total_purchased_amount' => 'Total Purchase Quantia',
     'classes_statistics' => 'Curso Tipos',
 
-//Discounts
+    //Discounts
 
     'discount_list_page_title' => 'Discounts Lista',
     'discount' => 'Discount',
@@ -315,9 +315,9 @@ return [
     'all_users_discount' => 'Todos Discounts',
     'remain' => 'Remained',
     'usable_times' => 'Usable Horas',
-  	'expire_date' => 'Expiry Data',
+    'expire_date' => 'Expiry Data',
 
-//Filtros
+    //Filtros
 
     'filter' => 'Filtrar',
     'filters' => 'Filtros',
@@ -331,7 +331,7 @@ return [
     'admin_filters_edit' => 'Filtros Editar',
     'admin_filters_delete' => 'Filtros Excluir',
 
-//Filtros Tipos
+    //Filtros Tipos
 
     'percentage_ascending' => 'Percentage - Ascending',
     'percentage_descending' => 'Percentage - Descending',
@@ -392,7 +392,7 @@ return [
     'discounted_appointments' => 'Discounted Reunião',
     'free_appointments' => 'Free Reunião',
 
-//Financial
+    //Financial
 
     'financial' => 'Financeiro',
     'accounting' => 'Contabilidade',
@@ -434,7 +434,7 @@ return [
     'paid_successful' => 'Paid/Successful',
     'success' => 'Successful',
     'invoice' => 'Invoice',
-  	'purchase_date' => 'Purchased Data',
+    'purchase_date' => 'Purchased Data',
 
     'offline_payment' => 'Pagamento Offline',
     'offline_payments' => 'Pagamentos Offlines',
@@ -483,16 +483,16 @@ return [
     'subscribe' => 'Assinatura',
     'new_package' => 'Novo Planos',
     'subscribes' => 'Assinaturas',
-  	'packages' => 'Planos',
-  	'subscribe_packages' => 'Assinaturas',
+    'packages' => 'Planos',
+    'subscribe_packages' => 'Assinaturas',
     'usable_count' => 'Qdt Max. de cursos',
     'short_description' => 'Descrição',
     'short_description_placeholder' => 'Example: Suggested for Professionals.',
     'promotion' => 'Promoção',
     'promotions' => 'Promoção Planos',
     'is_popular' => 'Plano Destaque',
-  	'new_plan' => 'Novo Plano',
-  	'plans' => 'Planos',
+    'new_plan' => 'Novo Plano',
+    'plans' => 'Planos',
     'new_promotion' => 'Novo Promoção Plano',
     'edit_promotion' => 'Editar Promoção Plano',
     'payment_channels' => 'Payment Gateways',
@@ -502,7 +502,7 @@ return [
     'to_date' => 'To Data',
     'document_number' => 'Document ID',
 
-//Groups
+    //Groups
 
     'group_list_page_title' => 'Groups Lista',
     'group' => 'Group',
@@ -512,7 +512,7 @@ return [
     'admin_group_edit' => 'Groups Editar',
     'admin_group_delete' => 'Groups Excluir',
 
-//Payment Gateways
+    //Payment Gateways
 
     'payment_channel' => 'Payment Gateway',
     'payment_channel_edit' => 'Editar Payment Gateway',
@@ -523,7 +523,7 @@ return [
     'admin_payment_channel_edit' => 'Payment Gateways Editar',
     'admin_payment_channel_delete' => 'Payment Gateways Excluir',
 
-//Quiz
+    //Quiz
 
     'quizzes' => 'Questionários',
     'quizzes_list' => 'Questionários list',
@@ -553,7 +553,7 @@ return [
     'certificate_image_hint' => 'Use an A4 size frame 3508x2480px. It will be loaded as the editor background',
     'certificate_text_hint' => 'Criar your certificate using this editor e click on the "Preview" button and try until reach your desired result',
 
-//Quiz Resultados
+    //Quiz Resultados
 
     'quiz_result_list_page_title' => 'Quiz Resultados',
     'admin_quiz_result' => 'Quiz Resultados',
@@ -562,7 +562,7 @@ return [
     'admin_quiz_result_edit' => 'Quiz Resultados Editar',
     'admin_quiz_result_delete' => 'Quiz Resultados Excluir',
 
-//Usuário Roles
+    //Usuário Roles
 
     'role' => 'Função',
     'roles' => 'Funções de Usuário',
@@ -582,7 +582,7 @@ return [
     'admin_roles_edit' => 'Editar Função',
     'admin_roles_delete' => 'Excluir Função',
 
-// Pages Título
+    // Pages Título
 
     'webinar_new_page_title' => 'Novo Curso',
     'tag_new_page_title' => 'Nova Tag',
@@ -591,7 +591,7 @@ return [
     'category_new_page_title' => 'Nova Categoria',
     'user_new_page_title' => 'Novo Usuário',
 
-//Settings
+    //Settings
 
     'setting' => 'Configuração',
     'settings' => 'Configurações',
@@ -614,7 +614,7 @@ return [
     'customization_card_hint' => 'Define additional CSS & JS codes.',
     'personalization' => 'Personalization',
 
-// Settings - SEO
+    // Settings - SEO
 
     'seo_metas' => 'SEO Meta Settings',
     'seo_metas_home' => 'Home Page',
@@ -631,12 +631,12 @@ return [
     'seo_metas_instructors' => 'Instructors',
     'seo_metas_organizations' => 'Organizations',
 
-// Settings-socials
+    // Settings-socials
 
     'settings_socials' => 'Social Accounts Settings',
     'socials' => 'Social Accounts',
 
-// Settings-footer
+    // Settings-footer
 
     'footer' => 'Rodapé',
     'footer_first_column' => 'First Column',
@@ -647,7 +647,7 @@ return [
     'item_title' => 'Item Título',
     'item_link' => 'Item URL',
 
-// Settings-main
+    // Settings-main
 
     'main' => 'Main',
     'home_sections' => 'Home Sections',
@@ -802,9 +802,9 @@ return [
     'Hero_style_2' => 'Animated Hero Style',
     'video_and_image_sections' => 'Video/Imagem Section',
     'change_password' => 'Change Senha',
-	'select_a_partner_hint' => 'Partner instrcutor will have access to the course content e their profile will be displayed on the course page.',
+    'select_a_partner_hint' => 'Partner instrcutor will have access to the course content e their profile will be displayed on the course page.',
 
-//Tags
+    //Tags
 
     'tag' => 'Tag',
     'tags' => 'Tags',
@@ -814,9 +814,9 @@ return [
     'admin_tags_create' => 'Tags Criar',
     'admin_tags_edit' => 'Tags Editar',
     'admin_tags_delete' => 'Tags Excluir',
-  	'create_field_title_placeholder' => 'Tags will be displayed on the course page.',
+    'create_field_title_placeholder' => 'Tags will be displayed on the course page.',
 
-//Usuários
+    //Usuários
 
     'users_list' => 'Usuários',
     'user_or_instructor' => 'Usuário or Instructor',
@@ -857,11 +857,11 @@ return [
     'create_field_email_placeholder' => 'Example: username@gmail.com',
     'search_user_or_instructor' => 'Procurar for user or instructor',
     'select_a_instructor' => 'Selecione Um Instrutor',
-  	'search_instructor' => 'Procurar por Instructor',
-  	'search_student' => 'Procurar por Student',
-  	'search_users' => 'Procurar Usuários',
+    'search_instructor' => 'Procurar por Instructor',
+    'search_student' => 'Procurar por Student',
+    'search_users' => 'Procurar Usuários',
 
-///Usuário Badges
+    ///Usuário Badges
 
     'select_badge' => 'Selecione a Badge',
     'badges' => 'Graduações',
@@ -909,7 +909,7 @@ return [
     'user_bio' => 'Job Título',
     'rate' => 'Rating',
 
-//Notification Template
+    //Notification Template
 
     'notification_single' => 'Single Usuário',
     'notification_all_users' => 'Todos Usuários',
@@ -940,7 +940,7 @@ return [
     'subscribe_plan_name' => 'Título da Assinatura',
     'promotion_plan_name' => 'Promoção Plano Título',
 
-//Instructor Requests
+    //Instructor Requests
 
     'reject_request' => 'Rejeitar',
     'become_instructor_info' => 'Detalhes de Solicitações de instrutor',
@@ -954,7 +954,7 @@ return [
     'contacts_message' => 'Contato Mensagem',
     'user_role_updated' => 'A função do usuário foi atualizada.',
 
-//Classes
+    //Classes
 
     'webinars_list_page_title' => 'Live Classes Lista',
     'webinars' => 'Cursos Ao Vivo',
@@ -1014,14 +1014,14 @@ return [
     'is_not_the_teacher_of_this_organization' => 'The selected instructor does not exist or not related to this organization.',
     'webinars_reports' => 'Relatório de Cursos',
 
-  // Quadro de notícias Page
+    // Quadro de notícias Page
 
     'edit_noticeboard' => 'Editar Notice',
     'send_noticeboard_success' => 'Notice sent successfully.',
     'edit_noticeboard_success' => 'Notice edited successfully.',
     'delete_noticeboard_success' => 'Notice deleted successfully.',
 
-//Statistic
+    //Statistic
 
     'total_appointments' => 'Total Reunião',
     'open_appointments' => 'Abrir Reunião',
@@ -1052,8 +1052,8 @@ return [
     'organizations_instructors' => 'Organizations Instructors',
     'inactive_instructors' => 'Inativo Instructors',
     'ban_instructors' => 'Banned Instructors',
-  	'banned' => 'Banned',
-  	'until' => 'Until',
+    'banned' => 'Banned',
+    'until' => 'Until',
     'total_organizations' => 'Total Organizations',
     'verified_organizations' => 'Verified Organizations',
     'organizations_students' => 'Organization Students',
@@ -1067,10 +1067,10 @@ return [
     'active_discounts' => 'Active Discounts',
     'net_profit_statistics' => 'Net Profit Statistics (w/o Tax)',
 
-//Hints & Placeholders
+    //Hints & Placeholders
 
     'hints' => 'Dicas',
-  	'new_page_link_hint' => 'Start com a "/" e just use small caps. Example: /about so the page URL will be yourwebsiteurl.com/pages/about',
+    'new_page_link_hint' => 'Start com a "/" e just use small caps. Example: /about so the page URL will be yourwebsiteurl.com/pages/about',
     'consultants_hint_title_1' => 'Become a Consultor',
     'consultants_hint_title_2' => 'Pendente Reunião',
     'consultants_hint_title_3' => 'Indisponível Consultores',
@@ -1162,40 +1162,40 @@ return [
     'has_lottie_hint' => 'Turn it ON if a Lottie animation file selected (.json)',
     'index' => 'Index',
     'no_index' => 'No Index',
-  	'additional_pages_title' => 'Additional Pages',
-  	'meetings_list_title' => 'Reunião Lista',
-  	'consultants_list_title' => 'Consultores Lista',
-  	'marketing_dashboard_title' => 'Marketing Painel',
-  	'general_dashboard_title' => 'Painel',
-  	'discount_codes_title' => 'Coupons',
-  	'new_discount_title' => 'Novo Discount',
-  	'edit_discount_title' => 'Editar Discount',
-  	'notices_list_title' => 'Notices Lista',
-  	'new_notice_title' => 'Novo Notice',
-  	'offline_payments_title' => 'Offline Payments ',
-  	'payouts_title' => 'Payouts ',
-   	'reviews_list_title' => 'Reviews Lista',
-   	'settings_title' => 'Settings',
-   	'new_product_discount_title' => 'Novo Curso Discount',
-   	'edit_product_discount_title' => 'Editar Curso Discount',
-   	'support_departments_title' => 'Suporte Departments',
-   	'new_support_ticket_title' => 'Novo Suporte Ticket',
-   	'edit_support_ticket_title' => 'Editar Suporte Ticket',
-   	'staff_list_title' => 'Staff Lista',
+    'additional_pages_title' => 'Additional Pages',
+    'meetings_list_title' => 'Reunião Lista',
+    'consultants_list_title' => 'Consultores Lista',
+    'marketing_dashboard_title' => 'Marketing Painel',
+    'general_dashboard_title' => 'Painel',
+    'discount_codes_title' => 'Coupons',
+    'new_discount_title' => 'Novo Discount',
+    'edit_discount_title' => 'Editar Discount',
+    'notices_list_title' => 'Notices Lista',
+    'new_notice_title' => 'Novo Notice',
+    'offline_payments_title' => 'Offline Payments ',
+    'payouts_title' => 'Payouts ',
+    'reviews_list_title' => 'Reviews Lista',
+    'settings_title' => 'Settings',
+    'new_product_discount_title' => 'Novo Curso Discount',
+    'edit_product_discount_title' => 'Editar Curso Discount',
+    'support_departments_title' => 'Suporte Departments',
+    'new_support_ticket_title' => 'Novo Suporte Ticket',
+    'edit_support_ticket_title' => 'Editar Suporte Ticket',
+    'staff_list_title' => 'Staff Lista',
 
-//21 Aug Update
+    //21 Aug Update
     'invited_instructor_hint' => 'The invited instructor will have access to the course content. Their profile will be shown on the course page.',
-  	'affiliate' => 'Affiliate',
-  	'referral' => 'Referral',
+    'affiliate' => 'Affiliate',
+    'referral' => 'Referral',
     'affiliate_users' => 'Affiliate Usuários',
     'referral_code' => 'Referral Code',
     'referral_history' => 'Referral History',
-  	'referrals_history' => 'Referral History',
+    'referrals_history' => 'Referral History',
     'referred_users' => 'Referred Usuários',
     'affiliate_amount' => 'Affiliate Quantia',
     'registration_amount' => 'Registration Quantia',
     'total_commission_amount' => 'Total Commission Quantia',
-  	'affiliate_user_commission' => 'Affiliate user commission',
+    'affiliate_user_commission' => 'Affiliate user commission',
     'affiliate_user' => 'Affiliate Usuário',
     'active_users_affiliate_when_registration' => 'Acticate affiliate for new users by default',
     'affiliate_users' => 'Affiliate Usuários',
@@ -1205,51 +1205,51 @@ return [
     'referral_description' => 'Affiliate Descrição',
     'affiliate_registration_amount' => 'Affiliate Registration Bonus',
     'total_affiliate_commission' => 'Total Affiliate Commission',
-  	'affiliate_user_commission' => 'Affiliate Commission',
+    'affiliate_user_commission' => 'Affiliate Commission',
     'total_referred_amount' => 'total referred amount',
-  	'referred_user_amount' => 'Referred Usuário Bonus',
+    'referred_user_amount' => 'Referred Usuário Bonus',
     'registration_income' => 'Registration Income',
-  	'aff_sales_commission' => 'Vendas Commission',
-	  'registeration_amount' => 'Registration Quantia',
+    'aff_sales_commission' => 'Vendas Commission',
+    'registeration_amount' => 'Registration Quantia',
 
     'affiliate_user_commission_hint' => 'The commission rate that will be awarded to the affiliate user when a purchase is made by a referred user (Percentage).',
     'affiliate_user_amount_hint' => 'The fixed amount will be awarded to the affiliate user when a user signs up using the affiliate code.',
     'referred_user_amount_hint' => 'The fixed amount will be awarded to the referred user when a user signs up using the affiliate code.',
-  	'referral_description_hint' => 'The description will be displayed in the user panel.',
-  	'total_user_hint' => 'Total Referred Usuários',
-  	'total_user_desc' => 'Usuários that registered on the platform using the referral code.',
-  	'total_affiliate_hint' => 'Total Affiliate Usuários',
-  	'total_affiliate_desc' => 'Usuários that referred at least one user to the platform using their referral code.',
-  	'total_aff_amount_hint' => 'Total Registration Quantia',
-  	'total_aff_amount_desc' => 'The amount earned by both referral users and affiliate users as the registration bonus.',
-  	'total_aff_commission_hint' => 'Total affiliate commission',
-  	'total_aff_commission_desc' => 'The amount earned by affiliate users as the sales commission.',
-  	'aff_sales_commission_hint' => 'Vendas Commission',
-  	'aff_sales_commission_desc' => 'The amount earned by user as the sales commission. Each sale made by sub-level users will include the commission for the affiliate user.',
-  	'registration_income_hint' => 'Registration Income',
-  	'registration_income_desc' => 'The amount earned by the user as the registration bonus. When a user registers using the affiliate code and activates their account, this amount will be calculated.',
+    'referral_description_hint' => 'The description will be displayed in the user panel.',
+    'total_user_hint' => 'Total Referred Usuários',
+    'total_user_desc' => 'Usuários that registered on the platform using the referral code.',
+    'total_affiliate_hint' => 'Total Affiliate Usuários',
+    'total_affiliate_desc' => 'Usuários that referred at least one user to the platform using their referral code.',
+    'total_aff_amount_hint' => 'Total Registration Quantia',
+    'total_aff_amount_desc' => 'The amount earned by both referral users and affiliate users as the registration bonus.',
+    'total_aff_commission_hint' => 'Total affiliate commission',
+    'total_aff_commission_desc' => 'The amount earned by affiliate users as the sales commission.',
+    'aff_sales_commission_hint' => 'Vendas Commission',
+    'aff_sales_commission_desc' => 'The amount earned by user as the sales commission. Each sale made by sub-level users will include the commission for the affiliate user.',
+    'registration_income_hint' => 'Registration Income',
+    'registration_income_desc' => 'The amount earned by the user as the registration bonus. When a user registers using the affiliate code and activates their account, this amount will be calculated.',
     'active_referral_hint' => 'Referral input fields and the related financial processes will be activated.',
-  	'active_referral_new_users_hint' => 'By activating this toggle, the affiliate feature will be activated for new registration by default.',
+    'active_referral_new_users_hint' => 'By activating this toggle, the affiliate feature will be activated for new registration by default.',
 
     'multi_language_content' => 'Multi-language Conteúdo',
-  	'multi_language_content_hint' => 'You will be able to define the platform content in different languages. If turn it off, the language dropdown will be hidden.',
+    'multi_language_content_hint' => 'You will be able to define the platform content in different languages. If turn it off, the language dropdown will be hidden.',
 
     'no_chapter' => 'No Section',
     'class_url' => 'URL do Curso',
     'class_url_hint' => 'A URL do Curso deve ser única, use ífem ao invés de espaço para separar as palavras. Você pode também usar o padrão.',
     'page_background' => 'Pages Background',
-  	'home_video_or_image_box' => 'Video/Imagem Section',
-	  'rtl' => 'Enable Arabic characters',
-	  'content_translate' => 'Conteúdo translate',
+    'home_video_or_image_box' => 'Video/Imagem Section',
+    'rtl' => 'Enable Arabic characters',
+    'content_translate' => 'Conteúdo translate',
     'posted_notifications' => 'Posted notifications',
     'posted' => 'Postado',
-	  'select_a_partner_hint' => 'O instrutor parceiro terá acesso ao conteúdo do curso e seu perfil será exibido na página do curso.',
-	  'search_instructor' => 'Procurar for Instructor',
+    'select_a_partner_hint' => 'O instrutor parceiro terá acesso ao conteúdo do curso e seu perfil será exibido na página do curso.',
+    'search_instructor' => 'Procurar for Instructor',
     'search_student' => 'Procurar for Student',
     'search_users' => 'Procurar Usuários',
-	  'session' => 'Live Session',
-	  'text_lesson' => 'Text Lesson',
-  	'balances' => 'Saldos',
+    'session' => 'Live Session',
+    'text_lesson' => 'Text Lesson',
+    'balances' => 'Saldos',
 
     'become_instructor_section' => 'Become Instructor',
     'reward_program' => 'Reward Points',
@@ -1292,7 +1292,7 @@ return [
     'notification_product_new_rating' => 'Novo Rating (Feedback)',
     'notification_product_receive_shipment' => 'Parcel Receive Confirmation (for Seller)',
     'notification_product_out_of_stock' => 'Out of Stock Product',
-    'notification_assignment' => 'Atribuições',
+    'notification_assignment' => 'Desafios',
     'notification_student_send_message' => 'Novo Submission (for Instructor)',
     'notification_instructor_send_message' => 'Novo Mensagem from Instructor (for Student)',
     'notification_instructor_set_grade' => 'Assignment Grade (for Student)',
