@@ -72,7 +72,7 @@
                                                 <select name="type" class="custom-select @error('type')  is-invalid @enderror">
                                                     <option value="webinar" @if((!empty($webinar) and $webinar->isWebinar()) or old('type') == \App\Models\Webinar::$webinar) selected @endif>{{ trans('webinars.webinar') }}</option>
                                                     <option value="course" @if((!empty($webinar) and $webinar->isCourse()) or old('type') == \App\Models\Webinar::$course) selected @endif>{{ trans('product.video_course') }}</option>
-                                                    <option>{{ trans('product.text_course') }} (Paid plugin)</option>
+                                                    <option value="text_lesson" @if((!empty($webinar) and $webinar->isTextCourse()) or old('type') == \App\Models\Webinar::$textLesson) selected @endif>{{ trans('product.text_course') }}</option>
                                                 </select>
 
                                                 @error('type')
@@ -94,7 +94,7 @@
 
                                             <div class="form-group mt-15">
                                                 <label class="input-label">{{ trans('update.points') }}</label>
-                                                <input type="text" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Vazio significa modo inativo"/>
+                                                <input type="text" name="points" value="{{ !empty($webinar) ? $webinar->points : old('points') }}" class="form-control @error('points')  is-invalid @enderror" placeholder="Empty means inactive this mode"/>
                                                 @error('points')
                                                 <div class="invalid-feedback">
                                                     {{ $message }}
@@ -356,14 +356,6 @@
                                                 <div class="custom-control custom-switch">
                                                     <input type="checkbox" name="support" class="custom-control-input" id="supportSwitch" {{ !empty($webinar) && $webinar->support ? 'checked' : '' }}>
                                                     <label class="custom-control-label" for="supportSwitch"></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group mt-30 d-flex align-items-center justify-content-between">
-                                                <label class="" for="certificateSwitch">{{ trans('update.include_certificate') }}</label>
-                                                <div class="custom-control custom-switch">
-                                                    <input type="checkbox" name="certificate" class="custom-control-input" id="certificateSwitch" {{ !empty($webinar) && $webinar->certificate ? 'checked' : '' }}>
-                                                    <label class="custom-control-label" for="certificateSwitch"></label>
                                                 </div>
                                             </div>
 
