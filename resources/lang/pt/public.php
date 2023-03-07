@@ -313,7 +313,7 @@ return [
     'user_role' => 'Tipo de usuário',
     'all_roles' => 'Todos os tipos',
     'error_404_page_title' => 'Página não encontrada',
-    'i_passed_this_lesson' => 'Eu passei nesta lição',
+    'i_passed_this_lesson' => 'Eu concluí esta aula',
     'course_learning_change_status_success' => 'Seu status de aprendizado foi alterado com sucesso.',
     'course_learning_change_status_error' => 'Falha ao alterar o status de aprendizagem.',
     'course_learning_passed' => ':percent% do curso é aprovado.',
