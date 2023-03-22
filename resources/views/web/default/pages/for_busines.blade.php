@@ -32,7 +32,7 @@
         </div>
     </section>
     <section class="bg-primary">
-        <div class="container mt-50 mb-50 pt-50 pb-50">
+        <div class="container mb-50 pt-50 pb-50">
             <div class="row align-items-center">
 
                 <div class="col-lg-8">
