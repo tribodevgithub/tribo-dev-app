@@ -7,19 +7,26 @@
 
 @section('content')
 
-<section>
+    <section class="bg-img-1">
         <div class="container mt-50 pt-50 pb-50">
             <div class="row align-items-center">
-                <div class="col-lg-6 ">
-                    <div class="default-title">
-                        <h1><span class="text-primary">Otimize</span> seu processo de desenvolvimento</h1>
-                        <p class="mt-30 mb-30 text-gray">Contrate uma equipe de desenvolvedores em poucos cliques e resolva todas as suas tarefas técnicas em um só lugar. A <b class="text-primary">Tribodev</b> apoia seu negócio, através de um processo de outsourcing prático e eficiente.</p>
-                        <a href="#assinar" class="btn btn-primary rounded-pill">Fale com um especialista</a>
-                        <a href="#assinar" class="btn btn-outline-primary rounded-pill">Ver Planos</a>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-12 mb-20">
+                            <div class="card mb-10">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                    <div class="default-title">
+                                        <h1><span class="text-primary">Otimize</span> seu processo de desenvolvimento</h1>
+                                        <p class="mt-30 mb-30 text-gray">Contrate uma equipe de desenvolvedores em poucos cliques e resolva todas as suas tarefas técnicas em um só lugar. A <b class="text-primary">Tribodev</b> apoia seu negócio, através de um processo de outsourcing prático e eficiente.</p>
+                                        <a href="#assinar" class="btn btn-primary rounded-pill">Fale com um especialista</a>
+                                        <a href="#assinar" class="btn btn-outline-primary rounded-pill float-right">Ver Planos</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="/assets/default/img/tribovip/img_td_efx_001.png">
                 </div>
             </div>
         </div>
